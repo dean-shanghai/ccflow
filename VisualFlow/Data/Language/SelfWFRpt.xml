@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="FieldsChose" B5=""  CH="为构造视图选择字段" RU="Посмотри на эту структуру на местах" EN="Choose fields to construct view" JP="その構造を表示オプションフィールド"  UG=""  />
+  <Item No="SelfRpt" CH="自定义报表" RU="Пользовательские отчеты" EN="Custom reports" JP="カスタムレポート" />
+  <Item No="Sort" CH="类别" RU="Категория" EN="Category" JP="カテゴリ" />
+  <Item No="RptSort" CH="报表类别" RU="Заявление категории" EN="Report category" JP="声明のカテゴリー" />
+  <Item No="DesignRpt" CH="设计报表" RU="Дизайн заявления&#xD;&#xA;" EN="Design Reports" JP=" 設計文 " />
+  <Item No="GroupFX" CH="分组分析" RU="Пакет анализа" EN="Group Analysis" JP="パケット解析" />
+  <Item No="DBFX" CH="对比分析" RU="Сравнительный анализ" EN="Comparative Analysis" JP="比較分析" />
+  <Item No="MRpt" CH="多纬报表" RU="Вэй заявлениями больше" EN="Multi-dimensional Reports" JP="魏の文をもっと" />
+  <Item No="Attr" CH="属性" RU="Свойства" EN="Attributes" JP="プロパティ" />
+  <Item No="ViewEName" CH="视图英文名称" RU="Посмотреть Английское название" EN="View Name" JP="ビューには、英語名" />
+  <Item No="ViewLabel" CH="视图标签" RU="Список меток" EN="View Label" JP="タグの表示" />
+  <Item No="OR" CH="或者关系" RU="Или взаимосвязь между" EN="OR" JP=" や関係 " />
+  <Item No="And" CH="并且关系" RU="И взаимосвязь между&#xD;&#xA;" EN="AND" JP="との関係の間に" />
+  <Item No="CondBlankWarning" CH="您没有设置条件，请在值文本框中输入值。" RU="Вы не можете установить условия, в стоимости текстовом поле Значение." EN="You have not set conditions, please enter a value in the textbox." JP="あなたが、テキストボックスの値の値に条件を設定していません。&#xD;&#xA;搜索" />
+</NewDataSet>

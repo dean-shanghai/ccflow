@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="Flow" CH="业务流程" RU="Бизнес-процесс" EN="Business Process" JP="ビジネスプロセス" />
+  <Item No="StopOverNode" CH="停留节点" RU="Вершины пребывания" EN="Nodes stay" JP="ノード滞在&#xD;&#xA;" />
+  <Item1 No="AcceptTime" CH="接受日期" RU="接受日期" EN="Accept Date" />
+  <Item No="WarningDate" CH="预警日期" RU="Предупреждение Дата" EN="Warning Date" JP="警告日" />
+  <Item No="SDT" CH="应完成日期" RU="Срок сдачи следует&#xD;&#xA;" EN="Completion date should be" JP="完成日する必要があります&#xD;&#xA;" />
+  <Item No="CurrDate" CH="当前日期" RU="Текущая дата" EN="The current date" JP="現在の日付" />
+  <Item No="LeftDays" CH="剩余天数" RU="Количество дней, оставшихся" EN="The number of days remaining" JP="残りの数日" />
+  <Item No="OutDays" CH="逾期" RU="Просроченные" EN="Overdue" JP="延滞" />
+</NewDataSet>

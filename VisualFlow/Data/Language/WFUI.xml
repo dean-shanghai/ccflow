@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+	<Item No="ReturnTo" B5="退回到:"  CH="退回到:" EN="ReturnTo:" JP="ReturnTo:" RU="ReturnTo:"  UG="ReturnTo:"  />
+	<Item No="Track" B5="工作轨迹"  CH="工作轨迹" EN="Track" JP="Track" RU="Track"  UG="Track"  />
+	<Item No="ClearDB" B5="清除流程数据"  CH="清除流程数据" EN="Clear Flow data" JP="Clear Flow data" RU="Clear Flow data"  UG="Clear Flow data"  />
+    <Item No="Setting" B5="设置"  CH="设置" EN="Setting" JP="Setting" RU="Setting"  UG="Setting"  />
+    <Item No="Upload" B5="上传"  CH="上传" EN="Upload" JP="Upload" RU="Upload"  UG="Upload"  />
+    <Item No="TitleImg" B5="标题图片设置"  CH="标题图片设置" EN="Header Image Set" JP="Header Image Set" RU="Header Image Set"  UG="Header Image Set"  />
+    <Item No="EW1" B5="当前您没有工作要去处理"  CH="当前您没有工作要去处理" EN="You have no work to handle at this time" JP="〜の間" RU="В течение"  UG=""  />
+
+  <Item No="StartWork" B5="工作发起"  CH="工作发起" EN="Start work" JP="〜の間" RU="В течение" />
+
+  <Item No="NodeSearch" B5="节点查询"  CH="节点查询" EN="Search Node" JP="NodeSearch" RU="NodeSearch" />
+
+  <Item No="BaseInfo" B5="基本信息"  CH="基本信息" EN="Basic Information" JP="BaseInfo" RU="BaseInfo" />
+  <Item No="UserAcc" B5="用户帐号"  CH="用户帐号" EN="User Account" JP="User account" RU="User account" />
+  <Item No="ESign" B5="电子签名"  CH="电子签名" EN="Electronic Signature" JP="Electronic Signature" RU="Electronic Signature" />
+
+  <Item No="InfoAlert" B5="信息提示"  CH="信息提示" EN="Tips" JP="Information Tips" RU="Information Tips" />
+
+  <Item No="NotSet" B5="未设置"  CH="未设置" EN="Not Set" JP="Not Setting" RU="Not Setting" />
+  <Item No="DeptP" B5="部门权限"  CH="部门权限" EN="Department Permissions" JP="Department permission" RU="Department permission" />
+  <Item No="StaP" B5="岗位权限"  CH="岗位权限" EN="Position Permissions" JP="Status privileges" RU="Status privileges" />
+  <Item No="Executor" B5="执行人"  CH="执行人" EN="Executor" JP="Executor" RU="Executor" />
+  <Item No="SMS1" B5="没有安装短信猫设备。"  
+        CH="没有安装短信猫设备。" 
+        EN="SMS is not installed equipment" 
+        JP="SMS is not installed equipment" RU="SMS is not installed equipment" />
+
+  <Item No="SiteSet" B5="网站设置"  CH="网站设置" EN="Website Settings" JP="Website Sitting" RU="Website Sitting" />
+  <Item No="ExitLiM" B5="退出授权模式"  CH="退出授权模式" EN="Quit authorized mode" JP="Website Sitting" RU="Website Sitting" />
+  
+
+  <Item No="ToAlert1" B5="接受短消息提醒手机号"  CH="接受短消息提醒手机号"
+      EN="Phone number to accept text messages"
+      JP="Phone number to accept short message reminding"
+      RU="Phone number to accept short message reminding" />
+
+  <Item No="ToAlert2" B5="接受E-mail提醒"  CH="接受E-mail提醒"
+      EN="Email address to accept reminders"
+      JP="E-mail reminder to accept"
+      RU="E-mail reminder to accept" />
+
+  <Item No="To1" B5="授权情况：未授权"  CH="授权情况：未授权"
+        EN="Authorization: no authorization" 
+        JP="Authorization: no authorization" 
+        RU="Authorization: no authorization" />
+
+  <Item No="To11" B5="授权情况：授权给"  CH="授权情况：授权给"
+       EN="Authorization: Authorized to"
+       JP="Authorization: Authorization to"
+       RU="Authorization: Authorization to" />
+  
+  <Item No="To2" B5="执行授权"  CH="执行授权"
+      EN="Executive authority"
+      JP="Executive authority"
+      RU="Executive authority" />
+
+  <Item No="To3" B5="岗位/部门-权限"  CH="岗位/部门-权限"
+ EN="Job Postions / Departments - Permissions"
+ JP="Posts / departments - Permissions"
+ RU="Posts / departments - Permissions" />
+
+
+  <Item No="To4" B5="电子签名设置"  CH="电子签名设置"
+ EN="Electronic Signature Settings"
+ JP="Electronic signature set"
+ RU="Electronic signature set" />
+
+  <Item No="To5" B5="请选择您要授权的人员"  CH="请选择您要授权的人员"
+EN="Please select the person you want to authorize"
+JP="Please select the person you want to authorize"
+RU="Please select the person you want to authorize" />
+
+
+  <Item No="To6" B5="没有同事授权给您，您不能使用授权方式登陆。"  CH="没有同事授权给您，您不能使用授权方式登陆。"
+EN="You cannot login with authorized mode when you are not authorized by other personnel."
+JP="No staff is licensed to you, you can not use the licensing visit."
+RU="No staff is licensed to you, you can not use the licensing visit." />
+
+  <Item No="To7" B5="下列同事授权给您"  CH="下列同事授权给您"
+EN="The following personnel have given you authorization"
+JP="The following colleagues are licensed to you"
+RU="The following colleagues are licensed to you" />
+
+
+  <Item No="To8" B5="您的登陆是授权模式，您不能查看个人信息。"  CH="您的登陆是授权模式，您不能查看个人信息。"
+EN="You logged in under authorized mode. You cannot view personal information."
+JP="Your login is the licensing model, you can not view personal information."
+RU="Your login is the licensing model, you can not view personal information." />
+
+  
+
+
+
+  <Item No="ChangePass" B5="修改密码"  CH="修改密码"
+     EN="Change Password"
+     JP="Change Password"
+     RU="Change Password" />
+
+
+  <Item No="CelAu" B5="取消授权"  CH="取消授权"
+   EN="Cancel authorization"
+   JP="Cancel license"
+   RU="Cancel license" />
+
+
+
+  <!-- MyFlowWap.ascx -->
+  <Item No="FW1" 
+        B5="@当前的工作已经被处理，或者您没有执行此工作的权限。@您可以执行如下操作。"
+        CH="@当前的工作已经被处理，或者您没有执行此工作的权限。@您可以执行如下操作。"
+        EN="@ The current work has been processed, or you do not have permission to perform this work. @ You can do the following."
+        JP="@ The current work has been processed, or you do not have permission to perform this work. @ You can do the following."
+        RU="@ The current work has been processed, or you do not have permission to perform this work. @ You can do the following." />
+
+
+  <!-- Runing.ascx -->
+  <Item No="Ring1"
+       B5="什么是在途工作?"
+       CH="什么是在途工作?"
+       EN="What is in-transit work?"
+       JP="What is in transit to work?"
+       RU="What is in transit to work?" />
+
+  <Item No="Ring2"
+     B5="在途工作就是我参与流程中的一个节点的工作，但是这条流程还没有完成，并且我不能处理当前的工作环节。 "
+     CH="在途工作就是我参与流程中的一个节点的工作，但是这条流程还没有完成，并且我不能处理当前的工作环节。 "
+     EN="An in-transit work is an incomplete work that you participate in but not involved in (cannot process) the current node."
+     JP="I was involved in the way work is a node in the process of work, but this process is not finished, and I can not handle the current work session."
+     RU="I was involved in the way work is a node in the process of work, but this process is not finished, and I can not handle the current work session." />
+  
+  <!-- AllotTask -->
+  <Item No="AT1" B5="帮助:系统会记住本次的工作指定，下次您在发送时间它会自动把工作投递给您本次指定的人。" 
+CH="帮助:系统会记住本次的工作指定，下次您在发送时间它会自动把工作投递给您本次指定的人。"
+EN="Help: The system will remember the work of this designation, the next time you send it automatically to the work delivered to you in this nomination."
+JP="Help: The system will remember the work of this designation, the next time you send it automatically to the work delivered to you in this nomination."
+RU="Help: The system will remember the work of this designation, the next time you send it automatically to the work delivered to you in this nomination." />
+
+
+  <Item No="AT0" B5="工作分配"  CH="工作分配" EN="Search Node" JP="NodeSearch" RU="NodeSearch" />
+  <Item No="AT2" B5="当前工作中你没有分配给任何人，此工作将不能被其他人所执行！"
+        CH="当前工作中你没有分配给任何人，此工作将不能被其他人所执行！" 
+        EN="Your current work is not assigned to anyone, this work will be performed by others can not!" 
+        JP="Your current work is not assigned to anyone, this work will be performed by others can not!" 
+        RU="Your current work is not assigned to anyone, this work will be performed by others can not!" />  
+</NewDataSet>

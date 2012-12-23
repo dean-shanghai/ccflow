@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Item No="AttrFiled" CH="属性/字段" RU="Атрибуты / Поля" EN="Attribute/Field" JP="属性/フィールド" />
+  <Item No="OperS" CH="操作符" RU="Оператор" EN="Operator" JP="演算子" />
+  <Item No="CondWay" CH="条件计算方式" RU="Условия метод расчета" EN="Conditions of the method for calculating" JP="は、算定の方法の条件" />
+  <Item No="CondWayD" CH="对于多个条件有效" RU="Ряд условий для эффективного" EN="A number of conditions for effective" JP="効果的な条件にも数多くの" />
+  <Item No="RunWay" CH="计算方式" RU="Метод расчета" EN="The method for calculating" JP="を計算するためのメソッド" />
+  <Item No="NodeT" CH="节点方向" RU="Узел направлении" EN="Node direction" JP="ノード方向" />
+  <Item No="FlowT" CH="流程完成条件" RU="Процесс завершить условия" EN="Flow to complete the conditions" JP="プロセスの条件を完了するには" />
+  <Item No="DirT" CH="方向条件" RU="Направление условия" EN="The direction of the conditions" JP="この条件の方向" />
+</NewDataSet>

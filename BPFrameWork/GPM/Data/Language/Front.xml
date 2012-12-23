@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="MySts" CH="我的岗位" B5=""  RU="Моя должностей" EN="My Position" JP="自分の投稿&#xD;&#xA;"  UG=""  />
+  <Item No="MyBill" CH="我的单据" RU="Мои документы" EN="My documents" JP="マイ楽器" />
+  <Item No="MyDepts" CH="我的部门" RU="Мой отдел" EN="My departments" JP="私の部門" />
+  <Item No="WorkWarning" CH="工作预警" RU="Работа систем раннего предупреждения" EN="Early warning of works" JP="早期警戒の活動" />
+  <Item No="AdminTools" CH="管理员工作列表" RU="Работа Список менеджер" EN="Administrator's To-do List" JP="仕事リストマネージャ" />
+  <Item No="PendingWork" CH="待办工作" RU="Предстоит сделать" EN="Works To Do" JP="仕事を" />
+  <Item No="WorkEarlyWarning" CH="工作预警" RU="Работа систем раннего предупреждения" EN="Early warning of works" JP="早期警戒の活動" />
+  <Item No="NewField" CH="新建字段" RU="Новое поле" EN="New Field" JP="新しいフィールド" />
+  <Item No="DesignDtl" CH="设计明细" RU="Дизайн Подробности" EN="Design Details" JP="設計の詳細" />
+  <Item No="FlowImg" CH="流程图" RU="Схема" EN="Flow chart" JP="フローチャート" />
+  <Item No="PTable" CH="物理表" RU="Физическая форма" EN="Physical Table" JP="物理的なフォーム" />
+  <Item No="DtlTable" CH="明细表" RU="Расписание" EN="Details Table" JP="スケジュール" />
+  <Item No="Dtl" CH="明细表" RU="Расписание" EN="Details" JP="スケジュール" />
+  <Item No="AutoGener" CH="系统自动生成" RU="Система автоматически генерирует" EN="Auto-generate" JP="システムが自動的に生成" />
+  <Item No="PTableD" CH="如果没有特殊情况可以与编号相同" RU="Если Есть никаких особых обстоятельств, с тем же числом" EN="Same as ID if no special circumstances" JP="がある場合は、同じ番号には特別な事情があります" />
+  <!-- WF  -->
+  <Item No="Back2TestHome" CH="返回测试主页" RU="Вернуться на главную тест" EN="Return to test home page" JP="戻るホームをテストする" />
+  <Item No="ChoseStarter" CH="请选择你要发起流程的人员" RU="Пожалуйста, выберите вы хотите начать процесс по персоналу" EN="Choose workflow initiator" JP="ごスタッフのプロセスを開始するかを選択" />
+  <Item No="StartError" CH="错误原因 @1，可能是您没有正确的设置岗位、部门、人员。@2，可能是没有给开始节点设置工作岗位。。" RU="Неверный причин @ 1, может быть правильные настройки у вас нет работы, отделов, персонала. @ 2, не может быть настроен на работу в начале этого узла. ." EN="Possible reasons of the error: @1. You did not set up Position, department or personnel properly. @2. You did not set Position for the start node." JP="@ 1の仕事をしていない場合は、正しい設定されることがあります誤った理由は、各部門、スタッフ。 @ 2は、ノードの先頭に動作するように設定することができない。 。&#xD;&#xA;" />
+  <Item No="FNote" CH="转发原因" RU="Экспедирование причина" EN="Reason of forwarding" JP="転送理由" />
+  <Item No="FAndC" CH="转发并关闭" RU="Вперед и закрыть" EN="Forward and close" JP="進むとの緊密な" />
+</NewDataSet>

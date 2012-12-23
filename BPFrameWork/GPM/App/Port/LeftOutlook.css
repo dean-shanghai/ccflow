@@ -1,0 +1,93 @@
+body
+{
+	font-size: 14px;
+	font-family: ËÎÌו;
+}
+
+.Tree
+{
+	font-size: 14px;
+	font-family: ËÎÌו;
+}
+ 
+.MainTable
+{
+	border-right: 1px solid;
+	border-top: 1px solid;
+	font: menu;
+	border-left: 1px solid;
+	width: 100%;
+	cursor: hand;
+	border-bottom: 1px solid;
+	height: 100%;
+} 
+
+.TDM
+{
+	border-right: gray 1px solid;
+	border-top: gray 1px solid;
+	font-size: medium;
+	background-image: url(./ImgOutlook/panel_middle_n.gif);
+	border-left: gray 1px solid;
+	width: 100%;
+	cursor: hand;
+	border-bottom: gray 1px solid;
+	height: 1%;
+}
+ 
+.TDM_Selected
+{
+   width:100%;
+   background-image: url(./ImgOutlook/panel_middle_r.gif);
+   font-size:medium;
+   cursor:hand;   
+}
+
+
+.ItemTable
+{
+	border-right: black 1px solid;
+	border-top: black 1px solid;
+	font-size: small;
+	border-left: black 1px solid;
+	width: 100%;
+	border-bottom: black 1px solid;
+	height: 1%;
+	background-color: infobackground;
+}
+
+.TDItemTable
+{
+	width: 100%;
+	height: 100%;
+}
+
+.Item
+{
+	border-right: buttontext 1px solid;
+	border-top: buttontext 1px solid;
+	font-size: small;
+	border-left: buttontext 1px solid;
+	width: 100%;
+	border-bottom: buttontext 1px solid;
+}
+
+.ItemOn
+{
+	border-top-width: medium;
+	border-left-width: medium;
+	font-size: small;
+	border-bottom-width: medium;
+	width: 100%;
+	background-color: background;
+	border-right-width: medium;
+}
+
+.ItemOut
+{
+	font-size: small;
+	width: 100%;
+	background-color: infobackground;
+	border-width:medium;
+}
+ 

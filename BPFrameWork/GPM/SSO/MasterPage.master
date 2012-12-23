@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="SSO_MasterPage" %>
+
+<%@ Register Src="Pub.ascx" TagName="Pub" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        <link href="Style/main.css" rel="stylesheet" type="text/css" />
+        <link href="./Comm/Style/Table.css" rel="stylesheet" type="text/css" />
+        <link href="./../Comm/Style/Table0.css" rel="stylesheet" type="text/css" />
+        <link href="./../../Comm/Style/Table0.css" rel="stylesheet" type="text/css" />
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table width='100%' style="align: center" border="0" aligen="center">
+        <tr>
+            <td colspan="2" height='75px' style="background: url(Img/barner.png);">
+                <div>
+                    <img src="Img/split.png" /></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="1" valign="top" style="background: #c7cfe2;">
+                <%--  <a href='/GPM/SSO/'>单点登陆</a><hr>
+                <hr>--%>
+                <h3 class="left_title">
+                    工作系统列表</h3>
+                <uc1:Pub ID="Pub1" runat="server" />
+            </td>
+            <td colspan="1" width='80%' valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div style="background: #f1f6fa; height: 50px; border: solid 1px #E9f2fc; border-top: solid 3px #7286ab;
+                    line-height: 50px; padding-left: 40px;">
+                    <span style="color: #045395; font-size: 12px;">版权所有：陕汽汽车集团有限责任公司 汽车工程研究院-单点登录系统</span>
+                </div>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

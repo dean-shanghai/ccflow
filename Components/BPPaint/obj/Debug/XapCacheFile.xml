@@ -1,0 +1,11 @@
+﻿<xapCache source="D:\ccflow\Components\BPPaint\Bin\Debug\BPPaint.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2012/3/30 13:15:27">
+  <file source="D:\ccflow\Components\BPPaint\obj\Debug\BPPaint.dll" archivePath="BPPaint.dll" lastWriteTime="2012/3/30 13:15:26" />
+  <file source="D:\ccflow\DLL\FJ.Core.dll" archivePath="FJ.Core.dll" lastWriteTime="2011/11/19 10:43:08" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Windows.Controls.dll" archivePath="System.Windows.Controls.dll" lastWriteTime="2010/8/26 2:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\System.Xml.Serialization.dll" archivePath="System.Xml.Serialization.dll" lastWriteTime="2010/8/26 2:17:48" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\zh-Hans\System.Windows.Controls.resources.dll" archivePath="zh-Hans\System.Windows.Controls.resources.dll" lastWriteTime="2010/8/26 5:33:36" />
+  <file source="C:\Program Files\Microsoft SDKs\Silverlight\v4.0\Libraries\Client\zh-Hans\System.Xml.Serialization.resources.dll" archivePath="zh-Hans\System.Xml.Serialization.resources.dll" lastWriteTime="2010/8/26 5:33:36" />
+  <file source="D:\ccflow\Components\BPPaint\Libs\System.Windows.Controls.Data.DataForm.Toolkit.dll" archivePath="Libs\System.Windows.Controls.Data.DataForm.Toolkit.dll" lastWriteTime="2012/3/22 19:17:24" />
+  <file source="D:\ccflow\Components\BPPaint\ServiceReferences.ClientConfig" archivePath="ServiceReferences.ClientConfig" lastWriteTime="2012/3/23 14:04:54" />
+  <file source="D:\ccflow\Components\BPPaint\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2012/3/30 13:15:27" />
+</xapCache>

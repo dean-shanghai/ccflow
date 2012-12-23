@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器  CloseWindow -->
+  <Item No="DoCheck" CH="检查"   EN="Do Check" JP="检查" RU="Проверять" />
+  <Item No="NodeEmp" CH="节点人员"   EN="Node Emps" JP="节点人员" RU="Проверять" />
+
+  <Item No="Not" CH="无"   EN="Not" JP="〜なしで" RU="Без" />
+  <Item No="Size" CH="大小"   EN="Size" JP="寸法" RU="Размер" />
+  <Item No="Date" CH="日期"   EN="Date" JP="日付" RU="Свидание" />
+  <Item No="ChoseField" CH="选择字段"   EN="Chose Field" JP="フィールドを選択してください" RU="Выбор места" />
+  <Item No="DataGroup" CH="分组查询" EN="Search By Group" JP="サブクエリ" RU="Под-запроса" />
+  <Item No="Copy" CH="复制"  EN="Copy" JP="コピー" RU="Копировать" />
+  <Item No="Go" CH="转到"   EN="Go" JP="〜へ" RU="К" />
+  <Item No="ExportToModel" CH="模板"   EN="Template" JP="テンプレート" RU="Шаблон" />
+  <Item No="DataCheck" CH="数据检查"   EN="Check Data" JP="データをチェック" RU="Данные проверки" />
+  <Item No="DataIO" CH="数据导入" EN="Data Leading-in" JP="データのインポート" RU="Импорт данных" />
+  <Item No="Statistic" CH="统计"   EN="Statistics" JP="統計" RU="Статистика" />
+  <Item No="Balance" CH="持平"   EN="Balance" JP="平らな" RU="Плоский" />
+  <Item No="GroupBy" CH="分组依据"   EN="Group By" JP="グループで" RU="Группа В  " />
+  <Item No="ShowDoc" CH="显示内容"  EN="Show Content" JP="画面のプロパティ" RU="Display Properties" />
+  <Item No="FXItem" CH="分析项目"  EN="Analyze Item" JP="分析は、プロジェクトの" RU="Анализ проекта" />
+  <Item No="OrderWay" CH="排序方式"   EN="Order Way" JP="並べ替え" RU="Сортировка по" />
+  <Item No="IsShowPict" CH="显示图形"   EN="Is Show Pict" JP="ディスプレイグラフィックス" RU="Показ графики" />
+  <Item No="Height" CH="高"   EN="Height" JP="高い" RU="Высокий" />
+  <Item No="Width" CH="宽"  EN="Width" JP="水" RU="W" />
+  <Item No="Up" CH="向上"  EN="Up" JP="上へ" RU="Вверх" />
+  <Item No="Chart" CH="图形"   EN="Chart" JP="グラフィックス" RU="Графика" />
+  <Item No="ChoseCols" CH="选择列查询"   EN="Chose Cols" JP="を選択してくださいお問い合わせ" RU="Выберите запросы" />
+  <Item No="Excel" CH="导出全部"  EN="Export All" JP="輸出全" RU="Экспортировать Все" />
+  <Item No="Excel_S" CH="导出当前"   EN="Export Currnet" JP="輸出は、現在の" RU="Экспорт текущей&#xD;&#xA;" />
+  <Item No="Send" CH="发送"   EN="Send" JP="送る" RU="Отправлять" />
+  <Item No="Reply" CH="回复"   EN="Reply" JP="返答する" RU="Ответ" />
+  <Item No="Forward" CH="转发"  EN="Forward" JP="転送する" RU="Вперед" />
+  <Item No="Next" CH="下一个"   EN="Next" JP="次の" RU="Следующий" />
+  <Item No="Previous" CH="上一个"  EN="Previous" JP="1つの" RU="Неопределенный артикль" />
+  <Item No="Selected" CH="选择"  EN="Selected" JP="選ぶ" RU="Выбирать" />
+  <Item No="Add" CH="增加"  EN="Add" JP="増加させる" RU="Увеличивать" />
+  <Item No="Adjunct" CH="附件"  EN="Adjunct" JP="附属書" RU="Приложения" />
+  <Item No="Card" CH="卡片"   EN="Card" JP="カード" RU="Карты" />
+  <Item No="Confirm" CH="确定"   EN="Confirm" JP="決定" RU="Определите" />
+  <Item No="Export" CH="导出"   EN="Export" JP="輸出" RU="Экспорт" />
+  <Item No="FileManager" CH="文件管理"  EN="File Manager" JP="ドキュメント管理" RU="Управление документами" />
+  <Item No="Insert" CH="插入"  EN="Insert" JP="挿入" RU="Включить" />
+  <Item No="LogOut" CH="注销"  EN="LogOut" JP="償却" RU="Списание" />
+  <Item No="Print" CH="打印"   EN="Print" JP="印刷" RU="Версия для печати" />
+  <Item No="Reomve" CH="移除"   EN="Reomve" JP="取り外す" RU="Удалить" />
+  <Item No="SaveAsDraft" CH="保存草稿"   EN="Save Draft" JP="下書きとして保存" RU="Сохранить черновик" />
+  <Item No="Search" CH="查找"   EN="Search" JP="見つける" RU="Найти" />
+  <Item No="SelectAll" CH="选择全部"  EN="Select All" JP="すべて選択" RU="Выбрать все" />
+  <Item No="SelectNone" CH="不选"   EN="Select None" JP="実行されません" RU="Не будет работать" />
+  <Item No="View" CH="查看"  EN="View" JP="視野" RU="Просмотр" />
+  <Item No="Update" CH="更新"   EN="Update" JP="更新する" RU="Обновление" />
+  <Item No="FJ" CH="附件"   EN="Attachment" JP="附属書" RU="Приложения" />
+  <Item No="InfoLost" CH="没有找到信息。" EN="Info lost" JP="の情報が見つかりませんでした。" RU="Не можете найти эту информацию" />
+</NewDataSet>

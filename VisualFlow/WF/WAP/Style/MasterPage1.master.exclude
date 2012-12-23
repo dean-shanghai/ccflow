@@ -1,0 +1,40 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="Face_MasterPage" %>
+<%@ Register Src="../WF/Style/Pub.ascx" TagName="Pub" TagPrefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>业务流程</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Style/Style.css" rel="stylesheet" type="text/css" />
+    <link href="Style/Table.css" rel="stylesheet" type="text/css" />
+    <script language="JavaScript" src="Style/JScript.js"></script>
+	<script language="JavaScript" src="Style/ActiveX.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table width=80%   bgcolor="White" height='600px'  align=center >
+    <tr>
+    <td>
+        <uc1:Pub ID="Pub1" runat="server" />
+        </td>
+        </tr>
+
+    <tr>
+    <td height=100% valign=top>
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+          </td>
+        </tr>
+     
+        <tr>
+         <td align=center >
+             chichengsoft @2009
+        </td>
+        </tr>
+     </table>
+     
+    </form>
+</body>
+</html>

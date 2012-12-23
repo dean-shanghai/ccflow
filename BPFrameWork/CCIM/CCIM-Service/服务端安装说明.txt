@@ -1,0 +1,13 @@
+1, 修改LeeIMService.exe.config中的
+    <setting name="SQLConnectionString" serializeAs="String">
+                <value>Data Source=127.0.0.1;User id=sa;password=aaaa;Initial Catalog=cwcc;</value>
+            </setting>
+    修改127.0.0.1指向自己的服务器地址
+2，修改
+  <setting name="MyTaskURI" serializeAs="String">
+                <value>http://127.0.0.1/GPM</value>
+            </setting>
+    修改http://127.0.0.1/GPM指向我的工作页面
+3，执行setupServer.bat安装服务端服务（会在安装完成后报错，直接忽略即可）
+4，打开Windows服务，启动LeeIMService
+5, 执行deleteServer.bat卸载该服务。

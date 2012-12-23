@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Item No="Ordinary" CH="正常" RU="Нормальный" EN="Normal" JP="通常の" />
+  <Item No="Warning" CH="预警" RU="Предупреждение" EN="Warning" JP="警告" />
+  <Item No="OutTime" CH="逾期" RU="Просроченные" EN="Overdue" JP="延滞" />
+  <Item No="Oper" CH="操作" RU="Операция" EN="Operation" JP="操作" />
+  <Item No="Style" CH="样式" RU="Стиль" EN="Style" JP="スタイル" />
+  <Item No="Note" CH="备注" RU="Примечания" EN="Note" JP="備考" />
+  <Item No="EditTable" CH="编辑表" RU="Изменить таблицу" EN="Edit Table" JP="編集テーブル" />
+  <Item No="UnDo" CH="撤消" RU="Отзыв" EN="Revoke" JP="撤回" />
+  <Item No="WorkRpt" CH="工作报告" RU="Доклад о работе" EN="Report on the work" JP="報告書の作業" />
+  <Item No="Do" CH="执行" RU="Исполнять" EN="Execute" JP="実施する" />
+  <Item No="Back" CH="返回" RU="Возврат" EN="Back" JP="戻る" />
+  <Item No="Exits" CH="已经存在" RU="Уже существует" EN="Already exists" JP="既に存在する" />
+  <Item No="NoNameBlank" CH="编号与名称不能为空" RU="Количество и названия не может быть пустым" EN="Number and name can not be empty" JP="番号と名前を空白にすることはできません" />
+  <Item No="DescBlank" CH="描述不能为空" RU="Описание не может быть пустым" EN="Description can not be empty" JP="説明書は空にできません" />
+  <Item No="ValInputError" CH="错误：您必须输入值，请参考帮助。" RU="Ошибка: Вы должны ввести значение, обратитесь к помощи." EN="Error: You must enter a value, please refer to help." JP="エラー：あなたの値を入力する必要があります、ヘルプを参照してください。" />
+  <Item No="WhenDelEnumErr" CH="错误:下列数据已经引用了枚举您不能删除它。" RU="Ошибка: Следующие данные были цитирует перечисление Вы не можете удалить его." EN="Error: The following data have been cited the enumeration You can not delete it." JP="エラー：次のデータを削除することはできませんあなたはそれを引用列挙されている。&#xD;&#xA;" />
+  <Item No="EnumField" CH="枚举字段" RU="Перечисление области" EN="Enumeration field" JP="列挙フィールド" />
+  <!-- 常用字段-->
+  <Item No="Name" CH="名称" RU="Имя" EN="Name" JP="名前" />
+  <Item No="No" CH="编号" RU="Номера" EN="No" JP="いいえ。" />
+  <Item No="Property" CH="属性" RU="Свойства" EN="Property" JP="プロパティ" />
+  <Item No="SaveOK" CH="保存成功" RU="Сохранение успеха" EN="Save OK" JP="保全の成功の" />
+  <Item No="DelOK" CH="删除成功" RU="Удалить успеха" EN="Delete OK" JP="削除成功" />
+  <Item No="InsertOK" CH="插入成功" RU="Успешное включение" EN="Insert OK" JP="成功の挿入" />
+  <Item No="UpdateOK" CH="更新成功" RU="Обновление успешной" EN="Update OK" JP="更新プログラムの成功" />
+  <!-- 通用标签 -->
+  <Item No="OK" CH="确定" RU="Определите" EN="OK" JP="決定" />
+  <Item No="Delete" CH="删除" RU="Удалить" EN="Delete" JP="取り外す" />
+  <Item No="Del" CH="删除" RU="Удалить" EN="Delete" JP="取り外す" />
+  <Item No="Save" CH="保存" RU="Сохранить" EN="Save" JP="保存する" />
+  <Item No="SaveAll" CH="保存全部" RU="Сохранить все" EN="Save" JP="全ての割引率" />
+  <Item No="SaveAndClose" CH="保存并关闭" RU="Сохранить и закрыть" EN="Save and close" JP="保存して閉じる" />
+  <Item No="SaveAndNew" CH="保存并新建" RU="Сохранить и Новой" EN="Save and new" JP="保存し、新" />
+  <Item No="New" CH="新建" RU="Новый" EN="New" JP="新しい&#xD;&#xA;" />
+  <Item No="Help" CH="帮助" RU="Помощь" EN="Help" JP="ヘルプ" />
+  <Item No="Open" CH="打开" RU="Открывать" EN="Open" JP="開く" />
+  <Item No="About" CH="关于" RU="Рассмотрение" EN="About" JP="〜に関して" />
+  <Item No="CheckNewVer" CH="检查更新" RU="Проверить наличие обновлений" EN="Check for updates" JP="更新プログラムの確認&#xD;&#xA;" />
+  <Item No="Update" CH="更新" RU="Обновление" EN="Update" JP="更新する" />
+  <Item No="Close" CH="关闭" RU="Закрыть" EN="Close" JP="閉じる" />
+  <Item No="Exit" CH="退出" RU="С" EN="Exit" JP="の投稿者" />
+  <Item No="Cancel" CH="取消" RU="Отмена" EN="Cancel" JP="キャンセル" />
+  <Item No="Refurbish" CH="刷新" RU="Обновить" EN="Refurbish" JP="リフレッシュ" />
+  <Item No="Windows" CH="窗口" RU="Окно" EN="Windows" JP="ウィンドウ" />
+  <Item No="WindowsCascade" CH="层叠窗口" RU="Каскадные окна" EN="Windows Cascade" JP="窓カスケード" />
+  <!-- 通用翻译语句 -->
+  <Item No="AYS" CH="您确定要执行吗？" RU="Вы уверены, что хотите продолжить?&#xD;&#xA;" EN="Are you sure you want to proceed?" JP="続行してよろしいですか？" />
+  <!--<Item No="Window tile horizontal" CH="层叠窗口" EN="Windows Cascade" JP="" />
+  <Item No="WindowsCascade" CH="层叠窗口" EN="Windows Cascade" JP="" />-->
+  <Item No="CloseWindows" CH="关闭窗口" RU="Закрыть окно" EN="Close Window" JP="このウィンドウを閉じる" />
+  <Item No="Sys" CH="系统" RU="Система" EN="System" JP="システム" />
+  <Item No="System" CH="系统" RU="Система" EN="System" JP="システム" />
+  <Item No="Edit" CH="编辑" RU="Редактор" EN="Edit" JP="エディタ" />
+  <!-- 通用内容翻译 -->
+  <Item No="ExitQuestion" CH="您确定要退出吗？" RU="Вы уверены, что хотите выйти из нее?" EN="Exit?" JP="あなたがそこから撤退してもよろしいですか？" />
+  <!-- 组织结构部分翻译 -->
+  <Item No="Dept" CH="部门" RU="Департаменты" EN="Dept" JP="部門" />
+  <Item No="Station" CH="岗位" RU="Статус" EN="Station" JP="地位" />
+  <Item No="User" CH="用户" RU="Пользователи" EN="User" JP="ユーザ" />
+  <Item No="Emp" CH="操作员" RU="Оператор" EN="Emp" JP="演算子" />
+  <Item No="EmpStation" CH="人员岗位" RU="Сотрудники должностей" EN="Emp Station" JP="スタッフの記事" />
+  <Item No="EmpDept" CH="人员部门" RU="Отдел кадров" EN="Emp Dept" JP="人事部" />
+  <!-- 主菜部分  -->
+  <Item No="OperVideo" CH="操作录像" RU="Операция видео&#xD;&#xA;" EN="Oper Video" JP="ビデオの操作" />
+  <!-- 流程设计器 - 流程树 右键菜单部分 -->
+  <Item No="NewFlowSort" CH="新建流程类别" RU="Новый процесс Категория" EN="New Flow Sort" JP="新しいプロセスカテゴリ" />
+  <Item No="EmpEdit" CH="用户维护" RU="Обслуживание пользователей" EN="User Maintenance" JP="ユーザメンテナンス" />
+  <Item No="StationEdit" CH="岗位维护" RU="Обслуживание рабочих мест" EN="Station Maintenance" JP="メンテナンスの仕事" />
+  <Item No="DeptEdit" CH="部门维护" RU="Подразделения по поддержанию" EN="Dept Maintenance" JP="部門を維持するために" />
+  <!-- 流程设计器 - 流程右键菜单部分 -->
+  <Item No="SysName" CH="驰骋工作流引擎" RU="Chichengsoft WorkFlow" EN="Chichengsoft WorkFlow" JP="ワークフローエンジンの運転" />
+  <Item No="Node" CH="节点" RU="Узел" EN="Node" JP="ノード" />
+  <Item No="NewNode" CH="增加节点" RU="Увеличение узла&#xD;&#xA;" EN="New Node" JP="ノードの増加" />
+  <Item No="CheckNode" CH="审核节点" RU="Узел аудит&#xD;&#xA;" EN="Check Node" JP="ノード監査" />
+  <Item No="OrdinaryNode" CH="普通节点" RU="Обычные узел" EN="Ordinary node" JP="通常のノード" />
+  <Item No="Label" CH="标签" RU="Теги" EN="Label" JP="タグ" />
+  <Item No="NodeLine" CH="节点连接线" RU="Узел связи" EN="Node Line" JP="ノードリンク" />
+  <Item No="FlowProperty" CH="流程属性" RU="Процесс атрибуты" EN="Flow Property" JP="プロセスの属性" />
+  <Item No="FlowDesign" CH="流程设计" RU="Процесс разработки" EN="Flow Design" JP="プロセス設計" />
+  <Item No="RunFlow" CH="运行流程" RU="Запуск процессов" EN="Run Flow" JP="プロセスの実行" />
+  <Item No="NodeProperty" CH="节点属性" RU="Узел атрибута" EN="Node Property" JP="ノードの属性" />
+  <Item No="NodeCopy" CH="节点复制" RU="Узел атрибута" EN="Node Copy" JP="节点复制" />
+
+
+  <Item No="FlowRpt" CH="流程诊断报告" RU="Процесс разработки доклада" EN="Diagnostic report process" JP="プロセス設計レポート" />
+  <Item No="RptDefinition" CH="报表定义" RU="Определение заявлений" EN="Definition statements" JP="定義文" />
+  <Item No="RptDefinitionTurn" CH="数据转出定义" RU="Определение данных, переданных" EN="Definition data transferred" JP="データの定義を転送" />
+  <Item No="NewFlow" CH="新建流程" RU="Новый процесс" EN="New Flow" JP="新しいプロセス" />
+  <Item No="DirCond" CH="方向条件" RU="Направление условия" EN="Direction the conditions" JP="この条件の方向" />
+  <!-- 系统应用 -->
+  <Item No="FlowSort" CH="流程类别" RU="Процесс категории" EN="Flow category" JP="プロセスカテゴリー" />
+  <Item No="WorkFlow" CH="工作流" RU="Workflow" EN="Workflow" JP="ワークフロー" />
+  <Item No="StartNode" CH="开始节点" RU="Начальный узел" EN="Start Node" JP="開始ノード" />
+  <Item No="EndNode" CH="结束节点" RU="Конец узел" EN="End Node" JP="エンドノード" />
+  <Item No="AcceptTime" CH="接受时间" RU="Согласен" EN="Accept" JP="受け入れる" />
+  <Item No="StartTime" CH="发起时间" RU="Время начала" EN="Time to initiate" JP="時間を開始する" />
+  <Item No="CompleteTime" CH="完成时间" RU="Время завершения" EN="Completion Time" JP="終了時間" />
+  <Item No="Recorder" CH="记录人" RU="Рекорды людей" EN="Recorder" JP="人々の記録" />
+  <Item No="Sponsor" CH="发起人" RU="Спонсор" EN="Sponsorer" JP="スポンサー" />
+  <Item No="NodeState" CH="节点状态" RU="Узел-государство" EN="Node-state" JP="ノードの状態" />
+  <Item No="FlowState" CH="流程状态" RU="Процесс статус" EN="Flow-state" JP="処理の進行状況" />
+  <Item No="OperDept" CH="操作员部门" RU="Сектор операторов" EN="Sector operators" JP="事業部門" />
+  <Item No="BillNo" CH="单据文号" RU="Условное обозначение документа" EN="Document symbol" JP="文書記号" />
+  <Item No="Title" CH="流程标题" RU="Процесс титула&#xD;&#xA;" EN="Title" JP="プロセスタイトル" />
+  <Item No="YearMonth" CH="年月" RU="Годы" EN="Years" JP="年月" />
+  <Item No="Num" CH="个数" RU="Количество" EN="Num" JP="数の" />
+  <Item No="SponsorDept" CH="发起人部门" RU="Спонсор департаментов" EN="Sponsor Dept" JP="主催部門" />
+  <Item No="NodeID" CH="节点ID" RU="Узел ID" EN="Node ID" JP="ノードID" />
+  <Item No="Log" CH="日志" RU="Вход" EN="Log" JP="ログ" />
+  <Item No="FlowStep" CH="流程步骤" RU="Процесс действия" EN="Flow Steps" JP="プロセスステップ" />
+  <Item No="FlowName" CH="流程名称" RU="Имя процесса" EN="Flow Name" JP="プロセス名" />
+  <Item No="WarningDays" CH="警告期限(0不警告)" RU="Внимание период (0 не является предупреждение)&#xD;&#xA;" EN="Warning period (0 is not a warning)" JP="警告期間（ 0 、警告ではありません）" />
+  <Item No="DeductDays" CH="限期(天)" RU="Срок (дни)" EN="Period (days)" JP="期間（日）" />
+  <Item No="DeductCent" CH="扣分(每延期1天扣)" RU="Точки (1 день вычет для каждого продления)" EN="Points (1 day deduction for each extension)" JP="それぞれの拡張機能のためのポイント（ 1日間の控除）" />
+  <Item No="MaxDeductCent" CH="最高扣分" RU="Самая высокая точка" EN="The highest points" JP="最高点" />
+  <Item No="SwinkCent" CH="工作得分" RU="Работа баллов" EN="The work scores" JP="作品点数" />
+  <Item No="DesignSheet" CH="设计表单" RU="Дизайн формы" EN="Design form" JP="  デザインフォーム " />
+  <Item No="DesignAction" CH="设计事件" RU="Дизайн мероприятий" EN="Design events" JP="デザインイベント" />
+  <Item No="NodeCond" CH="节点完成条件" RU="Узел завершить условия" EN="Node to complete the conditions" JP="ノードの条件を完了するには" />
+  <Item No="FlowCond" CH="流程完成条件" RU="Процесс завершить условия" EN="Flow to complete the conditions" JP="プロセスの条件を完了するには" />
+  <Item No="DeleteNode" CH="删除节点" RU="Удалить узел" EN="Delete node" JP="削除するノード" />
+  <Item No="BillBook" CH="单据与文书" RU="Документы и инструменты" EN="Documents and instruments" JP="ドキュメントや楽器" />
+  <Item No="DoFAppSet" CH="调用外部程序接口" RU="Внешние процедуры вызова интерфейса" EN="External procedure call interface" JP="外部プロシージャコールのインターフェイス" />
+  <Item No="DoAction" CH="调用事件接口" RU="Звоните случае интерфейс" EN="Call event interface" JP="請求イベントインターフェイス" />
+  <Item No="DoCond" CH="节点完成条件" RU="Узел завершить условия" EN="Node to complete the conditions" JP="ノードの条件を完了するには" />
+  <Item No="FK_Flow" CH="流程编号" RU="Процесс ID" EN="Flow No" JP="プロセスID" />
+  <Item No="FlowCheck" CH="流程检查" RU="Процесс проверки" EN="Flow Check" JP="プロセスチェック" />
+  <Item No="Error" CH="错误" RU="Ошибка" EN="Error" JP="ミス" />
+</NewDataSet>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="ChonseType" CH="选择类型" B5=""  RU="Выбор типа" EN="Select data type" JP="このタイプの選択"   UG=""  />
+  <Item No="GuideNewField" CH="增加新字段向导" RU="Добавить новое поле руководства" EN="Add New Field Wizard" JP="新しいフィールドをガイドに追加" />
+  <Item No="ChoseType" CH="选择类型" RU="Выбор типа" EN="Select data type" JP="このタイプの選択" />
+  <Item No="FType1" CH="普通" RU="Общее" EN="General" JP="一般的な" />
+  <Item No="FType2" CH="枚举" RU="Перечисление" EN="Enumeration" JP="列挙" />
+  <Item No="FType3" CH="外键" RU="Внешний ключ" EN="Foreign Key" JP="外部キー" />
+  <Item No="EditField" CH="编辑字段" RU="Редактирование области" EN="Edit Field" JP="編集フィールド" />
+  <Item No="Value" CH="值" RU="Значение" EN="Value" JP="値" />
+  <Item No="TString" CH="字符型" RU="Характер" EN="String/Character" JP="キャラクター" />
+  <Item No="TInt" CH="整数型" RU="Целый тип" EN="Integer" JP="整数型" />
+  <Item No="TMoney" CH="金额型" RU="Сумма типа" EN="Currency" JP="タイプの量" />
+  <Item No="TFloat" CH="浮点型" RU="С плавающей точкой типа" EN="Floating-point" JP="浮動小数点型" />
+  <Item No="TDate" CH="日期型" RU="Дата Тип" EN="Date" JP="日付型" /> 
+  <Item No="TDateTime" CH="日期时间型" RU="Дата Время Тип" EN="Date Time" JP="日付時刻型" />
+  <Item No="TBool" CH="Boole型(是/否)" RU="Boole типа (да / нет)" EN="Boolean (Yes / No)" JP="ブール型（はい/いいえ）" />
+  <Item No="TEnum" CH="枚举型" RU="Перечисление типа" EN="Enumeration" JP="列挙型" />
+  <Item No="TFK" CH="外键型" RU="Внешний ключ типа" EN="Foreign key" JP="外部キーのタイプ" />
+  <Item No="TStringD" CH="如:姓名、地址、邮编、电话" RU="Такие, как: имя, адрес, почтовый индекс, номер телефона" EN="E.g. name, address, postal code, telephone number" JP="のような：名前、住所、郵便番号、電話番号" />
+  <Item No="TIntD" CH="如:年龄" RU="Такие, как: возраст" EN="E.g. age&#xD;&#xA;" JP="のような：年齢" />
+  <Item No="TMoneyD" CH="如:发票金额" RU="Такие как: сумма счета-фактуры" EN="E.g. invoice amount" JP="のような：請求書の金額" />
+  <Item No="TFloatD" CH="如：身高、体重" RU="Такие, как: рост, вес" EN="E.g. height, weight" JP="のような：身長、体重" />
+  <Item No="TDateD" CH="如：生日" RU="Такие как: день рождения" EN="E.g. birthday" JP="のような：誕生日" />
+  <Item No="TDateTimeD" CH="如：发生日期时间" RU="Такие, как: дата время" EN="E.g. meeting time" JP="のような：時間の日" />
+  <Item No="TBoolD" CH="如：是否完成、是否达标" RU="Такие, как: является ли или не завершена, является ли цель" EN="E.g. whether or not the work is completed" JP="のような：完了していないかどうかは、対象かどうか" />
+  <Item No="TEnumD" CH="比如：性别:男/女。请假类型：事假/病假/婚假/产假/其它。" RU="Например: Пол: Мужчина / Женщина. Оставьте тип: отпуск / отпуск по болезни / браке / отпуска по беременности и родам / другие." EN="E.g. Gender: Male / Female. Leave type: sick leave / marriage leave / maternity leave / other." JP="例：性別：男性/女性。タイプのままに：休暇/病気休暇/結婚/出産休暇/その他。" />
+  <Item No="TFKD" CH="比如：岗位、税种、行业、经济性质。" RU="Например: статус, налоги, торговля, экономический характер." EN="E.g. status, taxes, trade, economic in nature." JP="例：ステータス、税金、貿易、自然の中で経済的。" />
+  <!-- 设计字段部分 -->
+  <Item No="FEName" CH="字段英文名称" RU="Английское название области" EN="Field Name" JP="英語名のフィールド" />
+  <Item No="FENameD" CH="字母或者字母数字组合" RU="Алфавиту или буквенно-цифровые комбинации" EN="Combination of alphanumeric characters" JP="アルファベットや英数字の組み合わせ" />
+  <Item No="FLabel" CH="字段中文名称" RU="Китайское название области" EN="Field Label" JP="中国語の名前フィールド" />
+  <Item No="FDefaultVal" CH="字段默认值" RU="Поле по умолчанию" EN="Default value" JP="フィールドのデフォルト値" />
+  <Item No="DefNull" CH="默认为空" RU="По умолчанию пуста" EN="Default to NULL" JP="デフォルトは空です" />
+  <Item No="DefaultVal" CH="默认值" RU="Значение по умолчанию" EN="Default value" JP="デフォルト値" />
+  <Item No="IsEdit" CH="是否可编辑" RU="Можно изменить" EN="Editable" JP="編集できます" />
+  <Item No="AutoFull" CH="自动填写" RU="Автоматическое заполнение" EN="Automatically populated" JP="自動的に入力" />
+  <Item No="MinLen" CH="最小长度" RU="Минимальная длина" EN="Minimum length" JP="最小長" />
+  <Item No="MaxLen" CH="最大长度" RU="Максимальная длина" EN="Maximum length" JP="最大の長さ" />
+  <Item No="TBWidth" CH="文本框宽度" RU="Текстовое поле шириной" EN="Text box width" JP="テキストボックスの幅" />
+  <Item No="ForDtl" CH="对明细表有效" RU="Эффективное по графику" EN="Effective on details" JP="スケジュールに効果的" />
+  <Item No="IsReadonly" CH="是否只读" RU="Ли только для чтения" EN="Read-only" JP="を読むかどうかのみ" />
+  <Item No="FK" CH="外键" RU="Внешний ключ" EN="Foreign key" JP="外部キー" />
+  <Item No="IsCanEdit" CH="是否可编辑" RU="Можно изменить" EN="Editable" JP="編集できます" />
+  <Item No="CanEdit" CH="可编辑" RU="Редактирование" EN="Editable" JP="編集" />
+  <Item No="UnCanEdit" CH="不可编辑" RU="Расходы, изменяемое" EN="Non-editable" JP="非編集" />
+  <Item No="Item" CH="项目" RU="Предмет" EN="Item" JP="項目" />
+  <Item No="Gather" CH="采集" RU="Приобретение" EN="Gather" JP="買収" />
+  <Item No="TableEName" CH="表英文名称" RU="Перечислите Английское название" EN="Table name" JP="リストには、英語名" />
+  <Item No="TableName" CH="表中文名称" RU="Таблица китайское название" EN="Table label" JP="表中国名" />
+  <Item No="PlsStartWord" CH="输入:新表名或已经存在的表名" RU="Введите: новое имя таблицы или таблицы именем уже существует" EN="Enter new table name or a table name already exists" JP="入力：新しいテーブル名またはテーブル名が既に存在する" />
+  <Item No="Create" CH="创建" RU="Создать" EN="Create" JP="作成&#xD;&#xA;作成&#xD;&#xA;作成&#xD;&#xA;作成&#xD;&#xA;作成&#xD;&#xA;作成" />
+  <Item No="EditData" CH="编辑数据" RU="Изменить данные" EN="Edit Data" JP="編集データ" />
+  <Item No="PChose" CH="请选择" RU="Пожалуйста, выберите" EN="Please select" JP="選択してください" />
+  <Item No="FExits" CH="字段已经存在" RU="Поле уже существует" EN="Field already exists" JP="フィールドが既に存在する" />
+  <Item No="IsBigDoc" CH="是否大块文本(对傻瓜表单有效)" RU="Если текст большой" EN="Large text" JP="大きなテキストかどうか" />
+  <Item No="DefSysData" CH="默认系统当前日期" RU="На текущую дату по умолчанию система" EN="Default to system current date" JP="現在の日付は、デフォルトのシステム&#xD;&#xA;現在の日付は、デフォルトのシステム&#xD;&#xA;現在の日付は、デフォルトのシステム&#xD;&#xA;" />
+  <Item No="EditEnum" CH="编辑枚举" RU="Редактор перечисление" EN="Edit enumeration" JP="エディタの列挙" />
+  <Item No="NewEnum" CH="新建枚举" RU="Новые перечисление" EN="New enumeration" JP="新しい列挙" />
+  <Item No="EnumEName" CH="枚举英文名称" RU="Английское название перечисления" EN="Enumeration Name&#xD;&#xA;" JP="英語名の列挙" />
+  <Item No="EnumLabel" CH="枚举中文名称" RU="Русское название перечисления" EN="Enumeration Label" JP="中国語の名前を列挙" />
+  <Item No="AddToSheet" CH="添加到表单" RU="Добавлено в форме" EN="Added to the form&#xD;&#xA;" JP="フォームに追加" />
+  <Item No="NoIsExits" CH="编号已经存在" RU="Количество уже существует" EN="Number already exists" JP="コードは既に存在" />
+  <Item No="NameIsExits" CH="名称已经存在" RU="Название уже существует" EN="Name already exists" JP="名は既に存在" />
+  <Item No="NewFK" CH="增加外键字段" RU="Увеличение внешнего ключа области" EN="Add foreign key field" JP="外部キーフィールドの増加" />
+  <Item No="ClickToAdd" CH="点击增加到表单" RU="Нажмите на форму" EN="Click to add to the form" JP="をクリックしてフォームに" />
+  <Item No="NewTable" CH="新建表" RU="Новая таблица" EN="New Table" JP="新しいテーブル" />
+  <Item No="TVErr" CH="错误:表或视图不存在No,Name列不符合约定规则." RU="Ошибка: таблицы или просмотра не существует, нет, название колонки не в соответствии с согласованными правилами." EN="Error: table or view does not have ID column, Name column is not in line with the system rules." JP="エラー：テーブルまたはビューは、名前の列が存在しない場合は、合意したルールに沿ったものではありません。" />
+</NewDataSet>

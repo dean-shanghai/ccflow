@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="CloseCurrWindows" CH="关闭当前窗口" RU="Закрыть текущее окно" EN="Close the current window" JP="現在のウィンドウを閉じる" />
+  <Item No="CloseAllWindows" CH="关闭所有窗口" RU="Закройте все окна" EN="Close all windows" JP="すべてのウィンドウを閉じる" />
+  <Item No="ZXPP" CH="纵向平铺窗口" RU="Черепица окна по вертикали" EN="Tile windows vertically" JP="タイル窓垂直" />
+  <Item No="HXPP" CH="横向平铺窗口" RU="Черепица окна по горизонтали" EN="Tile windows horizontally" JP="タイル張りのウィンドウを水平方向" />
+  <Item No="FlowPict" CH="流程图" RU="Схема" EN="Flow chart" JP="フローチャート" />
+  <Item No="WhenSavePict" CH="保存工作流图片描述时出错" RU="Сохранить изображение для описания рабочих процессов ошибке" EN="Save picture to describe the workflow error" JP="保存する画像は、ワークフローのエラーを記述するために" />
+  <Item No="WhenSaveNode" CH="保存工作流节点时出错" RU="Сохранить рабочий узел ошибке" EN="Save workflow node Error" JP="保存工作流图片描述时出错" />
+  <Item No="WhenSaveLabel" CH="保存流程注释时出错" RU="Примечания Ошибка сохранения процесс" EN="Notes Error preservation process" JP="Notesエラーの保存処理" />
+  <Item No="WhenSaveDir" CH="保存工作流流向时出错" RU="Сохранение потока Workflow ошибке" EN="Preserve the flow of Workflow Error" JP="ワークフローエラーの流れを保つ" />
+  <Item No="WhenSaveComplete" CH="检查流程完整时错误" RU="Полный рабочий день ошибок процесс" EN="Full-time error checking process" JP="フルタイムのエラーチェック処理" />
+  <Item No="NoDelStartNode" CH="您不能删除开始节点" RU="Вы не можете удалять начала узел" EN="You can not delete the start node" JP="する場合は、開始ノードを削除することはできません" />
+  <Item No="NodeStation" CH="工作岗位节点" RU="Работа узлов" EN="Node Station" JP="仕事のノード" />
+  <Item No="WhenAddLine" CH="当鼠标呈十字形时，请先点连接的第一个节点，然后点要连接的第二个节点。" RU="Когда мышь была крестом, первой точкой подключения первого узла, а затем подключить второй узел." EN="When the mouse was a cross, the first point of connection of the first node, and then point to connect the second node." JP="は、マウスのクロスは、最初のノードの接続の最初のポイントをクリックし、 2番目のノードを接続する点だった。" />
+  <Item No="DelSortErr" CH="该类别下面有流程您不能删除它" RU="Есть процессы в этой категории Вы не можете удалить его" EN="There are flows in this category You can not delete it" JP="このカテゴリには削除することはできませんあなたはそれを処理している&#xD;&#xA;" />
+  <Item No="WhenNewFlow" CH="请点，工具栏上的新建按钮，或者在树菜单上点右键。" RU="Пожалуйста, покажите, новые кнопки на панели инструментов или в меню &quot;Дерево правой точке." EN="Please point the new toolbar button or menu in the tree right point." JP="してくださいポイントは、新しいツールバーのボタンやメニューのツリーを右ポイント。&#xD;&#xA;" />
+  <!-- 
+  <Item No="DelFlowQuestion" CH=""您确定要删除流程吗？\\t\\n如果您选择是，该流程所有的信息都将会被删除。\\t\\n\\t\\n1，自动创建的物理表。\t\n2，流程节点。\t\n3，流程运行的数据。"" EN="where mouse shwo crea ." JP="" />
+  -->
+</NewDataSet>

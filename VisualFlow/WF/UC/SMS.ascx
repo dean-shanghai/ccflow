@@ -1,0 +1,1 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="SMS.ascx.cs" Inherits="WF_UC_SMS" %>

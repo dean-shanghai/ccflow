@@ -1,0 +1,17 @@
+E:\My Project\Jericho\BitmapCutter\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.dll
+E:\My Project\Jericho\BitmapCutter\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.pdb
+E:\My Project\Jericho\BitmapCutter\BitmapCutter.Core\obj\Debug\ResolveAssemblyReference.cache
+E:\My Project\Jericho\BitmapCutter\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.dll
+E:\My Project\Jericho\BitmapCutter\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.pdb
+C:\Users\Alvin\Desktop\BitmapCutter\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.dll
+C:\Users\Alvin\Desktop\BitmapCutter\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.pdb
+C:\Users\Alvin\Desktop\BitmapCutter\BitmapCutter.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Alvin\Desktop\BitmapCutter\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.dll
+C:\Users\Alvin\Desktop\BitmapCutter\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.pdb
+C:\Documents and Settings\Administrator\桌面\BitmapCutter\BitmapCutter\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.dll
+C:\Documents and Settings\Administrator\桌面\BitmapCutter\BitmapCutter\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.pdb
+C:\Documents and Settings\Administrator\桌面\BitmapCutter\BitmapCutter\BitmapCutter.Core\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\BitmapCutter\BitmapCutter\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.dll
+C:\Documents and Settings\Administrator\桌面\BitmapCutter\BitmapCutter\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.pdb
+D:\ccflow\Components\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.dll
+D:\ccflow\Components\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.pdb

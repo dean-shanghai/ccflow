@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<DS>
+  <Item No="01" CH="组织结构管理" EN="" RU="" JP="" />
+  <Item No="0101" Url="./../Comm/Ens.aspx?EnsName=BP.WF.Port.Stations" CH="岗位维护" EN="" RU="" JP="" />
+  <Item No="0102" Url="./../Comm/Ens.aspx?EnsName=BP.WF.Port.Depts" CH="部门维护" EN="" RU="" JP="" />
+  <Item No="0103" Url="./../Comm/Ens.aspx?EnsName=BP.Port.Emps" CH="人员维护" EN="" RU="" JP="" />
+
+  <Item No="02" CH="系统管理" EN="" RU="" JP="" />
+  <Item No="0201" Url="" CH="流程" EN="" RU="" JP="" />
+  <Item No="0202" Url="" CH="枚举数据" EN="" RU="" JP="" />
+  <Item No="0203" Url="./../Comm/Ens.aspx?EnsName=BP.Port.Emps" CH="网站管理" EN="" RU="" JP="" />
+  
+</DS>

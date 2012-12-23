@@ -1,0 +1,5800 @@
+<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <WF_Flow>
+    <No>009</No>
+    <FK_FlowSort>03</FK_FlowSort>
+    <Name>新航线考察流程</Name>
+    <IsOK>1</IsOK>
+    <FlowRunWay>0</FlowRunWay>
+    <RunObj />
+    <IsCanStart>1</IsCanStart>
+    <IsMD5>0</IsMD5>
+    <Note />
+    <StartListUrl />
+    <AppType>0</AppType>
+    <TimelineRole>0</TimelineRole>
+    <DocType>0</DocType>
+    <XWType>2</XWType>
+    <FlowType>1</FlowType>
+    <FlowSheetType>0</FlowSheetType>
+    <RunSQL />
+    <NumOfBill>0</NumOfBill>
+    <NumOfDtl>0</NumOfDtl>
+    <AvgDay>0</AvgDay>
+    <Idx>0</Idx>
+  </WF_Flow>
+  <WF_Node>
+    <NodeID>901</NodeID>
+    <Name>发起考察-分流点</Name>
+    <Step>1</Step>
+    <NodeWorkType>2</NodeWorkType>
+    <SubThreadType>0</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>2</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>1</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>0</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@01</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@902@904@906</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@901@908</GroupStaNDs>
+    <X>201</X>
+    <Y>38</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 09:59</DTFrom>
+    <DTTo>2012-02-05 09:59</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>1</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>1</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>902</NodeID>
+    <Name>飞行部-成员填写</Name>
+    <Step>2</Step>
+    <NodeWorkType>6</NodeWorkType>
+    <SubThreadType>1</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>4</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>2</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>1</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@11</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@903</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@902</GroupStaNDs>
+    <X>78</X>
+    <Y>121</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 10:00</DTFrom>
+    <DTTo>2012-02-05 10:00</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>0</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>0</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>903</NodeID>
+    <Name>飞行部-部门经理审核</Name>
+    <Step>3</Step>
+    <NodeWorkType>6</NodeWorkType>
+    <SubThreadType>1</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>4</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>2</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>1</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@06</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@908</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@903</GroupStaNDs>
+    <X>76</X>
+    <Y>198</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 10:00</DTFrom>
+    <DTTo>2012-02-05 10:00</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>0</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>0</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>904</NodeID>
+    <Name>配餐部-成员填写</Name>
+    <Step>4</Step>
+    <NodeWorkType>0</NodeWorkType>
+    <SubThreadType>0</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>4</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>2</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>1</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@08</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@905</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@904</GroupStaNDs>
+    <X>201</X>
+    <Y>121</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 10:00</DTFrom>
+    <DTTo>2012-02-05 10:00</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>1</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>1</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>905</NodeID>
+    <Name>配餐部-部门经理审核</Name>
+    <Step>5</Step>
+    <NodeWorkType>0</NodeWorkType>
+    <SubThreadType>0</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>4</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>2</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>1</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@03</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@908</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@905</GroupStaNDs>
+    <X>203</X>
+    <Y>200</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 10:00</DTFrom>
+    <DTTo>2012-02-05 10:00</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>1</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>1</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>906</NodeID>
+    <Name>航空安全部-成员填写</Name>
+    <Step>6</Step>
+    <NodeWorkType>0</NodeWorkType>
+    <SubThreadType>0</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>4</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>2</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>1</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@09</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@907</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@906</GroupStaNDs>
+    <X>324</X>
+    <Y>125</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 10:01</DTFrom>
+    <DTTo>2012-02-05 10:01</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>1</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>1</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>907</NodeID>
+    <Name>航空安全部-部门经理审核</Name>
+    <Step>7</Step>
+    <NodeWorkType>0</NodeWorkType>
+    <SubThreadType>0</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>4</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>2</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>1</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@04</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@908</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@907</GroupStaNDs>
+    <X>324</X>
+    <Y>200</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 10:01</DTFrom>
+    <DTTo>2012-02-05 10:01</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>1</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>1</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>908</NodeID>
+    <Name>考察工作汇总-合流点</Name>
+    <Step>8</Step>
+    <NodeWorkType>3</NodeWorkType>
+    <SubThreadType>0</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>1</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>1</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>1</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@01</HisStas>
+    <HisDeptStrs />
+    <HisToNDs>@999</HisToNDs>
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@901@908</GroupStaNDs>
+    <X>204</X>
+    <Y>301</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 13:36</DTFrom>
+    <DTTo>2012-02-05 13:36</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>1</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>1</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Node>
+    <NodeID>999</NodeID>
+    <Name>考察结果发布</Name>
+    <Step>99</Step>
+    <NodeWorkType>3</NodeWorkType>
+    <SubThreadType>0</SubThreadType>
+    <FK_Flow>009</FK_Flow>
+    <FlowName>新航线考察流程</FlowName>
+    <FK_FlowSort>01</FK_FlowSort>
+    <FK_FlowSortT>线性流程</FK_FlowSortT>
+    <FrmAttr />
+    <WarningDays>0</WarningDays>
+    <DeductDays>1</DeductDays>
+    <DeductCent>2</DeductCent>
+    <MaxDeductCent>10</MaxDeductCent>
+    <SwinkCent>0.1</SwinkCent>
+    <RecipientSQL />
+    <Doc />
+    <IsTask>1</IsTask>
+    <ReturnRole>2</ReturnRole>
+    <DeliveryWay>0</DeliveryWay>
+    <CCRole>0</CCRole>
+    <SaveModel>0</SaveModel>
+    <IsCanRpt>1</IsCanRpt>
+    <IsCanOver>0</IsCanOver>
+    <IsSecret>0</IsSecret>
+    <IsCanDelFlow>0</IsCanDelFlow>
+    <IsForceKill>0</IsForceKill>
+    <IsBackTracking>0</IsBackTracking>
+    <IsRM>1</IsRM>
+    <IsHandOver>0</IsHandOver>
+    <SignType>0</SignType>
+    <RunModel>0</RunModel>
+    <FLRole>0</FLRole>
+    <FJOpen>0</FJOpen>
+    <WhoExeIt>0</WhoExeIt>
+    <FNType>1</FNType>
+    <FormType>1</FormType>
+    <FormUrl>http://</FormUrl>
+    <TurnToDeal>0</TurnToDeal>
+    <TurnToDealDoc />
+    <NodePosType>2</NodePosType>
+    <IsCCNode>0</IsCCNode>
+    <IsCCFlow>0</IsCCFlow>
+    <HisStas>@10</HisStas>
+    <HisDeptStrs />
+    <HisToNDs />
+    <HisBillIDs />
+    <HisEmps />
+    <HisSubFlows />
+    <PTable />
+    <ShowSheets />
+    <GroupStaNDs>@999</GroupStaNDs>
+    <X>204</X>
+    <Y>383</Y>
+    <FocusField />
+    <JumpSQL />
+    <AtParas />
+    <CheckNodes />
+    <PassRate>100</PassRate>
+    <DTFrom>2012-02-05 09:59</DTFrom>
+    <DTTo>2012-02-05 09:59</DTTo>
+    <SendLab>发送</SendLab>
+    <SendJS />
+    <SaveLab>保存</SaveLab>
+    <SaveEnable>1</SaveEnable>
+    <JumpWayLab>跳转</JumpWayLab>
+    <JumpWay>0</JumpWay>
+    <ReturnLab>退回</ReturnLab>
+    <CCLab>抄送</CCLab>
+    <ShiftLab>移交</ShiftLab>
+    <ShiftEnable>1</ShiftEnable>
+    <DelLab>删除</DelLab>
+    <DelEnable>1</DelEnable>
+    <EndFlowLab>结束流程</EndFlowLab>
+    <EndFlowEnable>0</EndFlowEnable>
+    <PrintDocLab>打印单据</PrintDocLab>
+    <PrintDocEnable>0</PrintDocEnable>
+    <TrackLab>轨迹</TrackLab>
+    <TrackEnable>1</TrackEnable>
+    <HungLab>挂起</HungLab>
+    <HungEnable>0</HungEnable>
+    <SelectAccepterLab>接受人</SelectAccepterLab>
+    <SelectAccepterEnable>0</SelectAccepterEnable>
+    <SearchLab>查询</SearchLab>
+    <SearchEnable>1</SearchEnable>
+    <OutTimeDeal>0</OutTimeDeal>
+    <DoOutTime />
+    <CHWay>0</CHWay>
+    <Workload>0</Workload>
+    <CCCtrlWay>0</CCCtrlWay>
+    <CCSQL />
+    <CCTitle />
+    <CCDoc />
+  </WF_Node>
+  <WF_Cond>
+    <MyPK>264</MyPK>
+    <CondType>2</CondType>
+    <DataFrom>0</DataFrom>
+    <FK_Flow>009</FK_Flow>
+    <NodeID>901</NodeID>
+    <FK_Node>901</FK_Node>
+    <FK_Attr>ND901_QiDongFeiXingBuKaoCha</FK_Attr>
+    <AttrKey>QiDongFeiXingBuKaoCha</AttrKey>
+    <AttrName>启动飞行部考察</AttrName>
+    <FK_Operator>=</FK_Operator>
+    <OperatorValue>1</OperatorValue>
+    <OperatorValueT>是</OperatorValueT>
+    <ToNodeID>902</ToNodeID>
+    <ConnJudgeWay>0</ConnJudgeWay>
+    <MyPOID>265</MyPOID>
+    <PRI>0</PRI>
+  </WF_Cond>
+  <WF_Cond>
+    <MyPK>266</MyPK>
+    <CondType>2</CondType>
+    <DataFrom>0</DataFrom>
+    <FK_Flow>009</FK_Flow>
+    <NodeID>901</NodeID>
+    <FK_Node>901</FK_Node>
+    <FK_Attr>ND901_QiDongXinXiBuKaoCha</FK_Attr>
+    <AttrKey>QiDongXinXiBuKaoCha</AttrKey>
+    <AttrName>启动信息部考察</AttrName>
+    <FK_Operator>=</FK_Operator>
+    <OperatorValue>1</OperatorValue>
+    <OperatorValueT>是</OperatorValueT>
+    <ToNodeID>904</ToNodeID>
+    <ConnJudgeWay>0</ConnJudgeWay>
+    <MyPOID>267</MyPOID>
+    <PRI>0</PRI>
+  </WF_Cond>
+  <WF_Cond>
+    <MyPK>268</MyPK>
+    <CondType>2</CondType>
+    <DataFrom>0</DataFrom>
+    <FK_Flow>009</FK_Flow>
+    <NodeID>901</NodeID>
+    <FK_Node>901</FK_Node>
+    <FK_Attr>ND901_QiDongHangKongAnQuanBuKaoCha</FK_Attr>
+    <AttrKey>QiDongHangKongAnQuanBuKaoCha</AttrKey>
+    <AttrName>启动航空安全部考察</AttrName>
+    <FK_Operator>=</FK_Operator>
+    <OperatorValue>1</OperatorValue>
+    <OperatorValueT>是</OperatorValueT>
+    <ToNodeID>906</ToNodeID>
+    <ConnJudgeWay>0</ConnJudgeWay>
+    <MyPOID>269</MyPOID>
+    <PRI>0</PRI>
+  </WF_Cond>
+  <WF_FrmNode>
+    <MyPK>Demo_HK01_902</MyPK>
+    <FK_Frm>Demo_HK01</FK_Frm>
+    <FK_Node>902</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>1</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK01_903</MyPK>
+    <FK_Frm>Demo_HK01</FK_Frm>
+    <FK_Node>903</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>1</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK01_908</MyPK>
+    <FK_Frm>Demo_HK01</FK_Frm>
+    <FK_Node>908</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>0</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK02_904</MyPK>
+    <FK_Frm>Demo_HK02</FK_Frm>
+    <FK_Node>904</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>1</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK02_905</MyPK>
+    <FK_Frm>Demo_HK02</FK_Frm>
+    <FK_Node>905</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>1</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK02_908</MyPK>
+    <FK_Frm>Demo_HK02</FK_Frm>
+    <FK_Node>908</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>0</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK03_906</MyPK>
+    <FK_Frm>Demo_HK03</FK_Frm>
+    <FK_Node>906</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>1</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK03_907</MyPK>
+    <FK_Frm>Demo_HK03</FK_Frm>
+    <FK_Node>907</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>1</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_FrmNode>
+    <MyPK>Demo_HK03_908</MyPK>
+    <FK_Frm>Demo_HK03</FK_Frm>
+    <FK_Node>908</FK_Node>
+    <FK_Flow>009</FK_Flow>
+    <FrmType>0</FrmType>
+    <IsEdit>0</IsEdit>
+    <IsPrint>0</IsPrint>
+    <Idx>0</Idx>
+  </WF_FrmNode>
+  <WF_Direction>
+    <MyPK>901_902_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>901</Node>
+    <ToNode>902</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>901_904_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>901</Node>
+    <ToNode>904</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>901_906_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>901</Node>
+    <ToNode>906</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>902_903_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>902</Node>
+    <ToNode>903</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>903_908_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>903</Node>
+    <ToNode>908</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>904_905_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>904</Node>
+    <ToNode>905</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>905_908_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>905</Node>
+    <ToNode>908</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>906_907_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>906</Node>
+    <ToNode>907</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>907_908_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>907</Node>
+    <ToNode>908</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_Direction>
+    <MyPK>908_999_0</MyPK>
+    <FK_Flow>009</FK_Flow>
+    <Node>908</Node>
+    <ToNode>999</ToNode>
+    <DirType>0</DirType>
+    <IsCanBack>0</IsCanBack>
+    <Dots />
+  </WF_Direction>
+  <WF_LabNote>
+    <MyPK>009_239_62_1</MyPK>
+    <Name>异表单分合流的另外一种形式，子线程中有多个节点。</Name>
+    <FK_Flow>009</FK_Flow>
+    <X>239</X>
+    <Y>62</Y>
+  </WF_LabNote>
+  <WF_NodeStation>
+    <FK_Node>901</FK_Node>
+    <FK_Station>01</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>902</FK_Node>
+    <FK_Station>11</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>903</FK_Node>
+    <FK_Station>06</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>904</FK_Node>
+    <FK_Station>08</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>905</FK_Node>
+    <FK_Station>03</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>906</FK_Node>
+    <FK_Station>09</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>907</FK_Node>
+    <FK_Station>04</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>908</FK_Node>
+    <FK_Station>01</FK_Station>
+  </WF_NodeStation>
+  <WF_NodeStation>
+    <FK_Node>999</FK_Node>
+    <FK_Station>10</FK_Station>
+  </WF_NodeStation>
+  <Sys_MapData>
+    <No>ND901</No>
+    <Name>发起考察-分流点</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND901</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND902</No>
+    <Name>飞行部-成员填写</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND902</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND903</No>
+    <Name>飞行部-部门经理审核</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND903</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND904</No>
+    <Name>配餐部-成员填写</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND904</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND905</No>
+    <Name>配餐部-部门经理审核</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND905</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND906</No>
+    <Name>航空安全部-成员填写</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND906</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND907</No>
+    <Name>航空安全部-部门经理审核</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND907</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND908</No>
+    <Name>考察工作汇总-合流点</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND908</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND999</No>
+    <Name>考察结果发布</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND999</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapData>
+    <No>ND9Rpt</No>
+    <Name>CopyOf新航线考察流程_12月20日09时17分</Name>
+    <EnPK />
+    <SearchKeys />
+    <PTable>ND9Rpt</PTable>
+    <Dtls />
+    <FrmW>900</FrmW>
+    <FrmH>1000</FrmH>
+    <DBURL>0</DBURL>
+    <Tag />
+    <FrmType>0</FrmType>
+    <FK_FrmSort />
+    <AttrsInTable />
+    <AppType>1</AppType>
+    <IsSearchKey>0</IsSearchKey>
+    <DTSearchWay>0</DTSearchWay>
+    <DTSearchKey />
+    <Note />
+    <Designer />
+    <DesignerUnit />
+    <DesignerContact />
+    <AtParas />
+    <FK_Flow />
+    <FormType>0</FormType>
+    <URL />
+  </Sys_MapData>
+  <Sys_MapAttr>
+    <MyPK>ND901_BillNo</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>BillNo</KeyOfEn>
+    <Name>单据文号</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>15</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_CDT</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_Emps</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_FaQiRen</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>FaQiRen</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>175.56</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_FaQiShiJian</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>FaQiShiJian</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>384</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_FID</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_FK_Dept</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_FK_NY</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>FK_NY</KeyOfEn>
+    <Name>年月</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>7</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_KaoChaNeiRong</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>KaoChaNeiRong</KeyOfEn>
+    <Name>考察内容</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>548</UIWidth>
+    <UIHeight>331</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>169</X>
+    <Y>131</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_MyNum</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>MyNum</KeyOfEn>
+    <Name>个数</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_NodeState</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_OID</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_PRI</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>PRI</KeyOfEn>
+    <Name>优先级</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>1</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>1</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey>PRI</UIBindKey>
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>174.76</X>
+    <Y>56.19</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_QiDongFeiXingBuKaoCha</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>QiDongFeiXingBuKaoCha</KeyOfEn>
+    <Name>启动飞行部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>262</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>178</X>
+    <Y>57</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_QiDongHangKongAnQuanBuKaoCha</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>QiDongHangKongAnQuanBuKaoCha</KeyOfEn>
+    <Name>启动航空安全部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>262</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>411</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_QiDongXinXiBuKaoCha</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>QiDongXinXiBuKaoCha</KeyOfEn>
+    <Name>启动配餐部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>262</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>292</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_RDT</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_Rec</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND901_Title</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <KeyOfEn>Title</KeyOfEn>
+    <Name>标题</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>251</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>1</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>174.83</X>
+    <Y>54.4</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_BillNo</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>BillNo</KeyOfEn>
+    <Name>单据文号</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>15</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_CDT</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_Emps</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_FaQiRen</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>FaQiRen</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>175.56</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_FaQiShiJian</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>FaQiShiJian</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>384</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_FID</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_FK_Dept</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_FK_NY</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>FK_NY</KeyOfEn>
+    <Name>年月</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>7</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_KaoChaNeiRong</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>KaoChaNeiRong</KeyOfEn>
+    <Name>考察内容</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>548</UIWidth>
+    <UIHeight>336</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>169</X>
+    <Y>131</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_MyNum</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>MyNum</KeyOfEn>
+    <Name>个数</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_NodeState</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_OID</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_QiDongFeiXingBuKaoCha</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>QiDongFeiXingBuKaoCha</KeyOfEn>
+    <Name>启动飞行部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>178</X>
+    <Y>57</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_QiDongHangKongAnQuanBuKaoCha</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>QiDongHangKongAnQuanBuKaoCha</KeyOfEn>
+    <Name>启动航空安全部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>411</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_QiDongXinXiBuKaoCha</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>QiDongXinXiBuKaoCha</KeyOfEn>
+    <Name>启动配餐部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>292</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_RDT</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_Rec</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND902_Title</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <KeyOfEn>Title</KeyOfEn>
+    <Name>标题</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>251</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>1</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>174.83</X>
+    <Y>54.4</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_CDT</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>完成时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_Emps</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_FID</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_FK_Dept</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_NodeState</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_OID</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_RDT</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND903_Rec</MyPK>
+    <FK_MapData>ND903</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>记录人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_CDT</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>完成时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_Emps</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_FID</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_FK_Dept</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_NodeState</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_OID</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_RDT</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND904_Rec</MyPK>
+    <FK_MapData>ND904</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>记录人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_CDT</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>完成时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_Emps</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_FID</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_FK_Dept</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_NodeState</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_OID</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_RDT</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND905_Rec</MyPK>
+    <FK_MapData>ND905</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>记录人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_CDT</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>完成时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_Emps</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_FID</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_FK_Dept</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_NodeState</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_OID</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_RDT</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND906_Rec</MyPK>
+    <FK_MapData>ND906</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>记录人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_CDT</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>完成时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_Emps</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_FID</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_FK_Dept</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_NodeState</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_OID</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_RDT</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND907_Rec</MyPK>
+    <FK_MapData>ND907</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>记录人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_CDT</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>完成时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_Emps</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_FID</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_FK_Dept</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_NodeState</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_OID</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_RDT</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND908_Rec</MyPK>
+    <FK_MapData>ND908</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>记录人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_BillNo</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>BillNo</KeyOfEn>
+    <Name>单据文号</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>15</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_CDT</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_Emps</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>Emps</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_FaQiRen</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>FaQiRen</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>175.56</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_FaQiShiJian</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>FaQiShiJian</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal>@RDT</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>384</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_FID</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_FK_Dept</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_FK_NY</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>FK_NY</KeyOfEn>
+    <Name>年月</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>7</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_KaoChaNeiRong</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>KaoChaNeiRong</KeyOfEn>
+    <Name>考察内容</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>548</UIWidth>
+    <UIHeight>331</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>169</X>
+    <Y>131</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_MyNum</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>MyNum</KeyOfEn>
+    <Name>个数</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_NodeState</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>NodeState</KeyOfEn>
+    <Name>节点状态</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_OID</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_QiDongFeiXingBuKaoCha</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>QiDongFeiXingBuKaoCha</KeyOfEn>
+    <Name>启动飞行部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>178</X>
+    <Y>57</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_QiDongHangKongAnQuanBuKaoCha</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>QiDongHangKongAnQuanBuKaoCha</KeyOfEn>
+    <Name>启动航空安全部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>411</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_QiDongXinXiBuKaoCha</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>QiDongXinXiBuKaoCha</KeyOfEn>
+    <Name>启动配餐部考察</Name>
+    <DefVal>1</DefVal>
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>292</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_RDT</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_Rec</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal>@WebUser.No</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND999_Title</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <KeyOfEn>Title</KeyOfEn>
+    <Name>标题</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>251</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>1</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>261</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>174.83</X>
+    <Y>54.4</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_BillNo</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>BillNo</KeyOfEn>
+    <Name>单据文号</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>15</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>262</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_CDT</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>CDT</KeyOfEn>
+    <Name>活动时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_Emps</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>Emps</KeyOfEn>
+    <Name>参与者</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>400</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FaQiRen</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FaQiRen</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>175.56</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FaQiShiJian</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FaQiShiJian</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>384</X>
+    <Y>92.43</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FID</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FID</KeyOfEn>
+    <Name>FID</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FK_Dept</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FK_Dept</KeyOfEn>
+    <Name>操作员部门</Name>
+    <DefVal />
+    <UIContralType>1</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>2</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey>BP.Port.Depts</UIBindKey>
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FK_NY</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FK_NY</KeyOfEn>
+    <Name>年月</Name>
+    <DefVal />
+    <UIContralType>1</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>2</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>7</MaxLen>
+    <UIBindKey>BP.Pub.NYs</UIBindKey>
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FlowDaySpan</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FlowDaySpan</KeyOfEn>
+    <Name>跨度(天)</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>8</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>300</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>1</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FlowEmps</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FlowEmps</KeyOfEn>
+    <Name>参与人</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>1000</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>1</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FlowEnder</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FlowEnder</KeyOfEn>
+    <Name>结束人</Name>
+    <DefVal />
+    <UIContralType>1</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>2</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>1000</MaxLen>
+    <UIBindKey>BP.Port.Emps</UIBindKey>
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FlowEnderRDT</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FlowEnderRDT</KeyOfEn>
+    <Name>结束时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>300</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FlowEndNode</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FlowEndNode</KeyOfEn>
+    <Name>结束节点</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>300</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FlowStarter</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FlowStarter</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal />
+    <UIContralType>1</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>2</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>1000</MaxLen>
+    <UIBindKey>BP.Port.Emps</UIBindKey>
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_FlowStartRDT</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>FlowStartRDT</KeyOfEn>
+    <Name>发起时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>300</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_KaoChaNeiRong</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>KaoChaNeiRong</KeyOfEn>
+    <Name>考察内容</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>548</UIWidth>
+    <UIHeight>350</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>169</X>
+    <Y>131</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_MyNum</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>MyNum</KeyOfEn>
+    <Name>个数</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_OID</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>OID</KeyOfEn>
+    <Name>WorkID</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_PRI</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>PRI</KeyOfEn>
+    <Name>优先级</Name>
+    <DefVal>0</DefVal>
+    <UIContralType>1</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>1</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey>PRI</UIBindKey>
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>174.76</X>
+    <Y>56.19</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_QiDongFeiXingBuKaoCha</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>QiDongFeiXingBuKaoCha</KeyOfEn>
+    <Name>启动飞行部考察</Name>
+    <DefVal />
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>260</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>178</X>
+    <Y>57</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_QiDongHangKongAnQuanBuKaoCha</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>QiDongHangKongAnQuanBuKaoCha</KeyOfEn>
+    <Name>启动航空安全部考察</Name>
+    <DefVal />
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>260</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>411</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_QiDongXinXiBuKaoCha</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>QiDongXinXiBuKaoCha</KeyOfEn>
+    <Name>启动配餐部考察</Name>
+    <DefVal />
+    <UIContralType>2</UIContralType>
+    <MyDataType>4</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>1</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>260</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>292</X>
+    <Y>56</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_RDT</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>RDT</KeyOfEn>
+    <Name>接受时间</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>7</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag>1</Tag>
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_Rec</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>Rec</KeyOfEn>
+    <Name>发起人</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>20</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>1</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_Title</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>Title</KeyOfEn>
+    <Name>标题</Name>
+    <DefVal />
+    <UIContralType>0</UIContralType>
+    <MyDataType>1</MyDataType>
+    <LGType>0</LGType>
+    <UIWidth>251</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>200</MaxLen>
+    <UIBindKey />
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>1</UIIsLine>
+    <Tag />
+    <EditType>0</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>0</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>174.83</X>
+    <Y>54.4</Y>
+  </Sys_MapAttr>
+  <Sys_MapAttr>
+    <MyPK>ND9Rpt_WFState</MyPK>
+    <FK_MapData>ND9Rpt</FK_MapData>
+    <KeyOfEn>WFState</KeyOfEn>
+    <Name>流程状态</Name>
+    <DefVal />
+    <UIContralType>1</UIContralType>
+    <MyDataType>2</MyDataType>
+    <LGType>1</LGType>
+    <UIWidth>100</UIWidth>
+    <UIHeight>23</UIHeight>
+    <MinLen>0</MinLen>
+    <MaxLen>500</MaxLen>
+    <UIBindKey>WFState</UIBindKey>
+    <UIRefKey />
+    <UIRefKeyText />
+    <UIVisible>0</UIVisible>
+    <UIIsEnable>0</UIIsEnable>
+    <UIIsLine>0</UIIsLine>
+    <Tag />
+    <EditType>2</EditType>
+    <AutoFullDoc />
+    <AutoFullWay>0</AutoFullWay>
+    <IDX>999</IDX>
+    <GroupID>271</GroupID>
+    <IsSigan>0</IsSigan>
+    <X>5</X>
+    <Y>5</Y>
+  </Sys_MapAttr>
+  <Sys_GroupField>
+    <OID>258</OID>
+    <Lab>开始节点</Lab>
+    <EnName>ND902</EnName>
+    <Idx>0</Idx>
+  </Sys_GroupField>
+  <Sys_GroupField>
+    <OID>259</OID>
+    <Lab>开始节点</Lab>
+    <EnName>ND901</EnName>
+    <Idx>0</Idx>
+  </Sys_GroupField>
+  <Sys_GroupField>
+    <OID>260</OID>
+    <Lab>开始节点</Lab>
+    <EnName>ND9Rpt</EnName>
+    <Idx>0</Idx>
+  </Sys_GroupField>
+  <Sys_GroupField>
+    <OID>261</OID>
+    <Lab>开始节点</Lab>
+    <EnName>ND999</EnName>
+    <Idx>0</Idx>
+  </Sys_GroupField>
+  <Sys_GroupField>
+    <OID>262</OID>
+    <Lab>流程信息</Lab>
+    <EnName>ND9Rpt</EnName>
+    <Idx>-1</Idx>
+  </Sys_GroupField>
+  <Sys_GroupField>
+    <OID>271</OID>
+    <Lab>流程信息</Lab>
+    <EnName>ND9Rpt</EnName>
+    <Idx>-1</Idx>
+  </Sys_GroupField>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_1</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>281.82</X1>
+    <Y1>81.82</Y1>
+    <X2>281.82</X2>
+    <Y2>121.82</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_10</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>719.09</X1>
+    <Y1>40</Y1>
+    <X2>719.09</X2>
+    <Y2>482.73</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_11</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>281.82</X1>
+    <Y1>81.82</Y1>
+    <X2>281.82</X2>
+    <Y2>121.82</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_12</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>360</X1>
+    <Y1>80.91</Y1>
+    <X2>360</X2>
+    <Y2>120.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_13</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>360</X1>
+    <Y1>80.91</Y1>
+    <X2>360</X2>
+    <Y2>120.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_14</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>158.82</X1>
+    <Y1>41.82</Y1>
+    <X2>158.82</X2>
+    <Y2>482.73</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_15</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.55</X1>
+    <Y1>80</Y1>
+    <X2>718.82</X2>
+    <Y2>80</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_16</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.82</X1>
+    <Y1>40</Y1>
+    <X2>81.82</X2>
+    <Y2>480.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_17</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.82</X1>
+    <Y1>481.82</Y1>
+    <X2>720</X2>
+    <Y2>481.82</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_18</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>83.36</X1>
+    <Y1>40.91</Y1>
+    <X2>717.91</X2>
+    <Y2>40.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_19</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>83.36</X1>
+    <Y1>120.91</Y1>
+    <X2>717.91</X2>
+    <Y2>120.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_2</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>281.82</X1>
+    <Y1>81.82</Y1>
+    <X2>281.82</X2>
+    <Y2>121.82</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_20</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>719.09</X1>
+    <Y1>40</Y1>
+    <X2>719.09</X2>
+    <Y2>482.73</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_21</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>158.82</X1>
+    <Y1>41.82</Y1>
+    <X2>158.82</X2>
+    <Y2>482.73</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_22</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.55</X1>
+    <Y1>80</Y1>
+    <X2>718.82</X2>
+    <Y2>80</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_23</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.82</X1>
+    <Y1>40</Y1>
+    <X2>81.82</X2>
+    <Y2>480.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_24</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.82</X1>
+    <Y1>481.82</Y1>
+    <X2>720</X2>
+    <Y2>481.82</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_25</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>83.36</X1>
+    <Y1>40.91</Y1>
+    <X2>717.91</X2>
+    <Y2>40.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_26</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>83.36</X1>
+    <Y1>120.91</Y1>
+    <X2>717.91</X2>
+    <Y2>120.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_27</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>719.09</X1>
+    <Y1>40</Y1>
+    <X2>719.09</X2>
+    <Y2>482.73</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_3</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>360</X1>
+    <Y1>80.91</Y1>
+    <X2>360</X2>
+    <Y2>120.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_4</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>158.82</X1>
+    <Y1>41.82</Y1>
+    <X2>158.82</X2>
+    <Y2>482.73</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_5</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.55</X1>
+    <Y1>80</Y1>
+    <X2>718.82</X2>
+    <Y2>80</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_6</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.82</X1>
+    <Y1>40</Y1>
+    <X2>81.82</X2>
+    <Y2>480.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_7</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>81.82</X1>
+    <Y1>481.82</Y1>
+    <X2>720</X2>
+    <Y2>481.82</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_8</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>83.36</X1>
+    <Y1>40.91</Y1>
+    <X2>717.91</X2>
+    <Y2>40.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLine>
+    <MyPK>LIE1212200917291234567891011_9</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>5</X>
+    <Y>5</Y>
+    <X1>83.36</X1>
+    <Y1>120.91</Y1>
+    <X2>717.91</X2>
+    <Y2>120.91</Y2>
+    <BorderWidth>2</BorderWidth>
+    <BorderColor>Black</BorderColor>
+  </Sys_FrmLine>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_1</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <Text>发起人</Text>
+    <X>95.48</X>
+    <Y>98.08</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_10</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <Text>发起时间</Text>
+    <X>307.64</X>
+    <Y>95.17</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_11</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <Text>发起航空路线考察单（测试）</Text>
+    <X>86.67</X>
+    <Y>9.27</Y>
+    <FontSize>23</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_12</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <Text>参与部门</Text>
+    <X>97</X>
+    <Y>56</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_13</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <Text>考@察@内@容</Text>
+    <X>105</X>
+    <Y>168</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_14</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <Text>说明:被选择的部门才能启动.</Text>
+    <X>563</X>
+    <Y>58</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_15</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <Text>发起人</Text>
+    <X>95.48</X>
+    <Y>98.08</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_16</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <Text>发起时间</Text>
+    <X>307.64</X>
+    <Y>95.17</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_17</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <Text>发起航空路线考察单（测试）</Text>
+    <X>86.67</X>
+    <Y>9.27</Y>
+    <FontSize>23</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_2</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <Text>参与部门</Text>
+    <X>97</X>
+    <Y>56</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_3</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <Text>考@察@内@容</Text>
+    <X>105</X>
+    <Y>168</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_4</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <Text>说明:被选择的部门才能启动.</Text>
+    <X>563</X>
+    <Y>58</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_5</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <Text>发起人</Text>
+    <X>95.48</X>
+    <Y>98.08</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_6</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <Text>发起时间</Text>
+    <X>307.64</X>
+    <Y>95.17</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_7</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <Text>发布考察结果（测试）</Text>
+    <X>85.67</X>
+    <Y>6.27</Y>
+    <FontSize>23</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight>normal</FontWeight>
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_8</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <Text>参与部门</Text>
+    <X>97</X>
+    <Y>56</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmLab>
+    <MyPK>Lab121220091729123456789101112_9</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <Text>考@察@内@容</Text>
+    <X>105</X>
+    <Y>168</Y>
+    <FontSize>11</FontSize>
+    <FontColor>#FF000000</FontColor>
+    <FontName>Portable User Interface</FontName>
+    <FontStyle>Normal</FontStyle>
+    <FontWeight />
+    <IsBold>0</IsBold>
+    <IsItalic>0</IsItalic>
+  </Sys_FrmLab>
+  <Sys_FrmImg>
+    <MyPK>Img12122009172912345678910111213_1</MyPK>
+    <FK_MapData>ND901</FK_MapData>
+    <X>577.26</X>
+    <Y>3.45</Y>
+    <H>40</H>
+    <W>137</W>
+    <ImgURL>/CCForm;component/Img/LogoBig.png</ImgURL>
+    <LinkURL />
+    <LinkTarget>_blank</LinkTarget>
+  </Sys_FrmImg>
+  <Sys_FrmImg>
+    <MyPK>Img12122009172912345678910111213_2</MyPK>
+    <FK_MapData>ND902</FK_MapData>
+    <X>577.26</X>
+    <Y>3.45</Y>
+    <H>40</H>
+    <W>137</W>
+    <ImgURL>/CCForm;component/Img/LogoBig.png</ImgURL>
+    <LinkURL />
+    <LinkTarget>_blank</LinkTarget>
+  </Sys_FrmImg>
+  <Sys_FrmImg>
+    <MyPK>Img12122009172912345678910111213_3</MyPK>
+    <FK_MapData>ND999</FK_MapData>
+    <X>577.26</X>
+    <Y>3.45</Y>
+    <H>40</H>
+    <W>137</W>
+    <ImgURL>/CCForm;component/Img/LogoBig.png</ImgURL>
+    <LinkURL />
+    <LinkTarget>_blank</LinkTarget>
+  </Sys_FrmImg>
+</NewDataSet>

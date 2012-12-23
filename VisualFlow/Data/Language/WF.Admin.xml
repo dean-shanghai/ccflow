@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+
+  <!--测试主页 -->
+  <Item No="TestTitle" B5="感谢您选择驰骋工作流程引擎-流程设计与测试界面" CH="感谢您选择驰骋工作流程引擎-流程设计与测试界面"
+        EN="Thank you for choosing Chicheng Workflow Engine - Workflow design and testing interface" 
+        JP="Thank you for choosing ride workflow engine - process design and test interface"  
+        RU="Thank you for choosing ride workflow engine - process design and test interface"   UG="" />
+  <Item No="PortData" B5="组织结构维护" CH="组织结构维护" EN="Organization Maintenance" JP="Maintenance Organization"  RU="Maintenance Organization" />
+  <Item No="Tools" B5="系统工具" CH="系统工具" EN="Tools" JP="Tools"  RU="Tools" />
+  <Item No="FlowTest" B5="流程测试" CH="流程测试" EN="FlowTest" JP="Flow Testing"  RU="FlowTest" />
+  <Item No="FlowChart" B5="流程图" CH="流程图" EN="Flow chart" JP="Flow Chart"  RU="Flow chart" />
+  <Item No="AllFlow" B5="所有的流程" CH="所有的流程" EN="All Flows" JP="All Flows"  RU="All Flows" />
+  <Item No="ClearDatabase" B5="清除所有数据" CH="清除所有数据" EN="Reset Database" JP="Clear Database"  RU="Clear Database" />
+  <Item No="WebConfig" B5="系统设置" CH="系统设置" EN="System Configuration" JP="System Config"  RU="System Config" />
+
+
+  <!--报表定义 -->
+  <Item No="WFRpt1r" B5="查询条件定义" CH="查询条件定义"  EN="Search criteria definition" RU="Query defined" JP="Query defined" />
+  <Item No="WFRpt2r" B5="查询预览" CH="查询预览" EN="Query Preview" RU="Query Preview"  JP="Query Preview" />
+  <Item No="WFRpt3r" B5="分析预览" CH="分析预览" EN="Analysis Preview" RU="Analysis Preview"  JP="Analysis Preview" />
+  <Item No="ResetFields" B5="重设字段" CH="重设字段"  EN="Reset Fields" RU="Reset Fields" JP="Reset Fields" />
+  <Item No="FlowRptDef" B5="流程报表定义" CH="流程报表定义" EN="Workflow Report Definition" RU="Report definition process"  JP="Report definition process" />
+
+
+  <!--  流程体检  -->
+  <Item No="CheckBaseData" B5="开始检查基础数据是否完整" CH="开始检查基础数据是否完整"
+        EN="Checking essential data integrity"
+        RU="Start checking the basis of the data is complete"
+        JP="Start checking the basis of the data is complete" />
+  
+
+  <!-- 部门选择 -->
+  
+  <Item No="StaChose" B5="岗位选择" CH="岗位选择" EN="Choose Position" JP="StaChose"  RU="岗位选择" />
+  <Item No="DeptChose" B5="部门选择" CH="部门选择" RU="部门选择" EN="Choose Department" JP="DeptChose" />
+
+  <Item No="FormCond" B5="表单条件" CH="表单条件" RU="表单条件" EN="Form Conditions" JP="FormCond" />
+  <Item No="StaCond" B5="岗位条件" CH="岗位条件" RU="岗位条件" EN="Position Conditions" JP="StaCond" />
+  <Item No="DeptCond" B5="部门条件" CH="部门条件" RU="部门条件" EN="Department Conditions" JP="DeptCond" />
+
+  <Item No="DelFlowData" B5="删除流程数据" CH="删除流程数据" RU="DelFlowData" EN="Delete Flow Data" JP="DelFlowData" />
+
+  <Item No="ReplaceVal" B5="要替换的值" CH="要替换的值" RU="ReplaceVal" EN="Value to be replaced" JP="ReplaceVal" />
+  <Item No="BillTemplete" B5="单据模板" CH="单据模板" RU="BillTemplete" EN="Document Template" JP="BillTemplete" />
+  <Item No="BillType" B5="单据类型" CH="单据类型" RU="BillType" EN="Document Type" JP="BillType" />
+
+  <Item No="NewType" B5="新建类型" CH="新建类型" RU="NewType" EN="New Type" JP="NewType" />
+
+  <Item No="CopyField" CH="复制字段" EN="Copy Field" JP="CopyField" RU="CopyField" />
+  <Item No="IsView" CH="是否可以查看" EN="Visible" JP="IsView" RU="IsView" />
+
+
+  <Item No="IsView0" CH="不可见" EN="Visible" JP="View" RU="View" />
+  <Item No="IsView1" CH="可见" EN="Invisible" JP="Not View" RU="Not View" />
+
+  
+  <Item No="FieldGroup" CH="字段分组" EN="Field Group" JP="FieldGroup" RU="FieldGroup" />
+  <Item No="NewGroupField" CH="新建字段分组" EN="New Field Group" JP="NewGroupField" RU="NewGroupField" />
+
+  <Item No="NewGFBlank" CH="新建空白字段分组" EN="New blank field group" JP="NewGFBlank" RU="NewGFBlank" />
+  <Item No="NewGFBlankD" CH="增加后您可以向里面复制或者新建字段。"
+        EN="You can add fields to the group after it is created."
+        JP="NewGFBlankD" RU="NewGFBlankD" />
+
+  <Item No="NewGFCheck" CH="新建审核分组" EN="New audit group" JP="NewGFBlank" RU="NewGFBlank" />
+  <Item No="NewGFCheckD" 
+        CH="系统会让您输入审核的信息，并创建审核分组。"
+        EN="Enter audit information and create audit group" 
+        JP="NewGFBlank" RU="NewGFBlank" />
+
+
+  <Item No="FieldFix" CH="字段前缀" EN="Field Prefix" JP="Field Prefix"     RU="NewGroupField" />
+  <Item No="FieldFixD" 
+        CH="用于自动创建字段，请输入英文字母或者字母数字组合。系统自动依据您的输入产生字段。如：XXX_Note，审核意见。XXX_RDT审核时间。XXX_Checker审核人，为空系统自动用拼音表示。"  
+        EN="This is used to attach a prefix to auto-generated field name. Enter alphanumeric combination. "
+        JP="Field Prefix"
+        RU="NewGroupField" />
+
+
+
+  <Item No="CheckSta" CH="审核岗位" EN="Auditor Position" JP="Auditor Position" RU="Check Station" />
+  <Item No="CheckStaD" CH="比如:分局长审核、科长审核、总经理审核。" 
+        EN="E.g. Senior Vice President of Marketing" 
+        JP="For example: points for examination, head of audit, general manager for review" 
+        RU="For example: points for examination, head of audit, general manager for review" />
+
+
+
+  <Item No="EditFieldGroup" CH="字段分组" EN="Field Group" JP="FieldGroup" RU="FieldGroup" />
+  <Item No="FieldGroupGuide" CH="字段分组向导" EN="Field Group Guide" JP="FieldGroupGuide" RU="FieldGroupGuide" />
+
+  <!-- 复制从表 -->
+  <Item No="CopyDtl" CH="复制从表" EN="Copy Details" JP="Copy Dtl" RU="FieldGroupGuide" />
+  <Item No="Group" CH="分组" EN="Group" JP="Group" RU="FieldGroupGuide" />
+
+  <Item No="SelectNode" CH="选择节点" EN="Select Node" JP="SelectNode" RU="SelectNode" />
+
+  <Item No="Field" CH="字段" EN="Field" JP="Field" RU="Field" />
+  <Item No="Type" CH="类型" EN="Type" JP="Type" RU="Type" />
+  <Item No="Show" CH="显示" EN="Display" JP="Show" RU="Show" />
+
+
+  <!-- auto full -->
+  <Item No="Way0" CH="方式0：不做任何设置。" EN="Mode 0:Do nothing." JP="Mode0:Do nothing." RU="FieldGroup" />
+  <Item No="Way1" CH="方式1：本表单中数据计算。" EN="Mode 1: Calculated with field data on this form." JP="Mode1:This form of data calculations." RU="FieldGroup" />
+  <Item No="Way2" CH="方式2：利用SQL自动填充。" EN="Mode 2: Populate with SQL statements." JP="FieldGroup" RU="FieldGroup" />
+  <Item No="Way3" CH="方式3：本表单中外键列。" EN="Mode 3: The foreign key column of this form." JP="FieldGroup" RU="FieldGroup" />
+  <Item No="Way4" CH="方式4：对一个从表的列求值。" EN="Mode 4: Calculated with a field in the detail table." JP="FieldGroup" RU="FieldGroup" />
+
+  <Item No="Way0D" CH="不做任何设置。" EN="Do nothing." JP="Mode0:Do nothing." RU="FieldGroup" />
+  <Item No="Way1D" CH="比如:@单价*@数量" EN="E.g. @price*@quantity" JP="Mode1:This form of data calculations." RU="FieldGroup" />
+  <Item No="Way2D" CH="比如:Select Addr From 商品表 WHERE No=@FK_Pro  FK_Pro是本表中的任意字段名"
+        EN="E.g. Select Addr From commodity WHERE No = @FK_Pro /* FK_Pro is the name of a field in the table*/" 
+        JP="FieldGroup" RU="FieldGroup" />
+  <Item No="Way3D" CH="比如:表单中有商品编号列,需要填充商品地址、供应商电话。" 
+        EN="E.g. Populate the address and supplier phone number fields based on the product ID column (foreign key) value." 
+        JP="FieldGroup" RU="FieldGroup" />
+  
+  <Item No="Way4D" CH="比如:对从表中的列求值。" 
+        EN="E.g. calculate the subtotal of a field in the details table." 
+        JP="FieldGroup" RU="FieldGroup" />
+
+  <!-- dtl table -->
+  <Item No="IsUpdateR" CH="是否可以修改行" EN="Allow Edit" JP="IsUpdate" RU="IsUpdate" />
+  <Item No="IsInsertR" CH="是否可以新增行" EN="Allow Insert" JP="IsInsertR" RU="IsInsertR" />
+  <Item No="IsDeleteR" CH="是否可以删除行" EN="Allow Delete" JP="IsDeleteR" RU="IsDeleteR" />
+  <Item No="IsShowIdx" CH="是否显示序号列" EN="Display ID Column" JP="IsUpdate" RU="IsUpdate" />
+  <Item No="IsShowSum" CH="是否合计行" EN="Display Subtotal Row" JP="IsUpdate" RU="IsUpdate" />
+  <Item No="IsEnablePass" CH="是否启用审核字段" EN="是否启用审核字段" JP="IsUpdate" RU="IsUpdate" />
+
+  <Item No="RowsOfList" CH="初始化行数" EN="Initial Number of Rows" JP="Initialize the number of rows" RU="IsUpdate" />
+  <Item No="WhenOverSize" CH="越出处理" EN="Oversize Treatment" JP="Beyond treatment" RU="IsUpdate" />
+  <Item No="ShowInGroup" CH="显示在分组" EN="Display in Group" JP="IsUpdate" RU="IsUpdate" />
+  <Item No="IsCopyNDData" CH="是允许从上一个节点Copy数据" EN="Allow copy data from previous node" JP="Is to allow Copy data from one node on" RU="IsUpdate" />
+   
+
+
+
+  <!-- cond.aspx  NewFlowView -->
+  <Item No="NewView" B5=""  CH="新建视图" RU="Новый взгляд" EN="New view" JP="新しい表示&#xD;&#xA;" />
+  <Item No="CondDesign" CH="条件设计" RU="Дизайн условия" EN="Design conditions" JP="設計条件" />
+  <Item No="NodeC" CH="节点完成条件" RU="Узел завершить условия" EN="Node completion conditions" JP="ノードの条件を完了するには&#xD;&#xA;" />
+  <Item No="FlowC" CH="流程完成条件" RU="Процесс завершить условия" EN="Flow completion conditions " JP="プロセスの条件を完了するには&#xD;&#xA;" />
+  <!-- action.aspx -->
+  <Item No="NodeAction" CH="事件接口" RU="Событие интерфейс" EN="Event interface" JP="イベントインターフェイス" />
+  <Item No="WhenNodeSave" CH="当保存节点时" RU="Экономьте время, когда узел" EN="When save the node" JP="ノードが時間を節約" />
+  <Item No="WhenNodeSend" CH="当发送时" RU="Когда отправлено" EN="When send" JP="送信時" />
+  <Item No="WhenNodeSendOK" CH="当发送成功时" RU="При успешной отправке" EN="When sent successfully" JP="成功時の送信" />
+  <Item No="WhenNodeSendErr" CH="当发送失败时" RU="Если сообщение не удалось" EN="When send fails" JP="送信時に失敗する" />
+  
+  <Item No="WaringRtf" CH="必须是 rtf 格式的 才能被识别。" RU="RTF-формате необходимо, чтобы быть идентифицированы." EN="Only RTF format is supported" JP="RTF形式で識別する必要があります" />
+  <Item No="NodeBillDesign" CH="节点单据设计" RU="Инструмент разработки узла" EN="Node document design&#xD;&#xA;" JP="機器設計のノード" />
+  <Item No="BillMang" CH="单据管理" RU="Управление документооборотом" EN="Document management" JP="文書管理" />
+  <Item No="DownTemplete" CH="模板下载" RU="Скачать шаблон" EN="Template Download" JP="テンプレートをダウンロードする" />
+  <Item No="Test" CH="测试" RU="Проверка" EN="Testing" JP="試験" />
+
+  <Item No="BillTemplate" CH="文书模板" RU="Документ шаблоны" EN="Document templates" JP="音源のテンプレート" />
+  <Item No="BillTemplateD" CH="选择本地模板上传" RU="Из шаблонов для выбора местных" EN="Upload local templates" JP="テンプレートから選ぶことローカル" />
+  
+  
+ 
+  <!-- FAppSet.aspx -->
+  <Item No="FAppSet" CH="调用外部程序接口" RU="Внешние процедуры вызова интерфейса" EN="Invoke external procedure interface" JP="外部プロシージャコールのインターフェイス" />
+  <Item No="InvoType" CH="调用类型" RU="Звоните типа" EN="Invocation type" JP="請求のタイプ" />
+  <Item No="InvoWhen" CH="调用时间" RU="Вызов времени" EN="Invoke time" JP="通話時間" />
+  <Item No="ShowName" CH="显示名称" RU="Отображаемое имя" EN="Display name" JP="ハンドルネーム" />
+  <Item No="DoWhat" CH="执行内容" RU="Реализация содержания" EN="Content" JP="の内容の実施" />
+  <Item No="NewRpt" CH="新建报表" RU="Новые заявления" EN="New Report" JP="新しいステートメント" />
+  <Item No="StaRight" CH="岗位访问权限" RU="Доступ статус" EN="Position Access Permissions" JP="アクセス状況" />
+  <Item No="EmpRight" CH="人员访问权限" RU="Сотрудники доступа" EN="Personnel Access Permissions" JP="スタッフアクセス" />
+  <Item No="FlowView" CH="流程视图" RU="Процесс просмотра" EN="Flow View" JP="プロセスの表示" />
+  <Item No="RptName" CH="报表名称" RU="Заявление имя" EN="Report Name" JP="ステートメント名&#xD;&#xA;" />
+  <!-- WFRptD.aspx -->
+  <Item No="Order" CH="排序" RU="Сортировка" EN="Sort" JP="並べ替え" />
+  <Item No="FieldName" CH="字段中文名称" RU="Русское название области" EN="Field Label" JP="中国語の名前フィールド" />
+  <Item No="FieldEName" CH="字段英文名称" RU="Английское название области" EN="Field Name" JP="英語名のフィールド" />
+  <Item No="DefSearchFK" CH="定义查询条件" RU="Запрос определение" EN="Search criteria definition" JP="クエリの定義" />
+  <Item No="DNode" CH="节点设计" RU="Узел дизайн" EN="Node design" JP="ノードの設計" />
+  <Item No="ForFJ" CH="请保存后上传附件" RU="Пожалуйста, сохраните приложения после загрузки" EN="Please upload the attachment after the document is saved" JP="別館に保存して記入してください" />
+  <Item No="ForDtl1" CH="请保存后填写明细" RU="Пожалуйста, заполните детали после сохранения" EN="Please fill out the details after the document is saved" JP="詳しくは保存した後、詳細に記入する" />
+  <Item No="W1" CH="提示：在设计状态下才有此功能。" RU="Подсказка: в разработке государственной имеют данную функцию." EN="This feature is available in design mode only" JP="ヒント：国家の設計でこの機能があります。" />
+  <Item No="DealEmp" CH="处理人" RU="Сделка с" EN="Handled By&#xD;&#xA;" JP="対処する" />
+  <Item No="WFRpt1" CH="结束，现在历经如下步骤,详细报告如下:" RU="За она имеет следующие шаги, подробный отчет в следующем:" EN="Over, it has the following steps, a detailed report is as follows:" JP="  以上、それは次の手順を、詳細なレポートは以下のようにしています： " />
+  <Item No="WFRpt0" CH="当前操作人员:" RU="В настоящее время операторы:" EN="Current operators:" JP="以上、それは次の手順を、詳細なレポートは以下のようにしています：" />
+  <Item No="FlowCheckInfo" CH="流程检查信息:" RU="Процесс проверки информации:" EN="Flow check information:" JP="プロセスを確認情報：" />
+  <Item No="FlowDesc" CH="流程描述:" RU="Описание процесса:" EN="Flow Description:" JP="プロセスの説明：" />
+  <Item No="Info" CH="信息" RU="Информация" EN="Information" JP="情報" />
+  <Item No="Step" CH="步骤" RU="Шаги" EN="Steps" JP="手順" />
+  <Item No="FlowDRpt" CH="流程设计文档" RU="Процесс разработки документа" EN="Flow Design Document" JP="プロセス設計書" />
+
+  <Item No="GenerFlowTemplate" CH="生成流程模版" RU="Процесс разработки документа"
+      EN="Generate flow template" JP="プロセス設計書" />
+  
+  <!-- sheji -->
+  <Item No="Bill1" CH="错误，非法的rtf 格式文件。" EN="Error: illegal RTF format."  JP="手順"  RU="Wrong, illegal rtf format." />
+
+
+</NewDataSet>

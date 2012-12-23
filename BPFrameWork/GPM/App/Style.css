@@ -1,0 +1,113 @@
+
+ 
+a:link { color:Blue; text-decoration:none;}
+a:visited { color:Blue; text-decoration:none;}
+a:hover
+{
+	color: red;
+	text-decoration: none;
+}
+a:active { color:#000000; text-decoration:none;}
+
+.Bar
+{
+	border-right: inactivecaption thin;
+	padding-right: 1px;
+	border-top: inactivecaption thin;
+	padding-left: 1px;
+	font-size: 14px;
+	padding-bottom: 1px;
+	margin: 1px;
+	border-left: inactivecaption thin;
+	color: black;
+	padding-top: 1px;
+	border-bottom: background thin;
+	background-position: center top;
+	background-attachment: fixed;
+	background-image: url(App/Images/BarPGHome.gif);
+	background-repeat: repeat;
+}
+
+.Selected
+{
+	font-size: 14px;
+	color: black;
+	border-bottom: yellow thin solid;
+	background-color: activeborder;
+	border-top: blue thin solid;
+	border-left: blue thin solid;
+	border-right: blue thin solid;
+}
+
+.UnSelected
+{
+	font-size: 14px;
+	cursor: hand;
+	color: black;
+	border-bottom: background thin solid;
+	background-color: white;
+}
+.BodyOfInterval
+{
+	background-image: url(/PG/App/Images/BJOfInterval.gif);
+	background-position: right bottom;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font: menu;
+	font-size: 14px;
+}
+
+.BodyOfHY
+{
+	background-image: url(/PG/App/Images/TopLeftHY.gif);
+	background-position: right top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font: menu;
+	font-size: 14px;
+}
+
+
+.BodyOfHandWork
+{
+	background-image: url(App/Images/CJOfDH.gif);
+	background-attachment: scroll;
+	background-repeat: no-repeat;
+	font: menu;
+	font-size: 14px;
+}
+
+
+.BodyOfDH
+{
+	background-image: url(/PG/App/Images/TopLeftDH.gif);
+	background-position: right top;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font: menu;
+	font-size: 14px;
+}
+
+.Left
+{
+	background-color: infobackground;
+	font-size: 14px;
+}
+
+.Right
+{
+	font-size: 14px;
+}
+
+.Top
+{
+	font-size: 14px;
+}
+
+.Note
+{
+    font: menu;
+    color: #99cccc;
+}
+
+

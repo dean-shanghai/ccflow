@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="FlowSearch" CH="流程查询" RU="Процесс запроса" EN="Flow query" JP="プロセスのクエリ" />
+  <Item No="Return" CH="退回" RU="Возврат" EN="Return" JP="戻る" />
+  <Item No="WorkArea" CH="工作区" RU="Рабочая область" EN="Workspace" JP="ワークスペース" />
+  <Item No="FlowInfo" CH="流程图" RU="Схема" EN="Flow chart" JP="フローチャート" />
+  <Item No="FlowOver" CH="此流程已经完成" RU="Этот процесс был завершен" EN="This process has been completed" JP="このプロセスを完了している" />
+  <Item No="WhenSeleWorkErr" CH="处理选择工作出现错误" RU="Выбор работы для борьбы с ошибками" EN="Choice of work to deal with errors" JP="仕事の選択のエラーに対処するため" />
+  <Item No="SetOverFlow" CH="结束流程" RU="В конце процесса" EN="The end of the workflow" JP="プロセスの終了" />
+  <Item No="CanNoteDoWork" CH="@您现在没有处理当前工作的权限！@1：可能是由于当前的工作已经被您的同事处理了，流程已经转入了下一个节点；@2：此流程可能是虚拟流程！" RU="@ У вас нет полномочий заниматься текущей работой! @ 1: может быть связано с текущей работой стали заниматься ваши коллеги, процесс был перенесен на следующий узел; @ 2: Этот процесс может быть виртуальный процесс!" EN="@ You do not have the authority to deal with the current work! @ 1: may be due to the current work has been to deal with your colleagues, the process has been transferred to the next node; @ 2: This process may be a virtual process!" JP="@あなたの権限は、現在の作業に対処する必要はありません！ @ 1 ：現在の仕事に原因がある可能性がありますされているあなたの同僚に対処するため、プロセスは次のノードに転送されています。 @ 2 ：このプロセスは、仮想処理されることがあります！&#xD;&#xA;" />
+  <Item No="NotCurrNode" CH="没有找到当前的节点" RU="Не нашли текущего узла" EN="Did not find the current node" JP="現在のノードが見つかりませんでした" />
+  <Item No="FlowHup" CH="流程挂起" RU="Процесс повесить" EN="Flow hang" JP="プロセスのハングアップ" />
+  <Item No="FWNote" CH="转发原因" RU="Экспедирование причина" EN="Forwarding reason" JP="転送理由" />
+  <Item No="Accepter" CH="接受人" RU="Получатель" EN="Recipient" JP="受信者" />
+  <Item No="Transfer" CH="转发人" RU="Транспондеры были" EN="Transponders were" JP="トランスポンダれた" />
+  <Item No="WorkBackErr" CH="工作退回出错，请反馈给系统管理员，或者直接删除该流程。" RU="Работа вернуть ошибку, пожалуйста, отзыв к системному администратору или прямого исключения из этого процесса." EN="Work to return an error, please feedback to the system administrator, or direct the deletion of the process." JP="作業は、システム管理者、または直接のプロセスの削除にフィードバックしてくださいエラーを返します。" />
+</NewDataSet>

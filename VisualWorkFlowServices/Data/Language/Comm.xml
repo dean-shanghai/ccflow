@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="Sum" CH="合计" EN="Sum" JP="トータル" RU="Всего" />
+  <Item No="ForSum" CH="求合" EN="Sum" JP="すべて" RU="Для всех" />
+  <Item No="ForAvg" CH="求平均" EN="Average" JP="の平均は" RU="В среднем" />
+  <Item No="TableGrade" CH="表格" EN="Table" JP="フォーム" RU="Форма" />
+  <Item No="Histogram" CH="柱状图" EN="Histogram Chart" JP="ヒストグラム" RU="Гистограмма" />
+  <Item No="Pie" CH="丙图" EN="Pie Chart" JP="図C" RU="Рисунок C" />
+  <Item No="Line" CH="折线图" EN="Line Chart" JP="折れ線グラフ" RU="Ломаная линия графика" />
+  <Item No="CrrMonth" CH="本月" EN="This Month" JP="今月" RU="В этом месяце&#xD;&#xA;" />
+  <Item No="Amount" CH="累计" EN="Amount" JP="積" RU="Накопительное" />
+  <Item No="OrderCondErr" CH="@您选择的排序条件不在分析项目的范围内。@请更改排序方式，或者选择分析范围。" 
+        EN="@ You didn't choose the order of conditions within the scope of the project. @ Please change the sort order, or analysis of the scope of choice."
+        JP="@あなたはプロジェクトの範囲内での状況を分析することはないの順序を選択してください。 @詳しくはソート順、または選択した範囲の分析を変更します。" 
+    RU="@ Вы решите не анализировать порядок условий в рамках данного проекта. @ Изменить порядок сортировки или анализа сферы выбора." />
+</NewDataSet>

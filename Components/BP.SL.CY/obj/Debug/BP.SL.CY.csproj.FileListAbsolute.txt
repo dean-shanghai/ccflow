@@ -1,0 +1,5 @@
+D:\ccflow\Components\BP.SL.CY\Bin\Debug\BP.SL.CY.dll
+D:\ccflow\Components\BP.SL.CY\Bin\Debug\BP.SL.CY.pdb
+D:\ccflow\Components\BP.SL.CY\obj\Debug\ResolveAssemblyReference.cache
+D:\ccflow\Components\BP.SL.CY\obj\Debug\BP.SL.CY.dll
+D:\ccflow\Components\BP.SL.CY\obj\Debug\BP.SL.CY.pdb

@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  
+  <!-- UIRowStyleGlo -->
+  <Item No="UIRowStyleGlo" CH="表格数据行风格(应用全局)"
+        B5="表格数据行风格(应用全局)" 
+        EN="Table row style (application global)" JP="Table row style (application global)"
+        RU="Presentation"   UG=""  />
+  <Item No="IsEnableDouclickGlo" CH="是否启动双击打开(应用全局)" B5="Presentation"
+        EN="Whether to activate the double click to open (application global)" 
+        JP="Whether to activate the double click to open (application global)" 
+        RU="Whether to activate the double click to open (application global)"  UG=""  />
+  
+  <Item No="IsEnableFocusField" CH="是否启用焦点字段" 
+        B5="Whether to enable the focus field" 
+        EN="Whether to enable the focus field" 
+        JP="Whether to enable the focus field" 
+        RU="Whether to enable the focus field" />
+  
+  <Item No="FocusField" CH="焦点字段(用于显示点击打开的列)" 
+        B5="焦点字段(用于显示点击打开的列)" 
+        EN="Focus field (for display click on open columns)" 
+        JP="Focus field (for display click on open columns)" 
+        RU="Focus field (for display click on open columns)" />
+  
+  <Item No="IsEnableRefFunc" CH="是否启用相关功能列"
+        B5="是否启用相关功能列"
+        EN="Whether to enable the relevant functions are shown"
+        JP="Whether to enable the relevant functions are shown"
+        RU="Whether to enable the relevant functions are shown" />
+  
+  <Item No="IsEnableOpenICON" CH="是否启用打开图标" 
+        B5="是否启用打开图标" 
+        EN="Open the icon is enabled" 
+        JP="Open the icon is enabled" 
+        RU="Open the icon is enabled" />
+  
+  <Item No="MoveToShowWay" CH="移动到显示方式" 
+        B5="移动到显示方式" 
+        EN="Move to display" 
+        JP="Move to display" 
+        RU="Move to display" />
+  
+  <Item No="MoveTo" CH="移动到字段" 
+        B5="移动到字段" 
+        EN="Move to the field" JP="Move to the field" RU="Move to the field" />
+  <Item No="WinCardW" CH="弹出窗口宽度" B5="弹出窗口宽度" EN="Pop-up window width" JP="Pop-up window width" RU="Pop-up window width" />
+  <Item No="WinCardH" CH="弹出窗口高度" B5="弹出窗口高度" EN="Pop-up height" JP="Pop-up height" RU="Pop-up height" />
+
+  <Item No="EditerType" CH="大块文本编辑器" B5="大块文本编辑器" EN="Bulk Text Editor" JP="Bulk Text Editor" RU="Bulk Text Editor" />
+
+
+  <!-- 设计器 -->
+  <Item No="CtlShowWay" CH="呈现方式" B5="Presentation" EN="Presentation" JP="Presentation" RU="Presentation" />
+
+
+  <!--  Batch.aspx -->
+  <Item No="ExpImp" CH="导入/导出" B5="Exp/Imp" EN="Exp/Imp" JP="Exp/Imp" RU="Exp/Imp" />
+  <Item No="Exp2Excel" CH="导出全部数据到Excel"
+        B5="Exp/Imp" 
+        EN="Export all data to Excel" 
+        JP="Export all data to Excel" RU="Export all data to Excel" />
+
+  <Item No="DoImp" CH="执行数据导入" B5="执行数据导入" EN="Executive data import" JP="Executive data import" RU="Executive data import" />
+  <Item No="DoImpD" CH="按照固定的格式从Excel中导入数据。" B5="按照固定的格式从Excel中导入数据。" 
+        EN="According to a fixed format to import data from Excel." 
+        JP="According to a fixed format to import data from Excel." 
+        RU="According to a fixed format to import data from Excel." />
+
+
+
+   
+
+  <Item No="PageKey" CH="翻页键" B5="PageKey" EN="Page Key" JP="PageKey" RU="PageKey" />
+
+  <Item No="BaseSet" CH="基本设置" B5="基本设置" EN="BaseSet" JP="BaseSet" RU="BaseSet" />
+  <Item No="AdvSet" CH="高级设置" B5="高级设置" EN="AdvSet" JP="AdvSet" RU="AdvSet" />
+
+
+  <Item No="Row2" CH="跨两列显示" EN="Two columns" JP="Displayed across two columns" RU="Displayed across two columns" />
+  <Item No="Row1" CH="整行显示" EN="Full size" JP="Full line shows" RU="Full line shows" />
+
+   
+  <Item No="Sum" CH="合计" EN="Sum" JP="トータル" RU="Всего" />
+  <Item No="PlsChoseLang" CH="请选择系统支持的语言" EN="Select language" JP="してください言語システムのサポートを選択する" 
+        RU="Пожалуйста, выберите язык, система поддержки" />
+
+  <Item No="UserName" CH="用户名" EN="User Name" JP="ユーザー名" RU="Имя пользователя" />
+
+  <Item No="Login" CH="登陆" EN="Login" JP="ログイン" RU="Войти" />
+  <Item No="PassWord" CH="密码" EN="Password" JP="パスワード" RU="Пароль" />
+  <Item No="CC" CH="抄送" EN="CC" JP="CC" RU="CC" />
+
+  <Item No="IsEnable" CH="是否启用" EN="Enabled" JP="IsEnable" RU="IsEnable" />
+  <Item No="NoSelectGroupData" CH="您没有选择分析的数据"
+        EN="No data selected for analysis" 
+        JP="NoSelectGroupData" RU="NoSelectGroupData" />
+
+
+  <Item No="ForSum" CH="求合" EN="Summarize" JP="すべて" RU="Для всех" />
+  <Item No="ForAvg" CH="求平均" EN="Average" JP="の平均は" RU="В среднем" />
+  <Item No="TableGrade" CH="表格" EN="Table" JP="フォーム" RU="Форма" />
+  <Item No="Histogram" CH="柱状图" EN="Histogram Chart" JP="ヒストグラム" RU="Гистограмма" />
+  <Item No="Pie" CH="丙图" EN="Pie Chart" JP="図C" RU="Рисунок C" />
+  <Item No="Line" CH="折线图" EN="Line Chart" JP="折れ線グラフ" RU="Ломаная линия графика" />
+  <Item No="CrrMonth" CH="本月" EN="This Month" JP="今月" RU="В этом месяце&#xD;&#xA;" />
+  <Item No="Amount" CH="累计" EN="Subtotal" JP="積" RU="Накопительное" />
+  <Item No="OrderCondErr" CH="@您选择的排序条件不在分析项目的范围内。@请更改排序方式，或者选择分析范围。" 
+        EN="@ The sort criteria is out of the data analysis scope. @ Please change the sort criteria or the scope of analysis."
+        JP="@あなたはプロジェクトの範囲内での状況を分析することはないの順序を選択してください。 @詳しくはソート順、または選択した範囲の分析を変更します。" 
+    RU="@ Вы решите не анализировать порядок условий в рамках данного проекта. @ Изменить порядок сортировки или анализа сферы выбора." />
+</NewDataSet>

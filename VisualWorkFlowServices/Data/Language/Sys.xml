@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="NY" CH="年月" RU="Годы" EN="Years" JP="年月" />
+  <Item No="YF" CH="月份" RU="Месяц" EN="Month" JP="月" />
+  <Item No="ND" CH="年度" RU="Ежегодный" EN="Annual" JP="年間" />
+  <Item No="NYR" CH="年月日" RU="Свидание" EN="Date" JP="日付&#xD;&#xA;" />
+  <Item No="Day" CH="日" RU="Япония" EN="Day" JP="  日本 " />
+  <Item No="Pass" CH="密码" RU="Пароль" EN="Password" JP="パスワード" />
+  <Item No="Key" CH="关键字" RU="Ключевое слово" EN="Keyword" JP="キーワード" />
+  <Item No="OrderDesc" CH="降序" RU="По убыванию" EN="Descending" JP="降順" />
+  <Item No="OrderDescDef" CH="升序" RU="Восхождение" EN="Ascending" JP="昇順" />
+  <Item No="TanksForYouChose" CH="感谢您选择" RU="Благодарим вас за выбор" EN="Thank you for choosing" JP="をご利用いただきありがとうございます" />
+</NewDataSet>

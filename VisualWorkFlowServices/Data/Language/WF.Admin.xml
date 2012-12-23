@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- cond.aspx  NewFlowView -->
+  <Item No="NewView" CH="新建视图" RU="Новый взгляд" EN="New view" JP="新しい表示&#xD;&#xA;" />
+  <Item No="CondDesign" CH="条件设计" RU="Дизайн условия" EN="Design conditions" JP="設計条件" />
+  <Item No="NodeC" CH="节点完成条件" RU="Узел завершить условия" EN="Node to complete the conditions" JP="ノードの条件を完了するには&#xD;&#xA;" />
+  <Item No="FlowC" CH="流程完成条件" RU="Процесс завершить условия" EN="Process to complete the conditions " JP="プロセスの条件を完了するには&#xD;&#xA;" />
+  <!-- action.aspx -->
+  <Item No="NodeAction" CH="事件接口" RU="Событие интерфейс" EN="Event interface" JP="イベントインターフェイス" />
+  <Item No="WhenNodeSave" CH="当保存节点时" RU="Экономьте время, когда узел" EN="When the preservation of the node" JP="ノードが時間を節約" />
+  <Item No="WhenNodeSend" CH="当发送时" RU="Когда отправлено" EN="When sent" JP="送信時" />
+  <Item No="WhenNodeSendOK" CH="当发送成功时" RU="При успешной отправке" EN="When sending successful" JP="成功時の送信" />
+  <Item No="WhenNodeSendErr" CH="当发送失败时" RU="Если сообщение не удалось" EN="When sending fails" JP="送信時に失敗する" />
+  <Item No="BookTemplate" CH="文书模板" RU="Документ шаблоны" EN="Instrument templates" JP="音源のテンプレート" />
+  <Item No="BookTemplateD" CH="选择本地模板上传" RU="Из шаблонов для выбора местных" EN="From templates to choose local" JP="テンプレートから選ぶことローカル" />
+  <Item No="WaringRtf" CH="必须是 rtf 格式的 才能被识别。" RU="RTF-формате необходимо, чтобы быть идентифицированы." EN="Rtf format must be in order to be identified." JP="RTF形式で識別する必要があります" />
+  <Item No="NodeBookDesign" CH="节点文书设计" RU="Инструмент разработки узла" EN="Instrument design node&#xD;&#xA;" JP="機器設計のノード" />
+  <Item No="BookMang" CH="文书管理" RU="Управление документооборотом" EN="Document management" JP="文書管理" />
+  <Item No="DownTemplate" CH="模板下载" RU="Скачать шаблон" EN="Template Download" JP="テンプレートをダウンロードする" />
+  <Item No="Test" CH="测试" RU="Проверка" EN="Test" JP="試験" />
+  <!-- FAppSet.aspx -->
+  <Item No="FAppSet" CH="调用外部程序接口" RU="Внешние процедуры вызова интерфейса" EN="External procedure call interface" JP="外部プロシージャコールのインターフェイス" />
+  <Item No="InvoType" CH="调用类型" RU="Звоните типа" EN="Call type" JP="請求のタイプ" />
+  <Item No="InvoWhen" CH="调用时间" RU="Вызов времени" EN="Call time" JP="通話時間" />
+  <Item No="ShowName" CH="显示名称" RU="Отображаемое имя" EN="Display Name" JP="ハンドルネーム" />
+  <Item No="DoWhat" CH="执行内容" RU="Реализация содержания" EN="The implementation of the contents " JP="の内容の実施" />
+  <Item No="NewRpt" CH="新建报表" RU="Новые заявления" EN="New statements" JP="新しいステートメント" />
+  <Item No="StaRight" CH="岗位访问权限" RU="Доступ статус" EN="Access status" JP="アクセス状況" />
+  <Item No="EmpRight" CH="人员访问权限" RU="Сотрудники доступа" EN="Staff access" JP="スタッフアクセス" />
+  <Item No="FlowView" CH="流程视图" RU="Процесс просмотра" EN="Flow view" JP="プロセスの表示" />
+  <Item No="RptName" CH="报表名称" RU="Заявление имя" EN="Statement name" JP="ステートメント名&#xD;&#xA;" />
+  <!-- WFRptD.aspx -->
+  <Item No="Order" CH="排序" RU="Сортировка" EN="Sort" JP="並べ替え" />
+  <Item No="FieldName" CH="字段中文名称" RU="Русское название области" EN="Field label" JP="中国語の名前フィールド" />
+  <Item No="FieldEName" CH="字段英文名称" RU="Английское название области" EN="English name field" JP="英語名のフィールド" />
+  <Item No="DefSearchFK" CH="定义查询条件" RU="Запрос определение" EN="Query definition" JP="クエリの定義" />
+  <Item No="DNode" CH="节点设计" RU="Узел дизайн" EN="Node design" JP="ノードの設計" />
+  <Item No="ForFJ" CH="请保存后上传附件" RU="Пожалуйста, сохраните приложения после загрузки" EN="Please fill in the annex to save" JP="別館に保存して記入してください" />
+  <Item No="ForDtl1" CH="请保存后填写明细" RU="Пожалуйста, заполните детали после сохранения" EN="Please fill out the details after the preservation" JP="詳しくは保存した後、詳細に記入する" />
+  <Item No="W1" CH="提示：在设计状态下才有此功能。" RU="Подсказка: в разработке государственной имеют данную функцию." EN="Tip: in the design of state have this feature." JP="ヒント：国家の設計でこの機能があります。" />
+  <Item No="DealEmp" CH="处理人" RU="Сделка с" EN="Deal with&#xD;&#xA;" JP="対処する" />
+  <Item No="WFRpt1" CH="结束，现在历经如下步骤,详细报告如下:" RU="За она имеет следующие шаги, подробный отчет в следующем:" EN="Over, it has the following steps, a detailed report is as follows:" JP="  以上、それは次の手順を、詳細なレポートは以下のようにしています： " />
+  <Item No="WFRpt0" CH="当前操作人员:" RU="В настоящее время операторы:" EN="The current operators:" JP="以上、それは次の手順を、詳細なレポートは以下のようにしています：" />
+  <Item No="FlowCheckInfo" CH="流程检查信息:" RU="Процесс проверки информации:" EN="Process check information:" JP="プロセスを確認情報：" />
+  <Item No="FlowDesc" CH="流程描述:" RU="Описание процесса:" EN="Process Description:" JP="プロセスの説明：" />
+  <Item No="Info" CH="信息" RU="Информация" EN="Information" JP="情報" />
+  <Item No="Step" CH="步骤" RU="Шаги" EN="Step " JP="手順" />
+  <Item No="FlowDRpt" CH="流程设计文档" RU="Процесс разработки документа" EN="Process Design Document" JP="プロセス設計書" />
+
+    <Item No="GenerFlowTemplate" CH="生成流程模版" RU="Процесс разработки документа" EN="Build process template" JP="プロセス設計書" />
+    
+</NewDataSet>

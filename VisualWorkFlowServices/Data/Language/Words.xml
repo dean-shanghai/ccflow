@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="QJ" CH="期间" RU="В течение" EN="During" JP="〜の間" />
+  <Item No="State" CH="状态" RU="Государство" EN="State" JP="状態" />
+  <Item No="Desc" CH="描述" RU="Описание" EN="Desc" JP="説明" />
+  <Item No="Input" CH="输入" RU="Введите" EN="Input" JP="入力" />
+  <Item No="FlowDirSearch" CH="流程方向查询" RU="Поток направление расследования" EN="Flow direction of inquiry" JP="問い合わせの流れの方向" />
+  <Item No="RDT" CH="记录日期" RU="Запись Дата" EN="RDT" JP="基準日" />
+  <Item No="CDT" CH="完成日期" RU="Срок сдачи" EN="CDT" JP="完成日" />
+  <Item No="CurrentNode" CH="当前节点" RU="Текущий узел" EN="Current node" JP="現在のノード" />
+  <Item No="Url" CH="连接" RU="Подсоедините" EN="Url" JP="接続" />
+  <Item No="FlowRepare" CH="流程修复" RU="Процесс ремонта" EN="Repair Process" JP="修復処理" />
+  <Item No="CrrStopNode" CH="当前停留工作节点" RU="Остановка работы текущего узла" EN="Stop the work of the current node" JP="現在のノードの動作を停止" />
+  <Item No="Book" CH="文书" RU="Инструменты" EN="Book" JP="楽器" />
+</NewDataSet>

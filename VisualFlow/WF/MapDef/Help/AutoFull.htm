@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>关于自动填写</title>
+</head>
+<body>
+    <strong>什么是自动填写？<br />
+    </strong>&nbsp; &nbsp; &nbsp;&nbsp;
+    <br />
+    &nbsp; &nbsp; &nbsp;&nbsp; 自动填写是一个字段的值是是从外部数据获取的，或者本实体中多个属性计算得来的。下面以应用案例说明问题。<br />
+    &nbsp; &nbsp; &nbsp;<br />
+    <span style="color: #003399">&nbsp;&nbsp; &nbsp;&nbsp;</span><strong><span style="color: #ccccff"><span
+        style="color: #003399"> 应用案例1：</span></span></strong> 我们为一个公司的销售设计一个流程。销售人员的启动流程是由主表与从表构成的。主表里有如下字段。<br />
+    <br />
+    &nbsp; &nbsp; &nbsp;节点表（主表）部分字段：<br />
+    &nbsp; &nbsp; 客户编号FK_Cust &nbsp;&nbsp; 客户名称CustName(只读) &nbsp;&nbsp; 客户地址CustAddr(只读)
+    &nbsp; &nbsp; &nbsp;&nbsp; 总金额ZJE(只读)<br />
+    <br />
+    &nbsp; &nbsp; &nbsp; 发货从表（从表）部分字段：<br />
+    &nbsp; &nbsp; &nbsp; 产品FK_Pro &nbsp; 价格Price &nbsp; 订购数量OrderNum&nbsp; &nbsp;金额JE(只读).<br />
+    &nbsp; &nbsp;&nbsp;<br />
+    &nbsp; &nbsp;&nbsp; 首先我们要分析一下主表，当用户输入客户编号时间，客户名称，与客户地址，都是可以自动填写的，设置如下：<br />
+    &nbsp;&nbsp;
+    <br />
+    &nbsp; &nbsp; &nbsp;&nbsp; 客户名称CustName ：&nbsp; <span style="color: #000099"><strong>
+        " SELECT NAME FROM CU_CUST WHERE NO=@FK_Cust "<br />
+    </strong><span><strong>&nbsp; &nbsp; &nbsp;&nbsp; 客户地址CustAddr：</strong>&nbsp; <strong>
+        " SELECT Addr FROM CU_CUST WHERE NO=@FK_Cust "<br />
+    </strong><span style="color: #000000">&nbsp; &nbsp; &nbsp;&nbsp; 总金额ZJE： </span><strong>
+        <span style="color: #000099">" SELECT Sum(JE) FROM ND0101Dtl WHERE FK_NodeID=@OID"</span><br />
+    </strong></span>
+        <br />
+    </span>&nbsp; &nbsp;&nbsp; 其次我们在分析从表：从表的金额=单价*数量 。 数据来源于同一行业记录（同一个实体），设置规则如下。<br />
+    &nbsp; &nbsp; &nbsp; 金额 ： &nbsp;<span style="color: #330066"><strong><span style="color: #000099">@Price*
+        @OrderNum<br />
+        <br />
+        &nbsp; &nbsp; </span>
+    </strong></span>&nbsp;&nbsp;<br />
+    <strong>如何设置自动填写功能？<br />
+    </strong>&nbsp;&nbsp;<br />
+    &nbsp; &nbsp; &nbsp; 由以上案例来说，自动填充表达方式为从外部数据源获取，可以用sql 描述。对于同一个行记录（同一个实体）的可以用“@”+字段名称表示。
+    比如设计金额(JE) 自动填写表达式为 &nbsp; @Price*@OrderNum .
+    <br />
+    <br />
+    <br />
+    <strong>什么时间出发自动填写功能？<br />
+    </strong>&nbsp; &nbsp; &nbsp; &nbsp;
+    <br />
+    &nbsp; &nbsp; &nbsp; &nbsp; 对于数值的计算采用Javasrcip 完成的，用户输入就发生了，比如设置金额=数量*单价。 对于sql
+    的表达式需要出发保存事件完成。<br />
+    <br />
+    <strong>其它：<br />
+    </strong>
+    <br />
+    &nbsp; &nbsp; &nbsp;流程引擎为您提供的这些功能仅为您提供处理简单的业务逻辑，复杂的业务逻辑您可以在节点事件里完成。关于<a href='NodeAction.htm' >节点事件</a>更多的信息。<br />
+    &nbsp; &nbsp; &nbsp;
+    <br />
+    <br />
+    <br />
+
+</body>
+</html>

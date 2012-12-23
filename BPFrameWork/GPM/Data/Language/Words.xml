@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="QJ" B5=""  CH="期间" RU="В течение" EN="Duration" JP="〜の間"  UG=""  />
+  <Item No="State" CH="状态" RU="Государство" EN="State" JP="状態" />
+  <Item No="Desc" CH="描述" RU="Описание" EN="Description" JP="説明" />
+  <Item No="Input" CH="输入" RU="Введите" EN="Input" JP="入力" />
+  <Item No="FlowDirSearch" CH="流程方向查询" RU="Поток направление расследования" EN="Flow direction inquiry" JP="問い合わせの流れの方向" />
+  <Item No="RDT" CH="记录日期" RU="Запись Дата" EN="Recorded Date" JP="基準日" />
+  <Item No="CDT" CH="完成日期" RU="Срок сдачи" EN="Complete Date" JP="完成日" />
+  <Item No="CurrentNode" CH="当前节点" RU="Текущий узел" EN="Current node" JP="現在のノード" />
+  <Item No="Url" CH="连接" RU="Подсоедините" EN="Url" JP="接続" />
+  <Item No="FlowRepare" CH="流程修复" RU="Процесс ремонта" EN="Repair Flow" JP="修復処理" />
+  <Item No="CrrStopNode" CH="当前停留工作节点" RU="Остановка работы текущего узла" EN="Current work node" JP="現在のノードの動作を停止" />
+  <Item No="Bill" CH="单据" RU="Инструменты" EN="Document" JP="楽器" />
+  <Item No="Mouse" CH="鼠标" RU="Mouse" EN="Pointer" JP="Mouse" />
+  <Item No="FX" CH="分析" RU="Analysis" EN="Analysis" JP="Analysis" />
+  <Item No="Complete" CH="完成"  EN="Complete" JP="Complete" RU="完成" />
+  <Item No="Return" CH="退出"  EN="Return" JP="Return" RU="Return" />
+
+    <Item No="W0" CH="周日"  EN="Sunday" JP="Sunday" RU="Sunday" />
+    <Item No="W1" CH="周一"  EN="Monday" JP="Monday" RU="Monday" />
+    <Item No="W2" CH="周二"  EN="Tuesday" JP="Tuesday" RU="Tuesday" />
+    <Item No="W3" CH="周三"  EN="Wednesday" JP="Wednesday" RU="Wednesday" />
+    <Item No="W4" CH="周四"  EN="Thursday" JP="Thursday" RU="Thursday" />
+    <Item No="W5" CH="周五"  EN="Friday" JP="Friday" RU="Friday" />
+    <Item No="W6" CH="周六"  EN="Saturday" JP="Saturday" RU="Saturday" />
+</NewDataSet>

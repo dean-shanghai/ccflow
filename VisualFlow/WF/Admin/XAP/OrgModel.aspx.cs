@@ -1,0 +1,17 @@
+﻿using System;
+using System.Data;
+using System.Collections.Generic;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using BP.Port;
+using BP.Sys;
+using BP.DA;
+using BP.WF;
+
+public partial class OrgModel : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+    }
+}

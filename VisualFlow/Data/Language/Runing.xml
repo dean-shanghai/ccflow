@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="OnTheWayWork" B5=""  CH="在途工作" RU="Работа в пути" EN="Works in transit" JP="この方法で作業"  UG=""  />
+  <Item No="CurrNode" CH="当前节点" RU="Текущий узел" EN="Current node" JP="現在のノード" />
+  <Item No="StartDate" CH="发起日期" RU="Дата начала" EN="Date started" JP="日打ち上げ" />
+  <Item No="Starter" CH="发起人" RU="Спонсор" EN="Sponsor" JP="スポンサー" />
+  <Item No="BNY" CH="隶属年月" RU="По дате" EN="Belongs to Year/Month" JP="日の下で" />
+</NewDataSet>

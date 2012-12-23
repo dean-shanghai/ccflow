@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <Item No="IsFJ" CH="是否允许传递附件" EN="Whether to allow transmission of Annex" JP="附属書の送信を許可するかどうか" RU="Следует ли разрешить передачу Приложения" />
+  <Item No="DesignCheckRpt" CH="设计检查报告" EN="Design inspection report" JP="設計検査報告書" RU="Дизайн доклад об инспекции" />
+  <Item No="ViewDef" CH="定义视图" EN="View definition" JP="カスタムビュー" RU="Пользовательский режим просмотра" />
+  <Item No="RptRun" CH="运行报表" EN="Run statement" JP="実行ステートメント" RU="Запуск заявление" />
+  <Item No="FlowDataOut" CH="定义数据转出" EN="Definition of data transferred" JP="データの定義を転送" RU="Определение данных, переданных" />
+  <Item No="ErrEmpNull" CH="产生人员集合为空" EN="Staff collection is empty" JP="のスタッフを収集しているが空です" RU="Есть сотрудников коллекция пуста" />
+  <Item No="WN1" CH="未按期完成工作" EN="Did not complete its work on schedule" JP="スケジュールで、その作業が完了していない" RU="Не завершил свою работу по расписанию" />
+  <Item No="WN2" CH="管理员没有给节点设置工作岗位。节点名称：" EN="Admin Didn't Set Station For This Node。Node Name Is " JP="  ノードマネージャの動作するように設定されていません。ノード名： " RU="Узел менеджер не создана для работы. Имя узла:" />
+  <Item No="WN3" CH="维护错误，请检查维护的岗位中是否有人员？节点：" EN="Maintenance error, please check whether the maintenance of the status of personnel? Node:" JP="メンテナンスのエラーかどうかを確認してください。要員の地位の維持か？ノード：&#xD;&#xA;" RU="Поддержание ошибку, пожалуйста, будь то сохранение статус персонала? Узел:" />
+  <Item No="WN4" CH="接受人员列表为空" RU="Согласен сотрудники список пуст" EN="Accept the staff list is empty" JP="スタッフ一覧を受け入れる空です" />
+  <Item No="WN5" CH="生成文书失败，请让管理员检查目录设置" EN="Generation instrument failure, please check the directory allows administrators to set up" JP="発生器の障害は、管理者は、ディレクトリの設定を確認してお知らせください。" RU="Генерация документа провал, пожалуйста, каталог позволяет администраторам создавать" />
+  <Item No="WN6" CH="当前工作{0}已经完成" EN="current work{0} has been completed" JP="{0}現在の作業を完了されている&#xD;&#xA;" RU="{0}екущая работа была завершена" />
+  <Item No="WN7" CH="@当前工作{0}没有完成,下一步工作不能启动." EN="@Current work{0} not completed, the next step could not be activated." JP="@ {0}現在の作業を完了できない場合、次の手順を活性化されませんでした。" RU="@ {0} текущая работа не завершена, то следующий шаг не может быть активирован." />
+  <Item No="WN8" CH="@判断节点{0}完成条件出现错误." EN="@Node{0} to determine the completion of an error condition." JP="@ノード{0}エラー条件の完了を確認してください。" RU="@ Узла {0}, чтобы определить завершения ошибку состоянии." />
+  <Item No="WN9" CH="@判断流程{0}完成条件出现错误." EN="@Flow{0} to determine the completion of an error condition." JP="@ {0}は、プロセスのエラー条件の完了を確認してください。" RU="@ Поток {0}, чтобы определить завершения ошибку состоянии." />
+  <Item No="WN0" CH="此工作流程运行到最后一个环节，工作成功结束！" EN="This workflow is running to the last link in the successful conclusion of the work!" JP="このワークフローは、作品の成功の結論の最後のリンクを実行している！" RU="Этот рабочий работает до последнего звена в успешное завершение работы!" />
+  <Item No="WN10" CH="@定义节点的方向条件错误:没有给从{0}节点到{1},定义转向条件." EN="@ The direction of the conditions of the definition of node error: not given from the node{0} to node{1}, the definition of shift conditions." JP="ノードエラーの定義の条件の方向@ ： {0} {1}からのノード、シフト条件の定義。&#xD;&#xA;" RU="@ Направление условия определения узла ошибка: нет узла с {0} {1}, определение смены условий." />
+  <Item No="WN11" CH="@转向条件设置错误:节点名称{0}, 系统无法投递。" EN="@ Shift conditions set error: node name{0}, the system can not be delivered." JP="@シフト条件エラー設定：ノード名{0} 、システムを配信することはできません。&#xD;&#xA;" RU="@ Shift условия, ошибка: имя узла {0}, система не может быть доставлено." />
+  <Item No="WN12" CH="审核工作成功启动" EN="The successful launch of audit" JP="監査の打ち上げ成功&#xD;&#xA;" RU="Успешный запуск аудит" />
+  <Item No="WN13" CH="启动审核节点任务失败" EN="Node failure of audit tasks to start" JP="監査の仕事のノードの障害を開始する" RU="Узел невыполнение задач, аудит, чтобы начать" />
+  <Item No="WN14" CH="此节点是开始节点,没有上一步工作" EN="Node is the beginning of this node, the step does not work" JP="  このノードの最初のノードではなく、前のステップの作品です。 " RU="Узел начале этого узла, шаг не работает" />
+  <Item No="WN15" CH="没有找到他的上一步工作,系统错误。请通知管理员来处理，请上让上一步同事撤消发送、或者用本区县管理员用户登陆=》待办工作=》流程查询=》在关键字中输入Workid其它条件选择全部，查询到该流程删除它。" RU="Не нашли свою работу на шаг, то системная ошибка. Пожалуйста, сообщите администратору заниматься, дайте моим коллегам снять предыдущий шаг для отправки или посетить район администратора пользователь = &quot;сделать работу =&quot; Процесс запроса = &quot;введите ключевое слово выбора Workid все другие условия, запросы к процесс, чтобы удалить его." EN="Did not find his work on the step, the system error. Please notify an administrator to deal with, please let my colleagues to withdraw the previous step to send, or visit the district administrator user = &quot;to do the work =&quot; Process query = &quot;type in the keyword selection Workid all other conditions, inquiries to the process to remove it." JP="と、システムエラーは、ステップに彼の作品が見つかりませんでした。以下に対処するため、私の同僚の送信には、前のステップ、または= &quot; = &quot;他のすべての条件をWorkidキーワード選定に= &quot;型のプロセスのクエリは、作業を行うには、地域管理者ユーザーにアクセスを撤回して、管理者に通知すると、上でお問い合わせプロセスを削除してください" />
+  <Item No="WN16" CH="此节点的工作任务还没有完成,没有下一步工作" RU="Задачи этого узла до сих пор не завершено, никаких дальнейших работ" EN="Tasks of this node has not yet been completed, no further work" JP="このノードのタスクには、それ以上の作業を完了していない&#xD;&#xA;搜索" />
+  <Item No="WN17" CH="@此节点是结束节点,没有下一步工作." RU="@ В конце этого узла является узел, а не путь вперед." EN="@ The end of this node is the node, not the way forward." JP="@このノードの最後のノードではなく、今後進むべき道だ。" />
+  <Item No="WN18" CH="@节点{0},没有岗位." RU=" @ Узла {0}, нет поста. " EN="@ Node {0}, there is no post." JP="@ノード{0} 、ポストがないです。" />
+  <Item No="StartNextNodeErr" CH="启动下一下节点出错" EN="Click to start the next node error" JP="次のノードをクリックしてエラーを開始する" RU="Нажмите кнопку, чтобы начать следующий узел ошибке" />
+  <Item No="AllotWork" CH="分配工作" EN="Allocation of work" JP="仕事の割り当て&#xD;&#xA;" RU="Распределение работы" />
+  <Item No="TaskAutoSendTo" CH="@任务自动下达给{0}如下{1}位同事,{2}." EN="@ Task automatically issued to {0} as follows colleagues {1}, {2}." JP="ノード{0}の通常の作業を開始@失敗しました。" RU="@ Целевая автоматически выдаваться {0}, а именно коллег {1}, {2}." />
+  <Item No="CheckNoteD" CH="审批意见如下：" EN="Approval as follows" JP="は、次のビューの承認：" RU="Утверждение следующие мнения:" />
+  <Item No="SaveWorkErr" CH="保存下一个工作期间出现错误" EN="Preserved during the next error" JP="次のエラー時に保持&#xD;&#xA;搜索" RU="Консервированные в ходе следующей ошибке" />
+  <Item No="NStep" CH="@第{0}步" RU="@ Статье {0} шаг за шагом" EN="@NO:{0}Step" JP="@記事{0}ステップバイステップ" />
+  <Item No="WorkStartOK" CH="工作成功启动" RU="Работа успешного запуска" EN="The work of the successful launch" JP="打ち上げは成功の仕事" />
+  <Item No="StartGEWorkErr" CH="@启动普通工作节点{0}失败。" EN="@ Start the ordinary work of the node {0} failed" JP="ノード{0}の通常の作業を開始@失敗しました。&#xD;&#xA;" RU="@ Пуск обычной работы узлов {0} провалились." />
+  <Item No="ReturnRec" CH="退回记录" RU="Вернуться записи" EN="Return record" JP="復帰記録&#xD;&#xA;" />
+  <Item No="WF0" CH="工作流程定义错误,没有找到能够执行此项工作的人员.相关信息:" RU="Рабочее определение ошибку, не нашел для выполнения этой работы." EN="Workflow definition of error, not found to carry out this work." JP="エラーのワークフローの定義が見つかりませんこの作業を実施する。情報：" />
+  <Item No="WF1" CH="删除工作流程" RU="Чтобы удалить с рабочего" EN="Delete the workflow" JP="ワークフローを削除するには" />
+  <Item No="WF2" CH="工作流程{0}已经完成。" RU="Workflow {0}, было завершено." EN="Workflow {0} has been completed" JP="ワークフロー{0}を完了している。" />
+  <Item No="WF3" CH="没有找到当前的工作节点的数据，流程出现未知的异常。" RU="В настоящее время работы не найти данные узла, процесс неизвестных аномалия появляется." EN="The current work did not find the data node, process the unknown anomaly appears." JP="現在の仕事は、データノードのプロセスでは、未知の異常を見つけられませんでしたが表示されます。" />
+  <Item No="WF5" CH="工作流程{0},{1}任务完成。" RU="Workflow {0}, {1} для завершения задания." EN="Workflow {0}, {1} to complete the task" JP="ワークフロー{0} 、 {1}のタスクを完了します。" />
+  <Item No="WF6" CH="您不能执行撤消发送，因为当前工作不是您发送的。" RU="Вы не можете отправить Исполнительный снять, поскольку в настоящее время работы не то, что вы послали." EN="You can not send the Executive to withdraw because of the current work is not what you sent." JP="現在の仕事のために撤退することができない場合は、役員を送る送信されていません。" />
+  <Item No="WF7" CH="工作{0}被您撤消成功，您可以点这里" RU="Работа {0} успешно вывести вас, вы можете точку здесь" EN="The work of {0} was successful you withdraw, you can point here" JP="{0}の動作に成功したと、ここで指定できます" />
+  <Item No="Already" CH="已经" RU="Уже" EN="Already" JP="すでに" />
+  <Item No="UnOvFlow" CH="未完成流程" RU="Незавершенные процесс" EN="Unfinished process" JP="未完のプロセス" />
+  <Item No="FlowSelfTest" CH="流程自测" RU="Процесс самоопределения --" EN="Process of selftesting" JP="プロセスの自己-" />
+  <Item No="WFState" CH="流程状态" RU="Процесс статус" EN="Fllow state" JP="処理の進行状況" />
+  <Item No="Done" CH="执行" RU="Исполнять" EN="Done" JP="実施する" />
+  <Item No="Work" CH="工作" RU="Работа" EN="Work" JP="  働く " />
+  <Item No="From" CH="从" RU="От" EN="From" JP="から" />
+  <Item No="WorkStep" CH="工作步骤" RU="Рабочая шаги" EN="Work Step" JP="作業手順&#xD;&#xA;" />
+  <Item No="FlowDelOK" CH="流程删除成功" RU="Успех этого процесса, чтобы удалить" EN="Success of the process to delete" JP="このプロセスの成功を削除する" />
+  <Item No="CHTableDesc" CH="审核人、审核意见、审核时间" RU="Аудит и аудиторские заключения, в период проверки" EN="Audit, and audit opinions, the vetting period." JP="監査は、監査意見は、 vetting期間" />
+  <Item No="NoSetSta" CH="没有设置岗位" RU="Статус не установлен" EN="Status not set" JP="状態は設定" />
+  <Item No="F0" CH="岗位人员设置错误：虽然您设置了岗位，但是岗位上没有相关人员执行，流程到此步骤不能正常运行，请在用户维护里维护岗位。" RU="Сообщений созданы неправильно: Хотя вы установите должности, должности, но не имеют соответствующих должностных лиц при исполнении, процесс не может быть нормального функционирования этого шага, пожалуйста, содержание в поддержании пользователь должностей." EN="Posts set up wrong: Although you set the posts, but posts do not have the relevant officers in the execution of, process can not be the normal operation of this step, please maintenance in the maintenance of user posts." JP="間違った設定を投稿：この場合、記事を設定するが、投稿の執行役員の関連がない場合は、プロセスは、このステップの正常な動作は、ユーザー投稿のメンテナンスで維持することはできません。&#xD;&#xA;搜索" />
+  <Item No="F1" CH="本节点可执行的工作人员如下" RU="Сотрудники исполняемый узла заключается в следующем" EN="The staff of the executable node is as follows" JP="は、実行可能なノードのスタッフは次のとおりです：" />
+  <Item No="NodeWorkType" CH="节点类型" EN="Node type" JP="ノードタイプ" RU="Тип узла" />
+  <Item No="WorkBack" CH="工作退回" RU="Вернуться к работе" EN="Back to work" JP="仕事に戻る&#xD;&#xA;" />
+  <Item No="WReInfo" CH="@任务被你成功退回到【{0}】，退回给【{1}】。" RU="@ Задачей является успешное возвращение на свой 【{0}】 , вернулась в 【{1}】 ." EN="@ Task was the successful return to your {0}, returned to the {1}." JP="@タスクを（ 0に成功したリターン） 】 【 、された【 】 {1}に戻った" />
+  <Item No="WBackInfo" 
+        CH="{0}同志: &#xD;&#xA;&#xD;&#xA;   您在{1}处理的“{2}”工作有错误，需要您重新办理． &#xD;&#xA;&#xD;&#xA;此致!!!   &#xD;&#xA;   {3}" 
+    RU="{0}, товарищ: &#xD;&#xA;&#xD;&#xA;    Вы имеете дело с {1} &quot;{2}&quot; Работа ошибку, необходимость в повторной регистрации. &#xD;&#xA;&#xD;&#xA;С уважением!!! &#xD;&#xA;    {3}&#xD;&#xA;" 
+    EN="{0}, Comrade: &#xD;&#xA;&#xD;&#xA;    You deal with {1} , {2} work of error, the need for re-registration you. &#xD;&#xA;&#xD;&#xA;Sincerely!!! &#xD;&#xA;    {3}" 
+    JP="{0} 、同志： &#xD;&#xA;&#xD;&#xA;    {1} &quot; {2} &quot;とするエラーの対処作業の必要性を再登録します。 &#xD;&#xA;&#xD;&#xA;よろしくお願い申し上げます！ &#xD;&#xA;    {3}&#xD;&#xA;" />
+</NewDataSet>

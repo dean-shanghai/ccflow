@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" standalone="yes" ?>
+<NewDataSet>
+	<!-- 外部连接配置说明  No, 部门编号，URL 对方sqlserver 的连接。  -->
+  <WatchDog No="Runing" CH="正常流程"/>
+  <WatchDog No="Warning" CH="预警流程"/>
+  <WatchDog No="OutTime" CH="逾期流程"/>
+  <WatchDog No="History" CH="归档流程"/>
+</NewDataSet>

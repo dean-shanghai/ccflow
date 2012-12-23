@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCFlowServices", "CCFlowServices.csproj", "{6E005D96-857E-4FD3-BF33-D1413769F191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP.WFV4", "..\Components\BP.WFV4\BP.WFV4.csproj", "{51C1DADA-1B9A-41CC-B731-FDE1196778F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BP.En30", "..\Components\BP.En30\BP.En30.csproj", "{247F7483-86B3-442E-B8B1-2FCFB432BD75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E005D96-857E-4FD3-BF33-D1413769F191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E005D96-857E-4FD3-BF33-D1413769F191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E005D96-857E-4FD3-BF33-D1413769F191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E005D96-857E-4FD3-BF33-D1413769F191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51C1DADA-1B9A-41CC-B731-FDE1196778F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51C1DADA-1B9A-41CC-B731-FDE1196778F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51C1DADA-1B9A-41CC-B731-FDE1196778F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51C1DADA-1B9A-41CC-B731-FDE1196778F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{247F7483-86B3-442E-B8B1-2FCFB432BD75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{247F7483-86B3-442E-B8B1-2FCFB432BD75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{247F7483-86B3-442E-B8B1-2FCFB432BD75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{247F7483-86B3-442E-B8B1-2FCFB432BD75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

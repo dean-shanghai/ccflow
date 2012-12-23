@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<NewDataSet>
+  <!-- 设计器 -->
+  <Item No="Worker" CH="工作人员" RU="Персонал" EN="Staff" JP="スタッフ" />
+  <Item No="Start" CH="发起" RU="Запускаемых" EN="Launch" JP="上市" />
+</NewDataSet>
