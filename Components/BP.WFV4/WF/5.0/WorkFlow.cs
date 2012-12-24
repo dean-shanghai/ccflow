@@ -159,7 +159,7 @@ namespace BP.WF
                 wn.AddToTrack(ActionType.DeleteFlowByFlag, WebUser.No, WebUser.Name, wn.HisNode.NodeID, wn.HisNode.Name,
                         msg);
 
-                string sql = "UPDATE SET  ND" + int.Parse(this.HisFlow.No) + "Rpt SET WFState="+(int)WFState.Delete+" WHERE OID="+this.WorkID;
+                string sql = "UPDATE ND" + int.Parse(this.HisFlow.No) + "Rpt SET WFState=" + (int)WFState.Delete + " WHERE OID=" + this.WorkID;
                 DBAccess.RunSQL(sql);
             }
             catch (Exception ex)
