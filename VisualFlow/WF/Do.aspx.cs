@@ -245,13 +245,13 @@ namespace BP.Web.WF
                             WorkFlow mwf = new WorkFlow(this.FK_Flow, this.WorkID);
                             str = mwf.DoUnSend();
                             this.Session["info"] = str;
-                            this.Response.Redirect("MyFlowInfo" + Glo.FromPageType + ".aspx?FK_Flow=" + this.FK_Flow + "&WorkID=" + this.WorkID, true);
+                            this.Response.Redirect("MyFlowInfo" + Glo.FromPageType + ".aspx?FK_Flow=" + this.FK_Flow + "&WorkID=" + this.WorkID, false);
                             return;
                         }
                         catch (Exception ex)
                         {
                             this.Session["info"] = "@执行撤消失败。@失败信息" + ex.Message;
-                            this.Response.Redirect("MyFlowInfo" + Glo.FromPageType + ".aspx?FK_Flow=" + this.FK_Flow + "&WorkID=" + this.WorkID + "&FK_Type=warning", true);
+                            this.Response.Redirect("MyFlowInfo" + Glo.FromPageType + ".aspx?FK_Flow=" + this.FK_Flow + "&WorkID=" + this.WorkID + "&FK_Type=warning", false);
                             return;
                         }
                     // this.Response.Redirect("MyFlow.aspx?WorkID=" + this.WorkID + "&FK_Flow=" + this.FK_Flow, true);

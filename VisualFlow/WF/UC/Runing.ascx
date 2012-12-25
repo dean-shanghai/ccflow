@@ -7,11 +7,16 @@
         function UnSend(appPath, pageID, fid, workid, fk_flow) {
             if (window.confirm('您确定要撤销本次发送吗？') == false)
                 return;
-            var url = appPath + '/WF/Do.aspx?DoType=UnSend&FID=' + fid + '&WorkID=' + workid + '&FK_Flow=' + fk_flow;
-            var myVal = window.showModalDialog(url, 'sd', 'dialogHeight: 20px; dialogWidth: 35px;center: yes; help: no');
-            if (myVal == null)
-                return;
-            window.location.href = window.location.href;
+
+            var url = appPath + 'WF/Do.aspx?DoType=UnSend&FID=' + fid + '&WorkID=' + workid + '&FK_Flow=' + fk_flow;
+            window.location.href = url;
+            return;
+
+//            var url = appPath + '/WF/Do.aspx?DoType=UnSend&FID=' + fid + '&WorkID=' + workid + '&FK_Flow=' + fk_flow;
+//            var myVal = window.showModalDialog(url, 'sd', 'dialogHeight: 20px; dialogWidth: 35px;center: yes; help: no');
+//            if (myVal == null)
+//                return;
+//            window.location.href = window.location.href;
         }
         function Press(appPath, fid, workid, fk_flow) {
             var url = appPath+'/WF/WorkOpt/Press.aspx?FID=' + fid + '&WorkID=' + workid + '&FK_Flow=' + fk_flow;
