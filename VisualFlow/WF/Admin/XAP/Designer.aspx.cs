@@ -335,7 +335,7 @@ public partial class Designer : System.Web.UI.Page
                 {
                     sql = "  CREATE  VIEW WF_Track_NYR AS SELECT EmpFrom as FK_Emp,SUBSTR(RDT,0,8) AS FK_NY, SUBSTR(RDT,0,11) AS RDT,  COUNT(*) AS Num FROM  WF_Track GROUP BY EmpFrom ,SUBSTR(RDT,0,8) , SUBSTR(RDT,0,11) ";
                     sql += " UNION ";
-                    sql = "  SELECT EmpFrom as FK_Emp,SUBSTR(RDT,0,8) AS FK_NY, SUBSTR(RDT,0,11) AS RDT,  COUNT(*) AS Num FROM  WF_TrackTemp GROUP BY EmpFrom ,SUBSTR(RDT,0,8) , SUBSTR(RDT,0,11) ";
+                    sql += "  SELECT EmpFrom as FK_Emp,SUBSTR(RDT,0,8) AS FK_NY, SUBSTR(RDT,0,11) AS RDT,  COUNT(*) AS Num FROM  WF_TrackTemp GROUP BY EmpFrom ,SUBSTR(RDT,0,8) , SUBSTR(RDT,0,11) ";
                 }
                 else
                 {
