@@ -850,7 +850,6 @@ public partial class WF_MapDef_UC_MExt : BP.Web.UC.UCBase3
         me.AttrOfOper = attr;
         me.ExtType = MapExtXmlList.AutoFullDLL;
         me.Doc = this.Pub2.GetTextBoxByID("TB_Doc").Text.Replace("'","~");
-
         try
         {
             DataTable dt = BP.DA.DBAccess.RunSQLReturnTable(me.Doc);

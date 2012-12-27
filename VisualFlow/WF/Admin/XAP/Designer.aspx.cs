@@ -170,7 +170,6 @@ public partial class Designer : System.Web.UI.Page
             #region 升级 09-24 增加临时的trackTemp 表.
             TrackTemp tmp = new TrackTemp();
             tmp.CheckPhysicsTable();
-
             #endregion 升级 09-24
 
             #region 升级 07-01
@@ -329,6 +328,7 @@ public partial class Designer : System.Web.UI.Page
                 }
                 catch
                 {
+
                 }
 
                 if (BP.SystemConfig.AppCenterDBType == DBType.Oracle9i)
@@ -458,8 +458,6 @@ public partial class Designer : System.Web.UI.Page
                 rw.CheckPhysicsTable();
             }
             #endregion 升级基础信息。
-
-            
 
             msg = "@登陆时间错误。。";
 

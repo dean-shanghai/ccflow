@@ -525,7 +525,7 @@ public partial class Comm_MapDef_MapDtlDe : WebPage
                         TextBox tbCheck = this.Pub1.GetTextBoxByID("TB_" + me.AttrOfOper + "_" + i);
                         if (tbCheck != null)
                         {
-                            tbCheck.Attributes[me.Tag2] += me.Tag1 + "(this);";
+                            tbCheck.Attributes[me.Tag2] += " rowPK="+i+";"+me.Tag1 + "(this);";
                         }
                         else
                         {

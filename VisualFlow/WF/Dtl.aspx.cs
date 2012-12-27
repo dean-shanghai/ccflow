@@ -221,13 +221,6 @@ public partial class Comm_Dtl : WebPage
             return _MainMapAttrs;
         }
     }
-    public string AppPath
-    {
-        get
-        {
-            return this.Request.ApplicationPath;
-        }
-    }
     public string FK_MapData = null;
     public void Bind(MapDtl mdtl)
     {
@@ -691,166 +684,168 @@ public partial class Comm_Dtl : WebPage
             this.Pub1.AddTREnd();
             #endregion 增加rows
 
-            #region 拓展属性
-            if (this.IsReadonly == 0 && mes.Count != 0)
+           
+        }
+
+        #region 拓展属性
+        if (this.IsReadonly == 0 && mes.Count != 0)
+        {
+            this.Page.RegisterClientScriptBlock("s81",
+          "<script language='JavaScript' src='./Scripts/jquery-1.4.1.min.js' ></script>");
+
+            this.Page.RegisterClientScriptBlock("b81",
+         "<script language='JavaScript' src='./Scripts/MapExt.js' ></script>");
+
+            this.Pub1.Add("<div id='divinfo' style='width: 155px; position: absolute; color: Lime; display: none;cursor: pointer;align:left'></div>");
+
+            this.Page.RegisterClientScriptBlock("dCd",
+"<script language='JavaScript' src='./../DataUser/JSLibData/" + mdtl.No + ".js' ></script>");
+
+            foreach (BP.Sys.GEDtl mydtl in dtls)
             {
-                this.Page.RegisterClientScriptBlock("s81",
-              "<script language='JavaScript' src='"+this.Application+"/Scripts/jquery-1.4.1.min.js' ></script>");
-
-                this.Page.RegisterClientScriptBlock("b81",
-             "<script language='JavaScript' src='"+this.AppPath+"/WF/Scripts/MapExt.js' ></script>");
-
-                this.Pub1.Add("<div id='divinfo' style='width: 155px; position: absolute; color: Lime; display: none;cursor: pointer;align:left'></div>");
-
-                this.Page.RegisterClientScriptBlock("dCd",
-"<script language='JavaScript' src='"+this.AppPath+"/WF/DataUser/JSLibData/" + mdtl.No + ".js' ></script>");
-
-                foreach (BP.Sys.GEDtl mydtl in dtls)
+                //ddl.ID = "DDL_" + attr.KeyOfEn + "_" + dtl.OID;
+                foreach (MapExt me in mes)
                 {
-                    //ddl.ID = "DDL_" + attr.KeyOfEn + "_" + dtl.OID;
-                    foreach (MapExt me in mes)
+                    switch (me.ExtType)
                     {
-                        switch (me.ExtType)
-                        {
-                            case MapExtXmlList.DDLFullCtrl: // 自动填充.
-                                DDL ddlOper = this.Pub1.GetDDLByID("DDL_" + me.AttrOfOper + "_" + mydtl.OID);
-                                if (ddlOper == null)
-                                    continue;
-                                ddlOper.Attributes["onchange"] = "DDLFullCtrl(this.value,\'" + ddlOper.ClientID + "\', \'" + me.MyPK + "\')";
-                                break;
-                            case MapExtXmlList.ActiveDDL:
-                                DDL ddlPerant = this.Pub1.GetDDLByID("DDL_" + me.AttrOfOper + "_" + mydtl.OID);
-                                string val, valC;
-                                DataTable dt;
-                                if (ddlPerant == null)
-                                    continue;
+                        case MapExtXmlList.DDLFullCtrl: // 自动填充.
+                            DDL ddlOper = this.Pub1.GetDDLByID("DDL_" + me.AttrOfOper + "_" + mydtl.OID);
+                            if (ddlOper == null)
+                                continue;
+                            ddlOper.Attributes["onchange"] = "DDLFullCtrl(this.value,\'" + ddlOper.ClientID + "\', \'" + me.MyPK + "\')";
+                            break;
+                        case MapExtXmlList.ActiveDDL:
+                            DDL ddlPerant = this.Pub1.GetDDLByID("DDL_" + me.AttrOfOper + "_" + mydtl.OID);
+                            string val, valC;
+                            DataTable dt;
+                            if (ddlPerant == null)
+                                continue;
 #warning 此处需要优化
-                                string ddlC = "Pub1_DDL_" + me.AttrsOfActive + "_" + mydtl.OID;
-                                ddlPerant.Attributes["onchange"] = " isChange=true; DDLAnsc(this.value, \'" + ddlC + "\', \'" + me.MyPK + "\')";
-                                DDL ddlChild = this.Pub1.GetDDLByID("DDL_" + me.AttrsOfActive + "_" + mydtl.OID);
-                                val = ddlPerant.SelectedItemStringVal;
-                                if (ddlChild.Items.Count == 0)
-                                    valC = mydtl.GetValStrByKey(me.AttrsOfActive);
-                                else
-                                    valC = ddlChild.SelectedItemStringVal;
+                            string ddlC = "Pub1_DDL_" + me.AttrsOfActive + "_" + mydtl.OID;
+                            ddlPerant.Attributes["onchange"] = " isChange=true; DDLAnsc(this.value, \'" + ddlC + "\', \'" + me.MyPK + "\')";
+                            DDL ddlChild = this.Pub1.GetDDLByID("DDL_" + me.AttrsOfActive + "_" + mydtl.OID);
+                            val = ddlPerant.SelectedItemStringVal;
+                            if (ddlChild.Items.Count == 0)
+                                valC = mydtl.GetValStrByKey(me.AttrsOfActive);
+                            else
+                                valC = ddlChild.SelectedItemStringVal;
 
-                                dt = DBAccess.RunSQLReturnTable(me.Doc.Replace("@Key", val));
+                            dt = DBAccess.RunSQLReturnTable(me.Doc.Replace("@Key", val));
 
-                                ddlChild.Bind(dt, "No", "Name");
-                                if (ddlChild.SetSelectItem(valC) == false)
+                            ddlChild.Bind(dt, "No", "Name");
+                            if (ddlChild.SetSelectItem(valC) == false)
+                            {
+                                ddlChild.Items.Insert(0, new ListItem("请选择" + valC, valC));
+                                ddlChild.SelectedIndex = 0;
+                            }
+                            ddlChild.Attributes["onchange"] = " isChange=true;";
+                            break;
+                        case MapExtXmlList.AutoFullDLL: //自动填充下拉框的范围.
+                            DDL ddlFull = this.Pub1.GetDDLByID("DDL_" + me.AttrOfOper + "_" + mydtl.OID);
+                            if (ddlFull == null)
+                                continue;
+
+                            string valOld = mydtl.GetValStrByKey(me.AttrOfOper);
+                            //string valOld =ddlFull.SelectedItemStringVal;
+
+                            string fullSQL = me.Doc.Replace("@WebUser.No", WebUser.No);
+                            fullSQL = fullSQL.Replace("@WebUser.Name", WebUser.Name);
+                            fullSQL = fullSQL.Replace("@WebUser.FK_Dept", WebUser.FK_Dept);
+                            fullSQL = fullSQL.Replace("@WebUser.FK_DeptName", WebUser.FK_DeptName);
+
+                            if (fullSQL.Contains("@"))
+                            {
+                                Attrs attrsFull = mydtl.EnMap.Attrs;
+                                foreach (Attr attr in attrsFull)
                                 {
-                                    ddlChild.Items.Insert(0, new ListItem("请选择" + valC, valC));
-                                    ddlChild.SelectedIndex = 0;
+                                    if (fullSQL.Contains("@") == false)
+                                        break;
+                                    fullSQL = fullSQL.Replace("@" + attr.Key, mydtl.GetValStrByKey(attr.Key));
                                 }
-                                ddlChild.Attributes["onchange"] = " isChange=true;";
-                                break;
-                            case MapExtXmlList.AutoFullDLL: //自动填充下拉框的范围.
-                                DDL ddlFull = this.Pub1.GetDDLByID("DDL_" + me.AttrOfOper + "_" + mydtl.OID);
-                                if (ddlFull == null)
-                                    continue;
+                            }
 
-                                string valOld = mydtl.GetValStrByKey(me.AttrOfOper);
-                                //string valOld =ddlFull.SelectedItemStringVal;
-
-                                string fullSQL = me.Doc.Replace("@WebUser.No", WebUser.No);
-                                fullSQL = fullSQL.Replace("@WebUser.Name", WebUser.Name);
-                                fullSQL = fullSQL.Replace("@WebUser.FK_Dept", WebUser.FK_Dept);
-                                fullSQL = fullSQL.Replace("@WebUser.FK_DeptName", WebUser.FK_DeptName);
-
-                                if (fullSQL.Contains("@"))
+                            if (fullSQL.Contains("@"))
+                            {
+                                /*从主表中取数据*/
+                                Attrs attrsFull = this.MainEn.EnMap.Attrs;
+                                foreach (Attr attr in attrsFull)
                                 {
-                                    Attrs attrsFull = mydtl.EnMap.Attrs;
-                                    foreach (Attr attr in attrsFull)
+                                    if (fullSQL.Contains("@") == false)
+                                        break;
+
+                                    if (fullSQL.Contains("@" + attr.Key) == false)
+                                        continue;
+
+                                    fullSQL = fullSQL.Replace("@" + attr.Key, this.MainEn.GetValStrByKey(attr.Key));
+                                }
+                            }
+
+                            ddlFull.Items.Clear();
+                            ddlFull.Bind(DBAccess.RunSQLReturnTable(fullSQL), "No", "Name");
+                            if (ddlFull.SetSelectItem(valOld) == false)
+                            {
+                                ddlFull.Items.Insert(0, new ListItem("请选择" + valOld, valOld));
+                                ddlFull.SelectedIndex = 0;
+                            }
+                            ddlFull.Attributes["onchange"] = " isChange=true;";
+                            break;
+                        case MapExtXmlList.TBFullCtrl: // 自动填充.
+                            TextBox tbAuto = this.Pub1.GetTextBoxByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
+                            if (tbAuto == null)
+                                continue;
+                            tbAuto.Attributes["onkeyup"] = " isChange=true; DoAnscToFillDiv(this,this.value,\'" + tbAuto.ClientID + "\', \'" + me.MyPK + "\');";
+                            tbAuto.Attributes["AUTOCOMPLETE"] = "OFF";
+                            if (me.Tag != "")
+                            {
+                                /* 处理下拉框的选择范围的问题 */
+                                string[] strs = me.Tag.Split('$');
+                                foreach (string str in strs)
+                                {
+                                    string[] myCtl = str.Split(':');
+                                    string ctlID = myCtl[0];
+                                    DDL ddlC1 = this.Pub1.GetDDLByID("DDL_" + ctlID + "_" + mydtl.OID);
+                                    if (ddlC1 == null)
                                     {
-                                        if (fullSQL.Contains("@") == false)
-                                            break;
-                                        fullSQL = fullSQL.Replace("@" + attr.Key, mydtl.GetValStrByKey(attr.Key));
+                                        //me.Tag = "";
+                                        // me.Update();
+                                        continue;
                                     }
+
+                                    string sql = myCtl[1].Replace("~", "'");
+                                    sql = sql.Replace("@WebUser.No", WebUser.No);
+                                    sql = sql.Replace("@WebUser.Name", WebUser.Name);
+                                    sql = sql.Replace("@WebUser.FK_Dept", WebUser.FK_Dept);
+                                    sql = sql.Replace("@Key", tbAuto.Text.Trim());
+                                    dt = DBAccess.RunSQLReturnTable(sql);
+                                    string valC1 = ddlC1.SelectedItemStringVal;
+                                    ddlC1.Items.Clear();
+                                    foreach (DataRow dr in dt.Rows)
+                                        ddlC1.Items.Add(new ListItem(dr[1].ToString(), dr[0].ToString()));
+                                    ddlC1.SetSelectItem(valC1);
                                 }
+                            }
+                            break;
+                        case MapExtXmlList.InputCheck:
+                            TextBox tbCheck = this.Pub1.GetTextBoxByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
+                            if (tbCheck != null)
+                                tbCheck.Attributes[me.Tag2] += " rowPK="+mydtl.OID+"; "+me.Tag1 + "(this);";
+                            break;
+                        case MapExtXmlList.PopVal: //弹出窗.
+                            TB tb = this.Pub1.GetTBByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
+                            tb.Attributes["ondblclick"] = " isChange=true; ReturnVal(this,'" + me.Doc + "','sd');";
+                            break;
+                        case MapExtXmlList.Link: // 超链接.
 
-                                if (fullSQL.Contains("@"))
-                                {
-                                    /*从主表中取数据*/
-                                    Attrs attrsFull = this.MainEn.EnMap.Attrs;
-                                    foreach (Attr attr in attrsFull)
-                                    {
-                                        if (fullSQL.Contains("@") == false)
-                                            break;
-
-                                        if (fullSQL.Contains("@" + attr.Key) == false)
-                                            continue;
-
-                                        fullSQL = fullSQL.Replace("@" + attr.Key, this.MainEn.GetValStrByKey(attr.Key));
-                                    }
-                                }
-
-                                ddlFull.Items.Clear();
-                                ddlFull.Bind(DBAccess.RunSQLReturnTable(fullSQL), "No", "Name");
-                                if (ddlFull.SetSelectItem(valOld) == false)
-                                {
-                                    ddlFull.Items.Insert(0, new ListItem("请选择" + valOld, valOld));
-                                    ddlFull.SelectedIndex = 0;
-                                }
-                                ddlFull.Attributes["onchange"] = " isChange=true;";
-                                break;
-                            case MapExtXmlList.TBFullCtrl: // 自动填充.
-                                TextBox tbAuto = this.Pub1.GetTextBoxByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
-                                if (tbAuto == null)
-                                    continue;
-                                tbAuto.Attributes["onkeyup"] = " isChange=true; DoAnscToFillDiv(this,this.value,\'" + tbAuto.ClientID + "\', \'" + me.MyPK + "\');";
-                                tbAuto.Attributes["AUTOCOMPLETE"] = "OFF";
-                                if (me.Tag != "")
-                                {
-                                    /* 处理下拉框的选择范围的问题 */
-                                    string[] strs = me.Tag.Split('$');
-                                    foreach (string str in strs)
-                                    {
-                                        string[] myCtl = str.Split(':');
-                                        string ctlID = myCtl[0];
-                                        DDL ddlC1 = this.Pub1.GetDDLByID("DDL_" + ctlID + "_" + mydtl.OID);
-                                        if (ddlC1 == null)
-                                        {
-                                            //me.Tag = "";
-                                            // me.Update();
-                                            continue;
-                                        }
-
-                                        string sql = myCtl[1].Replace("~", "'");
-                                        sql = sql.Replace("@WebUser.No", WebUser.No);
-                                        sql = sql.Replace("@WebUser.Name", WebUser.Name);
-                                        sql = sql.Replace("@WebUser.FK_Dept", WebUser.FK_Dept);
-                                        sql = sql.Replace("@Key", tbAuto.Text.Trim());
-                                        dt = DBAccess.RunSQLReturnTable(sql);
-                                        string valC1 = ddlC1.SelectedItemStringVal;
-                                        ddlC1.Items.Clear();
-                                        foreach (DataRow dr in dt.Rows)
-                                            ddlC1.Items.Add(new ListItem(dr[1].ToString(), dr[0].ToString()));
-                                        ddlC1.SetSelectItem(valC1);
-                                    }
-                                }
-                                break;
-                            case MapExtXmlList.InputCheck:
-                                TextBox tbCheck = this.Pub1.GetTextBoxByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
-                                if (tbCheck != null)
-                                    tbCheck.Attributes[me.Tag2] += me.Tag1 + "(this);";
-                                break;
-                            case MapExtXmlList.PopVal: //弹出窗.
-                                TB tb = this.Pub1.GetTBByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
-                                tb.Attributes["ondblclick"] = " isChange=true; ReturnVal(this,'" + me.Doc + "','sd');";
-                                break;
-                            case MapExtXmlList.Link: // 超链接.
-
-                                //TB tb = this.Pub1.GetTBByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
-                                //tb.Attributes["ondblclick"] = " isChange=true; ReturnVal(this,'" + me.Doc + "','sd');";
-                                break;
-                            default:
-                                break;
-                        }
+                            //TB tb = this.Pub1.GetTBByID("TB_" + me.AttrOfOper + "_" + mydtl.OID);
+                            //tb.Attributes["ondblclick"] = " isChange=true; ReturnVal(this,'" + me.Doc + "','sd');";
+                            break;
+                        default:
+                            break;
                     }
                 }
             }
-            #endregion 拓展属性
         }
+        #endregion 拓展属性
 
         #region 生成合计
         if (mdtl.IsShowSum && dtls.Count > 1)

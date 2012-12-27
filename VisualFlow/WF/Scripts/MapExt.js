@@ -3,8 +3,8 @@ var oldValue = "";
 var oid ;
 var highlightindex = -1;
 function DoAnscToFillDiv(sender, e, tbid, fk_mapExt) {
-
     openDiv(sender, tbid);
+
     var myEvent = event || window.event;
     var myKeyCode = myEvent.keyCode;
     // 获得ID为divinfo里面的DIV对象 .  
