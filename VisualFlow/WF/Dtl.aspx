@@ -59,7 +59,7 @@ function DtlOpt(workId, fk_mapdtl) {
    </script>
 
 
-   <script language="javascript">
+   <script language="javascript" type="text/javascript" >
        // row主键信息 .
        var rowPK = null;
        // ccform 为开发者提供的内置函数.

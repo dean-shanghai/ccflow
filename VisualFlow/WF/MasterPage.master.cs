@@ -65,29 +65,33 @@ public partial class Face_MasterPage : BP.Web.MasterPage
 
         BP.WF.XML.ToolBars ens = new BP.WF.XML.ToolBars();
         ens.RetrieveAll();
-
-        BP.DA.Paras ps = new BP.DA.Paras();
-        string sql,sql2;
-        if (BP.Web.WebUser.IsAuthorize)
+        int numCC = 0;
+        int num = 0;
+        if (BP.Web.WebUser.No != null)
         {
-            BP.WF.Port.WFEmp emp = new BP.WF.Port.WFEmp(BP.Web.WebUser.No);
-            ps.SQL = "SELECT COUNT(*) AS Num FROM WF_EmpWorks WHERE WFState="+(int)BP.WF.WFState.Runing+" AND FK_Emp=" + SystemConfig.AppCenterDBVarStr + "FK_Emp  AND FK_Flow IN " + emp.AuthorFlows;
-            ps.AddFK_Emp();
-        }
-        else
-        {
-            ps.AddFK_Emp();
-            ps.SQL = "SELECT COUNT(*) AS Num FROM WF_EmpWorks WHERE WFState=" + (int)BP.WF.WFState.Runing + " and FK_Emp=" + SystemConfig.AppCenterDBVarStr + "FK_Emp";
-        }
-        int num = BP.DA.DBAccess.RunSQLReturnValInt(ps);
+            BP.DA.Paras ps = new BP.DA.Paras();
+            string sql, sql2;
+            if (BP.Web.WebUser.IsAuthorize)
+            {
+                BP.WF.Port.WFEmp emp = new BP.WF.Port.WFEmp(BP.Web.WebUser.No);
+                ps.SQL = "SELECT COUNT(*) AS Num FROM WF_EmpWorks WHERE WFState=" + (int)BP.WF.WFState.Runing + " AND FK_Emp=" + SystemConfig.AppCenterDBVarStr + "FK_Emp  AND FK_Flow IN " + emp.AuthorFlows;
+                ps.AddFK_Emp();
+            }
+            else
+            {
+                ps.AddFK_Emp();
+                ps.SQL = "SELECT COUNT(*) AS Num FROM WF_EmpWorks WHERE WFState=" + (int)BP.WF.WFState.Runing + " and FK_Emp=" + SystemConfig.AppCenterDBVarStr + "FK_Emp";
+            }
+            num = BP.DA.DBAccess.RunSQLReturnValInt(ps);
 
-        ps = new BP.DA.Paras();
-        ps.SQL = "SELECT COUNT(MyPK) FROM WF_CCList WHERE Sta=0 AND CCTo=" + BP.SystemConfig.AppCenterDBVarStr + "FK_Emp";
-        ps.AddFK_Emp();
+            ps = new BP.DA.Paras();
+            ps.SQL = "SELECT COUNT(MyPK) FROM WF_CCList WHERE Sta=0 AND CCTo=" + BP.SystemConfig.AppCenterDBVarStr + "FK_Emp";
+            ps.AddFK_Emp();
+            numCC = BP.DA.DBAccess.RunSQLReturnValInt(ps);
+        }
 
-        int numCC = BP.DA.DBAccess.RunSQLReturnValInt(ps);
         string msg = this.ToE("PendingWork", "待办");
-        string msgCC="抄送";
+        string msgCC = "抄送";
         if (num != 0)
         {
             msg = "<div id='blink'>" + this.ToE("PendingWork", "待办") + "-" + num + "</div>";
@@ -154,8 +158,11 @@ public partial class Face_MasterPage : BP.Web.MasterPage
                     this.Pub1.Add("<li class='Barli' ><a href=\"" + en.Url + "\" target='_self' title='" + en.Title + "' ><span>" + en.Name + "</span></a></li>");
             }
         }
+        this.Pub1.AddULEnd();
 
-        this.Pub1.Add("</UL> <div style='float:right;margin-right:30px;display:inline-block;line-height:35px;color:white' >您好:" + BP.Web.WebUser.No + "," + BP.Web.WebUser.Name + "</div>");
+        if (BP.Web.WebUser.No != null)
+            this.Pub1.Add(" <div style='float:right;margin-right:30px;display:inline-block;line-height:35px;color:white' >您好:" + BP.Web.WebUser.No + "," + BP.Web.WebUser.Name + "</div>");
+
         this.Pub1.Add("</DIV>");
         if (BP.WF.Glo.IsShowTitle)
             this.Pub1.Add("</DIV>");
