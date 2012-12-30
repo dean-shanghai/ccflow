@@ -72,6 +72,20 @@ namespace BP.WF
                 this.SetValByKey(DirectionAttr.DirType, value);
             }
         }
+        /// <summary>
+        /// 流程编号
+        /// </summary>
+        public string FK_Flow
+        {
+            get
+            {
+                return this.GetValStringByKey(DirectionAttr.FK_Flow);
+            }
+            set
+            {
+                this.SetValByKey(DirectionAttr.FK_Flow, value);
+            }
+        }
         
 		/// <summary>
 		/// 转向的节点

@@ -3622,6 +3622,7 @@ namespace BP.WF
                             }
                             try
                             {
+                                dir.FK_Flow = fl.No;
                                 dir.Insert();
                             }
                             catch

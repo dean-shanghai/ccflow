@@ -1279,26 +1279,17 @@ namespace BP.En
         public object GetRefObject(string key)
         {
             return this.Row["_"+key];
-            //object obj = this.Row[key];
-            //if (obj == null)
-            //{
-            //    if (this.Row.ContainsKey(key) == false)
-            //        return null;
-            //    obj = this.Row[key];
-            //}
-            //return obj;
         }
         /// <summary>
         /// …Ë÷√ µÃÂ
         /// </summary>
         /// <param name="key"></param>
         /// <param name="obj"></param>
-        public void SetRefObject(string key,object obj)
+        public void SetRefObject(string key, object obj)
         {
             if (obj == null)
                 return;
-
-            this.Row.SetValByKey("_"+key, obj);
+            this.Row.SetValByKey("_" + key, obj);
         }
         #endregion
 

@@ -400,7 +400,6 @@ namespace BP.Sys
             }
         }
         #endregion
-         
 
         #region  Ù–‘
         public GEDtls HisGEDtls_temp = null;

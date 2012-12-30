@@ -1316,6 +1316,7 @@ namespace BP.WF
                     {
                         if (dt.TableName != dtl.No)
                             continue;
+
                         //获取dtls
                         GEDtls daDtls = new GEDtls(dtl.No);
                         daDtls.Delete(GEDtlAttr.RefPK, workID); // 清除现有的数据.

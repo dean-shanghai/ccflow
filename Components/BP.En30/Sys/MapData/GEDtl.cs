@@ -84,6 +84,17 @@ namespace BP.Sys
                 this.SetValByKey(GEDtlAttr.RefPK, value);
             }
         }
+        public Int64 RefPKInt64
+        {
+            get
+            {
+                return this.GetValInt64ByKey(GEDtlAttr.RefPK);
+            }
+            set
+            {
+                this.SetValByKey(GEDtlAttr.RefPK, value);
+            }
+        }
         public Int64 FID
         {
             get
