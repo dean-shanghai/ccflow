@@ -2339,7 +2339,7 @@ namespace BP.WF
                 }
                 #endregion 主表数据copy.
 
-                #region 复制附件。
+                #region 复制附件
                 if (this.HisNode.MapData.FrmAttachments.Count > 0)
                 {
                     FrmAttachmentDBs athDBs = new FrmAttachmentDBs("ND" + this.HisNode.NodeID,
@@ -2416,173 +2416,197 @@ namespace BP.WF
                 }
                 #endregion
 
-                #region 复制明细数据。
-                if (this.HisNode.MapData.MapDtls.Count > 0)
+                #region 复制明细数据
+               // int deBugDtlCount=
+                Sys.MapDtls dtls = this.HisNode.MapData.MapDtls;
+                string recDtlLog = "@记录测试明细表Copy过程,从节点ID:"+this.HisNode.NodeID+" WorkID:"+this.WorkID+", 到节点ID="+toND.NodeID;
+                if (dtls.Count > 0)
                 {
-                    Sys.MapDtls dtls = this.HisNode.MapData.MapDtls;
-                    if (dtls.Count >= 1)
+                    Sys.MapDtls toDtls = toND.MapData.MapDtls;
+                    recDtlLog += "@到节点明细表数量是:" + dtls.Count + "个";
+
+                    Sys.MapDtls startDtls = null;
+                    bool isEnablePass = false; /*是否有明细表的审批.*/
+                    foreach (MapDtl dtl in dtls)
                     {
-                        Sys.MapDtls toDtls = toND.MapData.MapDtls;
-                        Sys.MapDtls startDtls = null;
-                        bool isEnablePass = false;
-                        foreach (MapDtl dtl in dtls)
+                        if (dtl.IsEnablePass)
+                            isEnablePass = true;
+                    }
+
+                    if (isEnablePass) /* 如果有就建立它开始节点表数据 */
+                        startDtls = new BP.Sys.MapDtls("ND" + int.Parse(toND.FK_Flow) + "01");
+
+                    recDtlLog += "@进入循环开始执行逐个明细表copy.";
+                    int i = -1;
+                    foreach (Sys.MapDtl dtl in dtls)
+                    {
+                        recDtlLog += "@进入循环开始执行明细表("+dtl.No+")copy.";
+
+                        i++;
+                        if (toDtls.Count <= i)
+                            continue;
+
+                        Sys.MapDtl toDtl = (Sys.MapDtl)toDtls[i];
+                        if (dtl.IsEnablePass == true)
                         {
-                            if (dtl.IsEnablePass)
-                                isEnablePass = true;
+                            /*如果启用了是否明细表的审核通过机制,就允许copy节点数据。*/
+                            toDtl.IsCopyNDData = true;
                         }
 
-                        if (isEnablePass)
-                            startDtls = new BP.Sys.MapDtls("ND" + int.Parse(toND.FK_Flow) + "01");
+                        if (toDtl.IsCopyNDData == false)
+                            continue;
 
-                        int i = -1;
-                        foreach (Sys.MapDtl dtl in dtls)
+                        //获取明细数据。
+                        GEDtls gedtls = new GEDtls(dtl.No);
+                        QueryObject qo = null;
+                        qo = new QueryObject(gedtls);
+                        switch (dtl.DtlOpenType)
                         {
-                            i++;
-                            if (toDtls.Count <= i)
-                                continue;
+                            case DtlOpenType.ForEmp:
+                                qo.AddWhere(GEDtlAttr.RefPK, this.WorkID);
+                                break;
+                            case DtlOpenType.ForWorkID:
+                                qo.AddWhere(GEDtlAttr.RefPK, this.WorkID);
+                                break;
+                            case DtlOpenType.ForFID:
+                                qo.AddWhere(GEDtlAttr.FID, this.WorkID);
+                                break;
+                        }
+                        qo.DoQuery();
 
-                            Sys.MapDtl toDtl = (Sys.MapDtl)toDtls[i];
-                            if (dtl.IsEnablePass == true)
+                        recDtlLog += "@查询出来从明细表:" + dtl.No + ",明细数据:" + gedtls.Count + "条.";
+
+                        int unPass = 0;
+                        // 是否起用审核机制。
+                        isEnablePass = dtl.IsEnablePass;
+                        if (isEnablePass && this.HisNode.IsStartNode == false)
+                            isEnablePass = true;
+                        else
+                            isEnablePass = false;
+
+                        if (isEnablePass == true)
+                        {
+                            /*判断当前节点该明细表上是否有，isPass 审核字段，如果没有抛出异常信息。*/
+                            if (gedtls.Count != 0)
                             {
-                                /*如果启用了是否明细表的审核通过机制,就允许copy节点数据。*/
-                                toDtl.IsCopyNDData = true;
+                                GEDtl dtl1 = gedtls[0] as GEDtl;
+                                if (dtl1.EnMap.Attrs.Contains("IsPass") == false)
+                                    isEnablePass = false;
                             }
+                        }
 
-                            if (toDtl.IsCopyNDData == false)
-                                continue;
+                        recDtlLog += "@删除到达明细表:" + dtl.No + ",数据, 并开始遍历明细表,执行一行行的copy.";
+                        DBAccess.RunSQL("DELETE " + toDtl.PTable + " WHERE RefPK=" + dbStr + "RefPK", "RefPK", this.WorkID.ToString());
 
-                            //获取明细数据。
-                            GEDtls gedtls = new GEDtls(dtl.No);
-                            QueryObject qo = null;
-                            qo = new QueryObject(gedtls);
-                            switch (dtl.DtlOpenType)
-                            {
-                                case DtlOpenType.ForEmp:
-                                    qo.AddWhere(GEDtlAttr.RefPK, this.WorkID);
-                                    //qo.addAnd();
-                                    //qo.AddWhere(GEDtlAttr.Rec, WebUser.No);
-                                    break;
-                                case DtlOpenType.ForWorkID:
-                                    qo.AddWhere(GEDtlAttr.RefPK, this.WorkID);
-                                    break;
-                                case DtlOpenType.ForFID:
-                                    qo.AddWhere(GEDtlAttr.FID, this.WorkID);
-                                    break;
-                            }
-                            qo.DoQuery();
-                            int unPass = 0;
-                            // 是否起用审核机制。
-                            isEnablePass = dtl.IsEnablePass;
-                            if (isEnablePass && this.HisNode.IsStartNode == false)
-                                isEnablePass = true;
-                            else
-                                isEnablePass = false;
-
-                            if (isEnablePass == true)
-                            {
-                                /*判断当前节点该明细表上是否有，isPass 审核字段，如果没有抛出异常信息。*/
-                                if (gedtls.Count != 0)
-                                {
-                                    GEDtl dtl1 = gedtls[0] as GEDtl;
-                                    if (dtl1.EnMap.Attrs.Contains("IsPass") == false)
-                                        isEnablePass = false;
-                                }
-                            }
-
-                            DBAccess.RunSQL("DELETE " + toDtl.PTable + " WHERE RefPK=" + dbStr + "RefPK", "RefPK", this.WorkID.ToString());
-                            foreach (GEDtl gedtl in gedtls)
-                            {
-                                if (isEnablePass)
-                                {
-                                    if (gedtl.GetValBooleanByKey("IsPass") == false)
-                                    {
-                                        /*没有审核通过的就 continue 它们，仅复制已经审批通过的.*/
-                                        continue;
-                                    }
-                                }
-
-                                BP.Sys.GEDtl dtCopy = new GEDtl(toDtl.No);
-                                dtCopy.Copy(gedtl);
-                                dtCopy.FK_MapDtl = toDtl.No;
-                                dtCopy.RefPK = this.WorkID.ToString();
-                                dtCopy.InsertAsOID(dtCopy.OID);
-
-                                #region  复制明细表单条 - 附件信息
-                                if (toDtl.IsEnableAthM)
-                                {
-                                    /*如果启用了多附件,就复制这条明细数据的附件信息。*/
-                                    FrmAttachmentDBs athDBs = new FrmAttachmentDBs(dtl.No, gedtl.OID.ToString());
-                                    if (athDBs.Count > 0)
-                                    {
-                                        i = 0;
-                                        foreach (FrmAttachmentDB athDB in athDBs)
-                                        {
-                                            i++;
-                                            FrmAttachmentDB athDB_N = new FrmAttachmentDB();
-                                            athDB_N.Copy(athDB);
-                                            athDB_N.FK_MapData = toDtl.No;
-                                            athDB_N.MyPK = toDtl.No + "_" + dtCopy.OID + "_" + i.ToString();
-                                            athDB_N.FK_FrmAttachment = athDB_N.FK_FrmAttachment.Replace("ND" + this.HisNode.NodeID,
-                                                "ND" + toND.NodeID);
-                                            athDB_N.RefPKVal = dtCopy.OID.ToString();
-                                            athDB_N.DirectInsert();
-                                        }
-                                    }
-                                }
-                                if (toDtl.IsEnableM2M || toDtl.IsEnableM2MM)
-                                {
-                                    /*如果启用了m2m */
-                                    M2Ms m2ms = new M2Ms(dtl.No, gedtl.OID);
-                                    if (m2ms.Count > 0)
-                                    {
-                                        i = 0;
-                                        foreach (M2M m2m in m2ms)
-                                        {
-                                            i++;
-                                            M2M m2m_N = new M2M();
-                                            m2m_N.Copy(m2m);
-                                            m2m_N.FK_MapData = toDtl.No;
-                                            m2m_N.MyPK = toDtl.No + "_" + m2m.M2MNo + "_" + gedtl.ToString() + "_" + m2m.DtlObj;
-                                            m2m_N.EnOID = gedtl.OID;
-                                            m2m.InitMyPK();
-                                            m2m_N.DirectInsert();
-                                        }
-                                    }
-                                }
-                                #endregion  复制明细表单条 - 附件信息
-
-                            }
+                        // copy数量.
+                        int deBugNumCopy = 0;
+                        foreach (GEDtl gedtl in gedtls)
+                        {
                             if (isEnablePass)
                             {
-                                /* 如果启用了审核通过机制，就把未审核的数据copy到第一个节点上去 
-                                 * 1, 找到对应的明细点.
-                                 * 2, 把未审核通过的数据复制到开始明细表里.
-                                 */
-
-                                string startTable = "ND" + int.Parse(toND.FK_Flow) + "01";
-                                string startUser = "SELECT Rec FROM " + startTable + " WHERE OID=" + this.WorkID;
-                                startUser = DBAccess.RunSQLReturnString(startUser);
-
-                                MapDtl startDtl = (MapDtl)startDtls[i];
-                                foreach (GEDtl gedtl in gedtls)
+                                if (gedtl.GetValBooleanByKey("IsPass") == false)
                                 {
-                                    if (gedtl.GetValBooleanByKey("IsPass"))
-                                        continue; /* 排除审核通过的 */
-
-                                    BP.Sys.GEDtl dtCopy = new GEDtl(startDtl.No);
-                                    dtCopy.Copy(gedtl);
-                                    dtCopy.OID = 0;
-                                    dtCopy.FK_MapDtl = startDtl.No;
-                                    dtCopy.RefPK = gedtl.OID.ToString(); //this.WorkID.ToString();
-                                    dtCopy.SetValByKey("BatchID", this.WorkID);
-                                    dtCopy.SetValByKey("IsPass", 0);
-                                    dtCopy.SetValByKey("Rec", startUser);
-                                    dtCopy.SetValByKey("Checker", BP.Web.WebUser.Name);
-                                    dtCopy.SaveAsOID(gedtl.OID);
+                                    /*没有审核通过的就 continue 它们，仅复制已经审批通过的.*/
+                                    continue;
                                 }
-                                DBAccess.RunSQL("UPDATE " + startDtl.PTable + " SET Rec='" + startUser + "',Checker='" + WebUser.No + "' WHERE BatchID=" + this.WorkID + " AND Rec='" + WebUser.No + "'");
                             }
+
+                            BP.Sys.GEDtl dtCopy = new GEDtl(toDtl.No);
+                            dtCopy.Copy(gedtl);
+                            dtCopy.FK_MapDtl = toDtl.No;
+                            dtCopy.RefPK = this.WorkID.ToString();
+                            dtCopy.InsertAsOID(dtCopy.OID);
+                            dtCopy.RefPKInt64 = this.WorkID;
+                            deBugNumCopy++;
+
+                            #region  复制明细表单条 - 附件信息
+                            if (toDtl.IsEnableAthM)
+                            {
+                                /*如果启用了多附件,就复制这条明细数据的附件信息。*/
+                                FrmAttachmentDBs athDBs = new FrmAttachmentDBs(dtl.No, gedtl.OID.ToString());
+                                if (athDBs.Count > 0)
+                                {
+                                    i = 0;
+                                    foreach (FrmAttachmentDB athDB in athDBs)
+                                    {
+                                        i++;
+                                        FrmAttachmentDB athDB_N = new FrmAttachmentDB();
+                                        athDB_N.Copy(athDB);
+                                        athDB_N.FK_MapData = toDtl.No;
+                                        athDB_N.MyPK = toDtl.No + "_" + dtCopy.OID + "_" + i.ToString();
+                                        athDB_N.FK_FrmAttachment = athDB_N.FK_FrmAttachment.Replace("ND" + this.HisNode.NodeID,
+                                            "ND" + toND.NodeID);
+                                        athDB_N.RefPKVal = dtCopy.OID.ToString();
+                                        athDB_N.DirectInsert();
+                                    }
+                                }
+                            }
+                            if (toDtl.IsEnableM2M || toDtl.IsEnableM2MM)
+                            {
+                                /*如果启用了m2m */
+                                M2Ms m2ms = new M2Ms(dtl.No, gedtl.OID);
+                                if (m2ms.Count > 0)
+                                {
+                                    i = 0;
+                                    foreach (M2M m2m in m2ms)
+                                    {
+                                        i++;
+                                        M2M m2m_N = new M2M();
+                                        m2m_N.Copy(m2m);
+                                        m2m_N.FK_MapData = toDtl.No;
+                                        m2m_N.MyPK = toDtl.No + "_" + m2m.M2MNo + "_" + gedtl.ToString() + "_" + m2m.DtlObj;
+                                        m2m_N.EnOID = gedtl.OID;
+                                        m2m.InitMyPK();
+                                        m2m_N.DirectInsert();
+                                    }
+                                }
+                            }
+                            #endregion  复制明细表单条 - 附件信息
+
                         }
+
+#warning 记录日志.
+                        if (gedtls.Count != deBugNumCopy)
+                        {
+                            recDtlLog += "@从明细表:" + dtl.No + ",明细数据:" + gedtls.Count + "条.";
+                            //记录日志.
+                            Log.DefaultLogWriteLineInfo(recDtlLog);
+                            throw new Exception("@系统出现错误，请将如下信息反馈给管理员,谢谢。: 技术信息:" + recDtlLog);
+                        }
+
+                        #region 如果启用了审核机制
+                        if (isEnablePass)
+                        {
+                            /* 如果启用了审核通过机制，就把未审核的数据copy到第一个节点上去 
+                             * 1, 找到对应的明细点.
+                             * 2, 把未审核通过的数据复制到开始明细表里.
+                             */
+
+                            string startTable = "ND" + int.Parse(toND.FK_Flow) + "01";
+                            string startUser = "SELECT Rec FROM " + startTable + " WHERE OID=" + this.WorkID;
+                            startUser = DBAccess.RunSQLReturnString(startUser);
+
+                            MapDtl startDtl = (MapDtl)startDtls[i];
+                            foreach (GEDtl gedtl in gedtls)
+                            {
+                                if (gedtl.GetValBooleanByKey("IsPass"))
+                                    continue; /* 排除审核通过的 */
+
+                                BP.Sys.GEDtl dtCopy = new GEDtl(startDtl.No);
+                                dtCopy.Copy(gedtl);
+                                dtCopy.OID = 0;
+                                dtCopy.FK_MapDtl = startDtl.No;
+                                dtCopy.RefPK = gedtl.OID.ToString(); //this.WorkID.ToString();
+                                dtCopy.SetValByKey("BatchID", this.WorkID);
+                                dtCopy.SetValByKey("IsPass", 0);
+                                dtCopy.SetValByKey("Rec", startUser);
+                                dtCopy.SetValByKey("Checker", BP.Web.WebUser.Name);
+                                dtCopy.RefPKInt64 = this.WorkID;
+                                dtCopy.SaveAsOID(gedtl.OID);
+                            }
+                            DBAccess.RunSQL("UPDATE " + startDtl.PTable + " SET Rec='" + startUser + "',Checker='" + WebUser.No + "' WHERE BatchID=" + this.WorkID + " AND Rec='" + WebUser.No + "'");
+                        }
+                        #endregion 如果启用了审核机制
                     }
                 }
                 #endregion 复制明细数据
@@ -2590,8 +2614,6 @@ namespace BP.WF
                 #endregion 初始化发起的工作节点.
 
                 #region 保存目标节点数据.
-             
-
                 try
                 {
                     toWK.DirectSave();
@@ -2612,10 +2634,6 @@ namespace BP.WF
                 #endregion 保存目标节点数据.
 
                 #region 执行数据初始化
-                /*
-                 * 1,
-                 */
-
                 // town.
                 WorkNode town = new WorkNode(toWK, toND);
 
