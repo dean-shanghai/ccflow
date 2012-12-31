@@ -201,7 +201,7 @@ namespace BP.WF
                 // 检查接受人员规则,是否符合设计要求.
                 string specEmpFields = town.HisNode.RecipientSQL;
                 if (string.IsNullOrEmpty(specEmpFields))
-                    specEmpFields = "FK_Emp";
+                    specEmpFields = "SysSendEmps";
 
                 if (this.HisWork.EnMap.Attrs.Contains(specEmpFields) == false)
                     throw new Exception("@您设置的当前节点按照指定的人员，决定下一步的接受人员，但是你没有在节点表单中设置该表单" + specEmpFields + "字段。");
@@ -559,7 +559,7 @@ namespace BP.WF
                // 检查接受人员规则,是否符合设计要求.
                string specEmpFields = town.HisNode.RecipientSQL;
                if (string.IsNullOrEmpty(specEmpFields))
-                   specEmpFields = "FK_Emp";
+                   specEmpFields = "SysSendEmps";
 
                if (this.HisWork.EnMap.Attrs.Contains(specEmpFields) == false)
                    throw new Exception("@您设置的当前节点按照指定的人员，决定下一步的接受人员，但是你没有在节点表单中设置该表单" + specEmpFields + "字段。");
@@ -2564,7 +2564,6 @@ namespace BP.WF
                             #endregion  复制明细表单条 - 附件信息
 
                         }
-
 #warning 记录日志.
                         if (gedtls.Count != deBugNumCopy)
                         {
