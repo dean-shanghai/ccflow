@@ -6,8 +6,6 @@ namespace BP.Web.UC
 	using System.Data;
 	using System.Data.SqlClient;
 	using System.Data.Odbc ;
-
-
 	using System.Drawing;
 	using System.Web;
 	using System.Web.SessionState;
