@@ -2,7 +2,7 @@
 <%@ Register src="UC/UCEn.ascx" tagname="UCEn" tagprefix="uc1" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <script language="JavaScript" src="~/Comm/JScript.js" type="text/javascript" ></script>
-    <script language="JavaScript" src="/Comm/JS/Calendar/WdatePicker.js" defer="defer" type="text/javascript" ></script>
+    <script language="JavaScript" src="./../Comm/JS/Calendar/WdatePicker.js" defer="defer" ></script>
 	<script language="JavaScript" src="./Scripts/MapExt.js" type="text/javascript" ></script>
     <script language='JavaScript' src='./Scripts/jquery-1.4.1.min.js' type="text/javascript"></script>
 <script language="javascript" >
