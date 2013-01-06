@@ -4,6 +4,9 @@ using BP.En;
 
 namespace BP.En
 {
+    /// <summary>
+    /// ²Ù×÷·ûºÅ
+    /// </summary>
 	public enum OperatorSymbol
 	{
 		/// <summary>

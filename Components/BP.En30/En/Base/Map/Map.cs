@@ -284,6 +284,12 @@ namespace BP.En
                 return this._SearchAttrs;
             }
         }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="refKey"></param>
+        /// <param name="symbol"></param>
+        /// <param name="val"></param>
         public void AddHidden(string refKey, string symbol, string val)
         {
             AttrOfSearch aos = new AttrOfSearch("K" + this.AttrsOfSearch.Count, refKey, refKey, symbol, val, 0, true);
