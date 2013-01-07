@@ -176,19 +176,21 @@ namespace BP.En
 
                 if (_DefaultVal.Contains("@"))
                 {
-                    switch(_DefaultVal)
-                    {
-                        case "@WebUser.No":
-                            return BP.Web.WebUser.No;
-                        case "@WebUser.Name":
-                            return BP.Web.WebUser.Name;
-                        case "@WebUser.FK_Dept":
-                            return BP.Web.WebUser.FK_Dept;
-                        case "@WebUser.FK_DeptName":
-                            return BP.Web.WebUser.FK_DeptName;
-                        default:
-                            throw new Exception("没有识别的系统变量");
-                    }
+                    if (_DefaultVal.Contains("@WebUser.No"))
+                        return _DefaultVal.Replace("@WebUser.No", Web.WebUser.No);
+
+                    if (_DefaultVal.Contains("@WebUser.Name"))
+                        return _DefaultVal.Replace("@WebUser.Name", Web.WebUser.Name);
+
+                    if (_DefaultVal.Contains("@WebUser.FK_Dept"))
+                        return _DefaultVal.Replace("@WebUser.FK_Dept", Web.WebUser.FK_Dept);
+
+                    if (_DefaultVal.Contains("@WebUser.FK_DeptName"))
+                        return _DefaultVal.Replace("@WebUser.FK_DeptName", Web.WebUser.FK_DeptName);
+
+                    if (_DefaultVal.Contains("@WebUser.FK_Unit"))
+                        return _DefaultVal.Replace("@WebUser.FK_Unit", Web.WebUser.FK_Unit);
+                      
                 }
                 return _DefaultVal;
             }

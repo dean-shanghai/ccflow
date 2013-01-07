@@ -199,7 +199,7 @@ namespace BP.WF
                 map.AddSearchAttr(FlowDataAttr.WFState);
                 map.AddSearchAttr(FlowDataAttr.FK_Flow);
 
-               map.AddHidden(FlowDataAttr.FlowEmps, " LIKE ", "%"+BP.Web.WebUser.No+"%");
+               map.AddHidden(FlowDataAttr.FlowEmps, " LIKE ", "%@@WebUser.No%");
 
                 RefMethod rm = new RefMethod();
                 rm.Title = "工作报告";
