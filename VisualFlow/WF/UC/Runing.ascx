@@ -8,7 +8,7 @@
             if (window.confirm('您确定要撤销本次发送吗？') == false)
                 return;
 
-            var url = appPath + 'WF/Do.aspx?DoType=UnSend&FID=' + fid + '&WorkID=' + workid + '&FK_Flow=' + fk_flow;
+            var url = appPath + '/WF/Do.aspx?DoType=UnSend&FID=' + fid + '&WorkID=' + workid + '&FK_Flow=' + fk_flow;
             window.location.href = url;
             return;
 

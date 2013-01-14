@@ -261,16 +261,6 @@ public partial class WF_UC_ToolWap : BP.Web.UC.UCBase3
                 this.AddLi(item.Name + "&nbsp;&nbsp;<span style='background:" + item.CSS + "' ><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></span>");
             else
                 this.AddLi(pageID + ".aspx?RefNo=Skin&SetNo=" + item.No, item.Name + "&nbsp;&nbsp;<span style='background:" + item.CSS + "' ><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</i></span>");
-
-            //System.Web.UI.WebControls.RadioButton rb = new RadioButton();
-            //rb.ID = "RB_" + item.No;
-            //rb.Text = item.Name;
-            //rb.GroupName = "s";
-            //if (WebUser.Style == item.No)
-            //    rb.Checked=true;
-
-            //this.Add(rb);
-            //this.AddBR();
         }
         this.AddULEnd();
 
