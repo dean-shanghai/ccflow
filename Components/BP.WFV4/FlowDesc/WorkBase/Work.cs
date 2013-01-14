@@ -746,55 +746,16 @@ namespace BP.WF
         /// </summary>
         public new int Save()
         {
-            if ( this.OID==0 || this.IsExits == false)
+            if (this.OID <= 10)
+                throw new Exception("@没有给WorkID赋值,不能保存.");
+            if (this.Update() == 0)
             {
-                this.OID = DBAccess.GenerOID();
-                this.InsertAsOID( this.OID);
+                this.InsertAsOID(this.OID);
                 return 0;
             }
-            else
-            {
-                this.Update();
-                return 1;
-            }
+            return 1;
         }
-        public void CopyCellsData(string fromRefVal)
-        {
-            if (this.OID == 0)
-                throw new Exception("@OID Not set val  you can not copy it.");
-
-
-            //Sys.DataCells dsc = new BP.Sys.DataCells(fromRefVal);
-            //dsc.Delete(Sys.DataCellAttr.RefVal, "ND" + this.HisNode.NodeID + "_" + this.OID);
-
-            //foreach (Sys.DataCell ds in dsc)
-            //{
-            //    Sys.DataCell en = new BP.Sys.DataCell();
-            //    en.Copy(ds);
-            //    en.RefVal = "ND" + this.HisNode.NodeID + "_" + this.OID;
-            //    en.OID = 0;
-            //    en.Insert();
-            //}
-        }
-
-        public void CopyCellsData_bak(string fromRefVal)
-        {
-            if (this.OID == 0)
-                throw new Exception("@OID Not set val  you can not copy it.");
-
-
-            //Sys.DataCells dsc = new BP.Sys.DataCells(fromRefVal);
-            //dsc.Delete(Sys.DataCellAttr.RefVal, "ND" + this.HisNode.NodeID + "_" + this.OID);
-
-            //foreach (Sys.DataCell ds in dsc)
-            //{
-            //    Sys.DataCell en = new BP.Sys.DataCell();
-            //    en.Copy(ds);
-            //    en.RefVal = "ND" + this.HisNode.NodeID + "_" + this.OID;
-            //    en.OID = 0;
-            //    en.Insert();
-            //}
-        }
+         
         public override void Copy(Entity fromEn)
         {
             if (fromEn == null)
@@ -817,12 +778,7 @@ namespace BP.WF
                     continue;
                 this.SetValByKey(attr.Key, fromEn.GetValByKey(attr.Key));
             }
-
-            //}
-            //else
-            //{
-            //    Attrs attrs = fromEn.EnMap.Attrs;
-            //}
+ 
         }
         /// <summary>
         /// 删除主表数据也要删除它的明细数据
@@ -834,27 +790,6 @@ namespace BP.WF
                 DBAccess.RunSQL("DELETE " + dtl.PTable + " WHERE RefPK=" + this.OID);
 
             base.afterDelete();
-        }
-        /// <summary>
-        /// 结束前插入
-        /// </summary>
-        /// <returns></returns>
-        protected override bool beforeInsert()
-        {
-            this.SetValByKey(WorkAttr.RDT, DataType.CurrentDataTime);
-
-            //this.InitBiillNo();
-            if (this.OID == 0)
-                this.OID = DBAccess.GenerOID();
-
-            return base.beforeInsert();
-        }
-        /// <summary>
-        /// 防止在一次查询
-        /// </summary>
-        protected virtual void afterInsertUpdateAction()
-        {
-            return;
         }
         #endregion
 

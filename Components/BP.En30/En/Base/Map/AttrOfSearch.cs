@@ -167,6 +167,9 @@ namespace BP.En
                 _DefaultVal = value;
             }
         }
+        /// <summary>
+        /// д╛хож╣
+        /// </summary>
         public string DefaultValRun
         {
             get

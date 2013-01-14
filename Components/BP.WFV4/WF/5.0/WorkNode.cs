@@ -485,20 +485,22 @@ namespace BP.WF
                dt.Rows.Add(dr);
                return WorkerListWayOfDept(town, dt);
            }
+
            //首先判断是否配置了获取下一步接受人员的sql.
            if (town.HisNode.HisDeliveryWay == DeliveryWay.BySQL)
            {
                if (town.HisNode.RecipientSQL.Length < 4)
                    throw new Exception("@您设置的当前节点按照sql，决定下一步的接受人员，但是你没有设置sql.");
 
-               Attrs attrs = this.HisWork.EnMap.Attrs;
+               Attrs attrs = town.HisWork.EnMap.Attrs;
                sql = town.HisNode.RecipientSQL;
+               Work wk=town.HisWork;
                foreach (Attr attr in attrs)
                {
                    if (attr.MyDataType == DataType.AppString)
-                       sql = sql.Replace("@" + attr.Key, "'" + this.HisWork.GetValStrByKey(attr.Key) + "'");
+                       sql = sql.Replace("@" + attr.Key, "'" + wk.GetValStrByKey(attr.Key) + "'");
                    else
-                       sql = sql.Replace("@" + attr.Key, this.HisWork.GetValStrByKey(attr.Key));
+                       sql = sql.Replace("@" + attr.Key, wk.GetValStrByKey(attr.Key));
                }
 
                sql = sql.Replace("~", "'");
@@ -522,6 +524,17 @@ namespace BP.WF
                dt = DBAccess.RunSQLReturnTable(ps);
                if (dt.Rows.Count == 0)
                    throw new Exception("请选择下一步骤工作(" + town.HisNode.Name + ")接受人员。");
+               return WorkerListWayOfDept(town, dt);
+           }
+           // 按节点绑定的人员处理.
+           if (town.HisNode.HisDeliveryWay == DeliveryWay.ByBindEmp)
+           {
+               ps = new Paras();
+               ps.Add("FK_Node", this.HisNode.NodeID);
+               ps.SQL = "SELECT FK_Emp FROM WF_NodeEmp WHERE FK_Node=" + dbStr + "FK_Node ";
+               dt = DBAccess.RunSQLReturnTable(ps);
+               if (dt.Rows.Count == 0)
+                   throw new Exception("@流程设计错误:下一个节点(" + town.HisNode.Name + ")没有绑定工作人员 . ");
                return WorkerListWayOfDept(town, dt);
            }
 
@@ -2920,8 +2933,13 @@ namespace BP.WF
             #endregion GenerFH
 
             #region 产生下一步骤的工作人员
-            // 发起.
+            // 把数据给下一个子线程工作赋值，不然在获取执行获取工作人员列表中执行参数时不能得到对应的参数。
             Work wk = toNode.HisWork;
+            wk.Copy(this.rptGe);
+            wk.Copy(this.HisWork);  //复制过来信息。
+            if (wk.FID == 0)
+                wk.FID = this.HisWork.OID;
+
             WorkNode town = new WorkNode(wk, toNode);
 
             // 产生下一步骤要执行的人员.
@@ -2969,6 +2987,8 @@ namespace BP.WF
                         Work mywk = toNode.HisWork;
                         mywk.Copy(this.rptGe);
                         mywk.Copy(this.HisWork);  //复制过来信息。
+                     
+
                         bool isHaveEmp = false;
                         if (IsHaveFH)
                         {
@@ -3006,9 +3026,12 @@ namespace BP.WF
                         {
                             mywk.OID = DBAccess.GenerOID();  //BP.DA.DBAccess.GenerOID();
                         }
-                        mywk.FID = this.HisWork.FID;
                         mywk.Rec = wl.FK_Emp;
                         mywk.Emps = wl.FK_Emp;
+
+                        if (this.HisWork.FID == 0)
+                            mywk.FID = this.HisWork.OID;
+
                         mywk.BeforeSave();
 
                         //判断是不是MD5流程？
@@ -3804,7 +3827,6 @@ namespace BP.WF
 
                 #endregion 第三步: 处理发送之后的业务逻辑.
                  
-
                 #region 处理收听
                 if (Glo.IsEnableSysMessage)
                 {
@@ -4186,7 +4208,6 @@ namespace BP.WF
                 throw ex;
             }
         }
-        
         /// <summary>
         /// 手工的回滚提交失败信息.
         /// </summary>
