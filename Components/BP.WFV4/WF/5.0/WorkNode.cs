@@ -1712,7 +1712,7 @@ namespace BP.WF
                 foreach (DataRow dr in dt.Rows)
                 {
                     string fk_emp = dr[0].ToString();
-                    if (rm.Objs.IndexOf("@" + fk_emp) != -1)
+                    if (rm.Objs.IndexOf("@" + fk_emp + "@") != -1)
                         isHaveIt = true;
 
                     emps += fk_emp + "@";
@@ -1726,10 +1726,10 @@ namespace BP.WF
                     Emp emp = null;
                     foreach (DataRow dr in dt.Rows)
                     {
-                        if (myemps.IndexOf(dr[0].ToString()) != -1)
+                        if (myemps.IndexOf("@"+dr[0].ToString()+",") != -1)
                             continue;
 
-                        myemps += "@" + dr[0].ToString();
+                        myemps += "@" + dr[0].ToString() + ",";
 
                         GenerWorkerList wl = new GenerWorkerList();
                         wl.IsEnable = true;
@@ -1737,12 +1737,14 @@ namespace BP.WF
                         wl.FK_Node = toNodeId;
                         wl.FK_NodeText = town.HisNode.Name;
                         wl.FK_Emp = dr[0].ToString();
+
                         try
                         {
                             emp = new Emp(wl.FK_Emp);
                         }
-                        catch
+                        catch(Exception ex)
                         {
+                            Log.DefaultLogWriteLineError("@为人员分配工作时出现错误:"+wl.FK_Emp+",没有执行成功,异常信息."+ex.Message);
                             continue;
                         }
 
@@ -4268,8 +4270,33 @@ namespace BP.WF
                 foreach (Node nd in nds)
                 {
                     Work mwk = nd.HisWork;
+                    if (this.HisNode.HisRunModel == RunModel.SubThread && nd.HisRunModel == RunModel.SubThread )
+                    {
+                        /*两个都是子线程, 删除当前子线程节点。*/
+                        ps = new Paras();
+                        ps.SQL = "DELETE WF_GenerWorkerlist  WHERE WorkID=" + dbStr + "WorkID AND FK_Node=" + dbStr + "FK_Node ";
+                        ps.AddFK_Emp();
+                        ps.Add("WorkID", this.WorkID);
+                        ps.Add("FK_Node", nd.NodeID);
+                        BP.DA.DBAccess.RunSQL(ps);
+                        continue;
+                    }
+
+                    if ((this.HisNode.HisRunModel == RunModel.FL ||  this.HisNode.HisRunModel == RunModel.FHL) && nd.HisRunModel == RunModel.SubThread)
+                    {
+                        /*两个都是子线程, 删除当前子线程节点。*/
+                        ps = new Paras();
+                        ps.SQL = "DELETE WF_GenerWorkerlist  WHERE FID=" + dbStr + "FID AND FK_Node=" + dbStr + "FK_Node ";
+                        ps.AddFK_Emp();
+                        ps.Add("FID", this.WorkID);
+                        ps.Add("FK_Node", nd.NodeID);
+                        BP.DA.DBAccess.RunSQL(ps);
+                        continue;
+                    }
+
                     mwk.OID = this.WorkID;
                     mwk.DirectDelete();
+
                 }
                 this.HisNode.MapData.FrmEvents.DoEventNode(EventListOfNode.SendError, this.HisWork);
             }
