@@ -55,14 +55,25 @@ namespace BP.WF
             string msg = "";
             Flows fls = new Flows();
             fls.RetrieveAll();
+            DataTable dt;
+            string sql = "";
             foreach (Flow fl in fls)
             {
                 string rptTable = "ND" + int.Parse(fl.No) + "Rpt";
                 string ndTable = "ND" + int.Parse(fl.No) + "01";
-                string sql = "SELECT OID,Title,Rec,WFState,NodeState FROM " + ndTable + " WHERE NodeState=0 AND OID IN (SELECT OID FROM " + rptTable + " WHERE WFState!=0 )";
-                DataTable dt = DBAccess.RunSQLReturnTable(sql);
-                if (dt.Rows.Count == 0)
+                try
+                {
+                     sql = "SELECT OID,Title,Rec,WFState,NodeState FROM " + ndTable + " WHERE NodeState=0 AND OID IN (SELECT OID FROM " + rptTable + " WHERE WFState!=0 )";
+                    dt = DBAccess.RunSQLReturnTable(sql);
+                    if (dt.Rows.Count == 0)
+                        continue;
+                }
+                catch(Exception ex)
+                {
+                    fl.DoCheck();
+                    Log.DefaultLogWriteLineInfo(ex.Message);
                     continue;
+                }
 
                 msg += "@" + sql;
                 //msg += "ÐÞ¸´sql: UPDATE " + ndTable"  " ;

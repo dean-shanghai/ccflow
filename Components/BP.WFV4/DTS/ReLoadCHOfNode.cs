@@ -90,6 +90,8 @@ namespace BP.WF.DTS
                         ndData.MyPK = nd.NodeID + "_" + dr["OID"].ToString();
                         ndData.FK_Node = nd.NodeID;
                         ndData.FK_Flow = nd.FK_Flow;
+                     
+
                         ndData.WorkID = Int64.Parse(dr["OID"].ToString());
                         ndData.FK_Emp = dr["Rec"].ToString();
                         try

@@ -558,6 +558,7 @@ namespace BP.WF
 			string sql="SELECT a.WorkID FROM WF_GenerWorkFlow a, WF_GenerWorkerlist b WHERE a.WorkID=b.WorkID   AND b.FK_Node=a.FK_Node  AND b.FK_Emp='"+empId.ToString()+"' AND a.FK_Flow='"+flowNo+"'";
 			return DBAccess.RunSQLReturnTable(sql);
 		}
+
 		#region 方法
 		/// <summary>
 		/// 得到它的 Entity 

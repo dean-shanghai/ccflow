@@ -1520,10 +1520,13 @@ namespace BP.Web.UC
             this.Controls.Add(ctl);
             this.Add("</TD>");
         }
-
         public void AddTDCenter(string str)
         {
             this.Add("\n<TD align=center nowrap >" + str + "</TD>");
+        }
+        public void AddTDRight(string str)
+        {
+            this.Add("\n<TD align=Right nowrap >" + str + "</TD>");
         }
         public void AddTD()
         {

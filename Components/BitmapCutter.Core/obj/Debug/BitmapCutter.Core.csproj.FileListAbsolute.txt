@@ -15,3 +15,8 @@ C:\Documents and Settings\Administrator\桌面\BitmapCutter\BitmapCutter\BitmapC
 C:\Documents and Settings\Administrator\桌面\BitmapCutter\BitmapCutter\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.pdb
 D:\ccflow\Components\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.dll
 D:\ccflow\Components\BitmapCutter.Core\bin\Debug\BitmapCutter.Core.pdb
+D:\ccflow-google\branches\ccflow4.5\DLL\BitmapCutter.Core.dll
+D:\ccflow-google\branches\ccflow4.5\DLL\BitmapCutter.Core.pdb
+D:\ccflow-google\branches\ccflow4.5\Components\BitmapCutter.Core\obj\Debug\ResolveAssemblyReference.cache
+D:\ccflow-google\branches\ccflow4.5\Components\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.dll
+D:\ccflow-google\branches\ccflow4.5\Components\BitmapCutter.Core\obj\Debug\BitmapCutter.Core.pdb

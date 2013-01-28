@@ -1002,7 +1002,7 @@ namespace BP.WF
                 if (Glo.IsShowUserNoOnly)
                     empsExt += no + "¡¢";
                 else
-                    empsExt += no + "<" + dr[1] + ">¡¢";
+                    empsExt += no + "(" + dr[1] + ")¡¢";
             }
 
             Paras pss = new Paras();

@@ -503,7 +503,8 @@ namespace BP.DA
             lock_OID = true;
             if (DBAccess.RunSQL("UPDATE Sys_Serial SET IntVal=IntVal+1 WHERE CfgKey='OID'") == 0)
                 DBAccess.RunSQL("INSERT INTO Sys_Serial (CfgKey,IntVal) VALUES ('OID',100)");
-            int oid = DBAccess.RunSQLReturnValInt("SELECT  IntVal FROM Sys_Serial WHERE CfgKey='OID'");
+
+            int oid = DBAccess.RunSQLReturnValInt("SELECT IntVal FROM Sys_Serial WHERE CfgKey='OID'");
             lock_OID = false;
             return oid;
         }

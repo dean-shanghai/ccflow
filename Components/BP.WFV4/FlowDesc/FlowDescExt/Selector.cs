@@ -8,6 +8,37 @@ using BP.WF.Port;
 namespace BP.WF
 {
     /// <summary>
+    /// 待办工作超时处理方式
+    /// </summary>
+    public enum OutTimeDeal
+    {
+        /// <summary>
+        /// 不处理
+        /// </summary>
+        None,
+        /// <summary>
+        /// 自动的转向下一步骤
+        /// </summary>
+        AutoTurntoNextStep,
+        /// <summary>
+        /// 自动移交到指定的人员
+        /// </summary>
+        AutoShiftToSpecUser,
+        /// <summary>
+        /// 向指定的人员发送消息
+        /// </summary>
+        SendMsgToSpecUser,
+        /// <summary>
+        /// 删除流程
+        /// </summary>
+        DeleteFlow,
+        /// <summary>
+        /// 执行SQL
+        /// </summary>
+        RunSQL
+    }
+
+    /// <summary>
     /// 显示方式
     /// </summary>
     public enum SelectorDBShowWay

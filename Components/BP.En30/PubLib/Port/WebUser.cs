@@ -188,7 +188,6 @@ namespace BP.Web
 
             BP.Sys.UserLog.AddLog("SignIn", em.No, "µÇÂ¼", System.Web.HttpContext.Current.Request.UserHostAddress);
 
-
             if (em.No == "admin")
             {
                 if (em.FK_Dept.Length != 2)

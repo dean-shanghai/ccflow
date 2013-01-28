@@ -25,6 +25,58 @@ namespace BP.WF
     {
         #region 自动执行
         /// <summary>
+        /// 处理延期的任务.根据节点属性的设置
+        /// </summary>
+        /// <returns>返回处理的消息</returns>
+        public static string DTS_DealDeferredWork()
+        {
+            string sql = "SELECT * FROM WF_EmpWorks  WHERE FK_Node IN (SELECT NodeID from WF_Node WHERE OutTimeDeal >0 ) AND SDT <='" + DataType.CurrentData + "' ORDER BY FK_Emp";
+            DataTable dt = DBAccess.RunSQLReturnTable(sql);
+            string msg = "";
+            foreach (DataRow dr in dt.Rows)
+            {
+                string fk_emp = dr["FK_Emp"].ToString();
+                string fk_flow = dr["FK_Flow"].ToString();
+                int fk_node = int.Parse(dr["FK_Node"].ToString());
+                Int64 workid = Int64.Parse(dr["WorkID"].ToString());
+                if (WebUser.No != fk_emp)
+                {
+                    Emp emp = new Emp(WebUser.No);
+                    BP.Web.WebUser.SignInOfGener(emp);
+                }
+
+                BP.WF.Ext.NodeO nd = new BP.WF.Ext.NodeO();
+                nd.NodeID = fk_node;
+                nd.Retrieve();
+
+                switch (nd.HisOutTimeDeal)
+                {
+                    case OutTimeDeal.None:
+                        break;
+                    case OutTimeDeal.AutoTurntoNextStep: //自动转到下一步骤.
+                        msg += BP.WF.Dev2Interface.Node_SendWork(fk_flow, workid).ToMsgOfText();
+                        break;
+                    case OutTimeDeal.AutoShiftToSpecUser:
+                        msg += BP.WF.Dev2Interface.Node_Forward(workid, nd.OutTimeDeal, "来自ccflow的自动移交消息:(" + BP.Web.WebUser.Name + ")工作未按时处理(" + nd.Name + "),现在移交给您。");
+                        break;
+                    case OutTimeDeal.SendMsgToSpecUser:
+                        BP.WF.Dev2Interface.Port_SendSMS(nd.OutTimeDeal, "来自ccflow的自动消息:(" + BP.Web.WebUser.Name + ")工作未按时处理(" + nd.Name + ")", "感谢您选择ccflow.");
+                        break;
+                    case OutTimeDeal.DeleteFlow:
+                        msg += BP.WF.Dev2Interface.Flow_DoDeleteFlowByReal(fk_flow, workid);
+                        break;
+                    case OutTimeDeal.RunSQL:
+                        msg += BP.DA.DBAccess.RunSQL(nd.OutTimeDeal);
+                        break;
+                    default:
+                        throw new Exception("@错误没有判断的超时处理方式." + nd.HisOutTimeDeal);
+                }
+            }
+            Emp emp1 = new Emp("admin");
+            BP.Web.WebUser.SignInOfGener(emp1);
+            return msg;
+        }
+        /// <summary>
         /// 自动执行开始节点数据
         /// </summary>
         public static void DTS_AutoStarterFlow(Flow fl)
@@ -1202,7 +1254,7 @@ namespace BP.WF
         /// <param name="fk_nodeOfJumpTo">发起后要跳转到的节点(可以为空)</param>
         /// <param name="nextWorker">发起后要跳转到的节点并指定的工作人员(可以为空)</param>
         /// <returns>执行信息</returns>
-        public static string Node_StartWork(string flowNo, Hashtable ht, DataSet workDtls, int fk_nodeOfJumpTo, string nextWorker)
+        public static SendReturnObjs Node_StartWork(string flowNo, Hashtable ht, DataSet workDtls, int fk_nodeOfJumpTo, string nextWorker)
         {
             Flow fl = new Flow(flowNo);
             Work wk = fl.NewWork();
@@ -1247,12 +1299,12 @@ namespace BP.WF
                     }
                 }
             }
-
             WorkNode wn = new WorkNode(wk, fl.HisStartNode);
+
             if (nextWorker != null && fk_nodeOfJumpTo != 0)
-                return wn.NodeSend(new Node(fk_nodeOfJumpTo), nextWorker).ToMsgOfHtml();
+                return wn.NodeSend(new Node(fk_nodeOfJumpTo), nextWorker);
             else
-                return wn.NodeSend().ToMsgOfHtml();
+                return wn.NodeSend();
         }
         /// <summary>
         /// 发送工作
@@ -1262,7 +1314,7 @@ namespace BP.WF
         /// <returns>返回执行信息</returns>
         public static SendReturnObjs Node_SendWork(string fk_flow, Int64 workID)
         {
-            return Node_SendWork(fk_flow, workID, new Hashtable(),null);
+            return Node_SendWork(fk_flow, workID, null,null);
         }
         /// <summary>
         /// 发送工作

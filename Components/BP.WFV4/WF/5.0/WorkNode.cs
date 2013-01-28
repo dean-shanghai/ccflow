@@ -161,6 +161,20 @@ namespace BP.WF
             }
             #endregion
 
+
+            // 按节点绑定的人员处理.
+            if (town.HisNode.HisDeliveryWay == DeliveryWay.ByBindEmp)
+            {
+                ps = new Paras();
+                ps.Add("FK_Node", town.HisNode.NodeID);
+                ps.SQL = "SELECT FK_Emp FROM WF_NodeEmp WHERE FK_Node=" + dbStr + "FK_Node ";
+                dt = DBAccess.RunSQLReturnTable(ps);
+                if (dt.Rows.Count == 0)
+                    throw new Exception("@流程设计错误:下一个节点(" + town.HisNode.Name + ")没有绑定工作人员 . ");
+                return WorkerListWayOfDept(town, dt);
+            }
+
+
             // 按上一节点发送人处理。
             if (town.HisNode.HisDeliveryWay == DeliveryWay.ByPreviousOper
                 || town.HisNode.HisDeliveryWay == DeliveryWay.ByPreviousOperSkip)
@@ -187,7 +201,8 @@ namespace BP.WF
             {
                 ps = new Paras();
                 ps.Add("FK_Node", town.HisNode.NodeID);
-                ps.SQL = "SELECT FK_Emp FROM WF_NodeEmp WHERE FK_Node=" + dbStr + "FK_Node";
+                ps.Add("WorkID", this.WorkID);
+                ps.SQL = "SELECT FK_Emp FROM WF_GenerWorkerlist WHERE WorkID=" + dbStr + "WorkID AND FK_Node=" + dbStr + "FK_Node AND IsEnable=1 AND IsPass=1";
                 dt = DBAccess.RunSQLReturnTable(ps);
 
                 if (dt.Rows.Count == 0)
@@ -530,7 +545,7 @@ namespace BP.WF
            if (town.HisNode.HisDeliveryWay == DeliveryWay.ByBindEmp)
            {
                ps = new Paras();
-               ps.Add("FK_Node", this.HisNode.NodeID);
+               ps.Add("FK_Node", town.HisNode.NodeID);
                ps.SQL = "SELECT FK_Emp FROM WF_NodeEmp WHERE FK_Node=" + dbStr + "FK_Node ";
                dt = DBAccess.RunSQLReturnTable(ps);
                if (dt.Rows.Count == 0)
@@ -1678,14 +1693,14 @@ namespace BP.WF
 
                 wl.DirectInsert();
                 this.HisWorkerLists.AddEntity(wl);
-               
-                    RememberMe rm = new RememberMe(); // this.GetHisRememberMe(town.HisNode);
-                    rm.Objs = "@" + wl.FK_Emp + "@";
-                    rm.ObjsExt = wl.FK_Emp + "<" + wl.FK_EmpText + ">";
-                    rm.Emps = "@" + wl.FK_Emp + "@";
-                    rm.EmpsExt = wl.FK_Emp + "<" + wl.FK_EmpText + ">";
-                    this._RememberMe = rm;
-                 
+
+                RememberMe rm = new RememberMe(); // this.GetHisRememberMe(town.HisNode);
+                rm.Objs = "@" + wl.FK_Emp + "@";
+                rm.ObjsExt = wl.FK_Emp + "<" + wl.FK_EmpText + ">";
+                rm.Emps = "@" + wl.FK_Emp + "@";
+                rm.EmpsExt = wl.FK_Emp + "<" + wl.FK_EmpText + ">";
+                this._RememberMe = rm;
+
             }
             else
             {
@@ -1726,7 +1741,7 @@ namespace BP.WF
                     Emp emp = null;
                     foreach (DataRow dr in dt.Rows)
                     {
-                        if (myemps.IndexOf("@"+dr[0].ToString()+",") != -1)
+                        if (myemps.IndexOf("@" + dr[0].ToString() + ",") != -1)
                             continue;
 
                         myemps += "@" + dr[0].ToString() + ",";
@@ -1742,9 +1757,9 @@ namespace BP.WF
                         {
                             emp = new Emp(wl.FK_Emp);
                         }
-                        catch(Exception ex)
+                        catch (Exception ex)
                         {
-                            Log.DefaultLogWriteLineError("@为人员分配工作时出现错误:"+wl.FK_Emp+",没有执行成功,异常信息."+ex.Message);
+                            Log.DefaultLogWriteLineError("@为人员分配工作时出现错误:" + wl.FK_Emp + ",没有执行成功,异常信息." + ex.Message);
                             continue;
                         }
 
@@ -1843,7 +1858,7 @@ namespace BP.WF
                         if (Glo.IsShowUserNoOnly)
                             objExts += wl.FK_Emp + "、";
                         else
-                            objExts += wl.FK_Emp + "<" + wl.FK_EmpText + ">、";
+                            objExts += wl.FK_Emp + "(" + wl.FK_EmpText + ")、";
                     }
                     rm.ObjsExt = objExts;
 
@@ -1856,14 +1871,14 @@ namespace BP.WF
                             if (Glo.IsShowUserNoOnly)
                                 empExts += emp.No + "、";
                             else
-                                empExts += emp.No + "<" + emp.Name + ">、";
+                                empExts += emp.No + "(" + emp.Name + ")、";
                         }
                         else
                         {
                             if (Glo.IsShowUserNoOnly)
                                 empExts += "<strike><font color=red>" + emp.No + "</font></strike>、";
                             else
-                                empExts += "<strike><font color=red>" + emp.No + "<" + emp.Name + "></font></strike>、";
+                                empExts += "<strike><font color=red>" + emp.No + "(" + emp.Name + ")</font></strike>、";
                         }
                     }
                     rm.EmpsExt = empExts;
@@ -3388,7 +3403,7 @@ namespace BP.WF
                     if (Glo.IsShowUserNoOnly)
                         toEmpsStr += wl.FK_Emp + "、";
                     else
-                        toEmpsStr += wl.FK_Emp + "<" + wl.FK_EmpText + ">、";
+                        toEmpsStr += wl.FK_Emp + "(" + wl.FK_EmpText + ")、";
 
                     if (gwls.Count == 1)
                         emps = fk_emp;
@@ -3748,8 +3763,15 @@ namespace BP.WF
         public SendReturnObjs NodeSend(Node jumpToNode, string jumpToEmp)
         {
             //加入系统变量.
+            //this.addMsg(SendReturnMsgFlag.VarCurrNodeID, this.HisNode.NodeID.ToString(), this.HisNode.NodeID.ToString(), SendReturnMsgType.SystemMsg);
+            //this.addMsg(SendReturnMsgFlag.VarCurrNodeName, this.HisNode.Name, this.HisNode.Name, SendReturnMsgType.SystemMsg);
+
+            //加入系统变量.
             this.addMsg(SendReturnMsgFlag.VarCurrNodeID, this.HisNode.NodeID.ToString(), this.HisNode.NodeID.ToString(), SendReturnMsgType.SystemMsg);
             this.addMsg(SendReturnMsgFlag.VarCurrNodeName, this.HisNode.Name, this.HisNode.Name, SendReturnMsgType.SystemMsg);
+            this.addMsg(SendReturnMsgFlag.VarWorkID, this.WorkID.ToString(), this.WorkID.ToString(), SendReturnMsgType.SystemMsg);
+
+
 
             //设置跳转节点，如果有可以为null.
             this.JumpToNode = jumpToNode;
@@ -4847,6 +4869,8 @@ namespace BP.WF
             /* 产生开始工作流程记录. */
             GenerWorkFlow gwf = new GenerWorkFlow();
             gwf.WorkID = this.HisWork.OID;
+            gwf.DirectDelete();
+
             gwf.Title = WorkNode.GenerTitle(this.HisWork);
             this.HisWork.SetValByKey("Title", gwf.Title);
             gwf.WFState = 0;
@@ -4882,7 +4906,7 @@ namespace BP.WF
                 {
                     Log.DefaultLogWriteLineError("可能是流程设计错误,获取开始节点{" + gwf.Title + "}的整体流程应完成时间有错误,是否包含SysSDTOfFlow字段? 异常信息:" + ex.Message);
                     /*获取开始节点的整体流程应完成时间有错误,是否包含SysSDTOfFlow字段? .*/
-                    if (this.HisWork.EnMap.Attrs.Contains(WorkSysFieldAttr.SysSDTOfFlow)==false)
+                    if (this.HisWork.EnMap.Attrs.Contains(WorkSysFieldAttr.SysSDTOfFlow) == false)
                         throw new Exception("流程设计错误，您设置的流程时效属性是｛按开始节点表单SysSDTOfFlow字段计算｝，但是开始节点表单不包含字段 SysSDTOfFlow , 系统错误信息:" + ex.Message);
 
                     throw new Exception("初始化开始节点数据错误:" + ex.Message);
@@ -4904,14 +4928,7 @@ namespace BP.WF
 
             }
 
-            try
-            {
-                gwf.DirectInsert();
-            }
-            catch
-            {
-                gwf.DirectUpdate();
-            }
+            gwf.DirectInsert();
 
             StartWork sw = (StartWork)this.HisWork;
 
@@ -5257,7 +5274,7 @@ namespace BP.WF
                     /* 如果流程完成 */
                      this.HisWorkFlow.DoFlowOver(ActionType.FlowOver,"符合流程完成条件");
                     this.IsStopFlow = true;
-                    this.addMsg(SendReturnMsgFlag.OneNodeOver, "工作已经成功处理(一个流程的工作)。", 
+                    this.addMsg(SendReturnMsgFlag.OneNodeSendOver, "工作已经成功处理(一个流程的工作)。", 
                         "工作已经成功处理(一个流程的工作)。 @查看<img src='./../Images/Btn/PrintWorkRpt.gif' ><a href='WFRpt.aspx?WorkID=" + this.HisWork.OID + "&FID=" + this.HisWork.FID + "&FK_Flow=" + this.HisNode.FK_Flow + "'target='_blank' >工作报告</a>", SendReturnMsgType.Info);
                     return; 
                 }
@@ -5417,7 +5434,7 @@ namespace BP.WF
                 if (Glo.IsShowUserNoOnly)
                     toEmpsStr += wl.FK_Emp + "、";
                 else
-                    toEmpsStr += wl.FK_Emp + "<" + wl.FK_EmpText + ">、";
+                    toEmpsStr += wl.FK_Emp + "(" + wl.FK_EmpText + ")、";
 
                 if (gwls.Count == 1)
                     emps = fk_emp;
@@ -5730,7 +5747,7 @@ namespace BP.WF
                 if (Glo.IsShowUserNoOnly)
                     toEmpsStr += wl.FK_Emp + "、";
                 else
-                    toEmpsStr += wl.FK_Emp + "<" + wl.FK_EmpText + ">、";
+                    toEmpsStr += wl.FK_Emp + "(" + wl.FK_EmpText + ")、";
 
                 if (gwls.Count == 1)
                     emps = fk_emp;

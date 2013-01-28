@@ -13,6 +13,20 @@ namespace BP.WF.Ext
     public class NodeO : Entity
     {
         /// <summary>
+        /// 超时处理方式
+        /// </summary>
+        public OutTimeDeal HisOutTimeDeal
+        {
+            get
+            {
+                return (OutTimeDeal)this.GetValIntByKey(NodeAttr.OutTimeDeal);
+            }
+            set
+            {
+                this.SetValByKey(NodeAttr.OutTimeDeal, (int)value);
+            }
+        }
+        /// <summary>
         /// 访问规则
         /// </summary>
         public ReturnRole HisReturnRole
@@ -71,6 +85,17 @@ namespace BP.WF.Ext
             set
             {
                 this.SetValByKey(NodeAttr.NodeID, value);
+            }
+        }
+        public string OutTimeDeal
+        {
+            get
+            {
+                return this.GetValStringByKey(NodeAttr.OutTimeDeal);
+            }
+            set
+            {
+                this.SetValByKey(NodeAttr.OutTimeDeal, value);
             }
         }
         public string Name

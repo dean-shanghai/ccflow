@@ -117,14 +117,10 @@ namespace BP.WF
                 int i = 0;
                 foreach (string k in System.Web.HttpContext.Current.Request.QueryString.AllKeys)
                 {
+                    if (k == "OID")
+                        continue;
                     i++;
                     wk.SetValByKey(k, System.Web.HttpContext.Current.Request.QueryString[k]);
-                }
-
-                if (i >= 3)
-                {
-                    wk.OID = newOID;
-                    wk.DirectUpdate();
                 }
 
                 #region 处理删除草稿的需求。
@@ -437,7 +433,7 @@ namespace BP.WF
                     }
 
                     BP.Web.WebUser.SignInOfGener(emp);
-                    string info_send= BP.WF.Dev2Interface.Node_StartWork(this.No,null,null,0,null);
+                    string info_send= BP.WF.Dev2Interface.Node_StartWork(this.No,null,null,0,null).ToMsgOfHtml();
                     if (WebUser.No != "admin")
                     {
                         emp = new BP.Port.Emp();

@@ -111,12 +111,17 @@ namespace BP.WF
         /// <summary>
         /// 一个节点完成
         /// </summary>
-        public const string OneNodeOver = "OneNodeOver";
+        public const string OneNodeSendOver = "OneNodeSendOver";
         /// <summary>
         /// 单据信息
         /// </summary>
         public const string BillInfo = "BillInfo";
+
         #region 系统变量
+        /// <summary>
+        /// VarWorkID
+        /// </summary>
+        public const string VarWorkID = "VarWorkID";
         /// <summary>
         /// 当前节点ID
         /// </summary>
@@ -142,7 +147,7 @@ namespace BP.WF
         /// </summary>
         public const string VarAcceptersID = "VarAcceptersID";
         /// <summary>
-        /// 接受人集合的ID&Name(用逗号分开)
+        /// 接受人集合的ID Name(用逗号分开)
         /// </summary>
         public const string VarAcceptersNID = "VarAcceptersNID";
         #endregion 系统变量
@@ -181,6 +186,96 @@ namespace BP.WF
     /// </summary>
     public class SendReturnObjs:System.Collections.CollectionBase
     {
+        #region 获取系统变量.
+        public Int64 VarWorkID
+        {
+            get
+            {
+                foreach (SendReturnObj item in this)
+                {
+                    if (item.MsgFlag == SendReturnMsgFlag.VarWorkID)
+                        return Int64.Parse(item.MsgOfText);
+                }
+                return 0;
+            }
+        }
+        /// <summary>
+        /// 到达节点ID
+        /// </summary>
+        public int VarToNodeID
+        {
+            get
+            {
+                foreach (SendReturnObj item in this)
+                {
+                    if (item.MsgFlag == SendReturnMsgFlag.VarCurrNodeID)
+                        return int.Parse( item.MsgOfText);
+                }
+                return 0;
+            }
+        }
+        /// <summary>
+        /// 到达节点名称
+        /// </summary>
+        public string VarToNodeName
+        {
+            get
+            {
+                foreach (SendReturnObj item in this)
+                {
+                    if (item.MsgFlag == SendReturnMsgFlag.VarToNodeName)
+                        return item.MsgOfText;
+                }
+                return "没有找到变量.";
+            }
+        }
+        /// <summary>
+        /// 到达的节点名称
+        /// </summary>
+        public string VarCurrNodeName
+        {
+            get
+            {
+                foreach (SendReturnObj item in this)
+                {
+                    if (item.MsgFlag == SendReturnMsgFlag.VarCurrNodeName)
+                        return  item.MsgOfText;
+                }
+                return null;
+            }
+        }
+        /// <summary>
+        /// 接受人
+        /// </summary>
+        public string VarAcceptersName
+        {
+            get
+            {
+                foreach (SendReturnObj item in this)
+                {
+                    if (item.MsgFlag == SendReturnMsgFlag.VarAcceptersName)
+                        return item.MsgOfText;
+                }
+                return null;
+            }
+        }
+        /// <summary>
+        /// 接受人IDs
+        /// </summary>
+        public string VarAcceptersID
+        {
+            get
+            {
+                foreach (SendReturnObj item in this)
+                {
+                    if (item.MsgFlag == SendReturnMsgFlag.VarAcceptersID)
+                        return item.MsgOfText;
+                }
+                return null;
+            }
+        }
+        #endregion
+
         /// <summary>
         /// 输出text消息
         /// </summary>
