@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{83D53118-9A8D-4970-9A88-A2909B13FF64}</ProjectGuid>
+    <ProjectGuid>{69621102-FC58-414F-B884-9705752AE08E}</ProjectGuid>
     <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -62,20 +62,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ColorPicker">
-      <HintPath>..\..\..\ccflow\DLL\ColorPicker.dll</HintPath>
+      <HintPath>..\DLL\ColorPicker.dll</HintPath>
     </Reference>
     <Reference Include="Liquid.Menu">
-      <HintPath>..\..\..\ccflow\DLL\Liquid.Menu.dll</HintPath>
+      <HintPath>..\DLL\Liquid.Menu.dll</HintPath>
     </Reference>
     <Reference Include="Liquid.TreeView">
-      <HintPath>..\..\..\ccflow\DLL\Liquid.TreeView.dll</HintPath>
+      <HintPath>..\DLL\Liquid.TreeView.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Expression.Interactions">
       <HintPath>..\DLL\Microsoft.Expression.Interactions.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="Silverlight.DataSet">
-      <HintPath>..\..\..\ccflow\DLL\Silverlight.DataSet.dll</HintPath>
+      <HintPath>..\DLL\Silverlight.DataSet.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
     <Reference Include="System.Net" />

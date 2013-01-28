@@ -14,36 +14,21 @@ namespace CCForm
 {
     public partial class FrmEle : ChildWindow
     {
-        public string GetEleType(string eleTypeStr)
-        {
-            string s = "";
-            if (eleTypeStr == "0")
-                s = "HandSiganture";
-
-            if (eleTypeStr == "1")
-                s = "EleSiganture";
-
-            if (eleTypeStr == "2")
-                s = "CheckGroup";
-
-            if (eleTypeStr == "3")
-                s = "iFrame";
-            return s;
-        }
         public int NodeID = 0;
         public Boolean IsNew = false;
         public BPEle HisEle
         {
             get
             {
-                string eleType = this.DDL_EleType.SelectedIndex.ToString();
-              
+                ComboBoxItem item = (ComboBoxItem)this.DDL_EleType.SelectedItem ;
+                string eleType = item.Tag.ToString();
 
                 BPEle ele = new BPEle();
                 ele.Name = Glo.FK_MapData + "_" + eleType + "_" + this.TB_EleID.Text;
                 ele.EleID = this.TB_EleID.Text;
                 ele.EleType = eleType;
                 ele.EleName = this.TB_EleName.Text;
+
                 return ele;
             }
             set
@@ -54,6 +39,47 @@ namespace CCForm
         public FrmEle()
         {
             InitializeComponent();
+        }
+        private DataTable _dtConfig=null;
+        public DataTable dtConfig
+        {
+            get
+            {
+                if (_dtConfig == null)
+                {
+                    _dtConfig = new DataTable();
+                    _dtConfig.Columns.Add(new DataColumn("DFor", typeof(string)));
+                    _dtConfig.Columns.Add(new DataColumn("Tag1", typeof(string)));
+                    _dtConfig.Columns.Add(new DataColumn("Tag2", typeof(string)));
+                    _dtConfig.Columns.Add(new DataColumn("Tag3", typeof(string)));
+                    _dtConfig.Columns.Add(new DataColumn("Tag4", typeof(string)));
+
+                    DataRow dr = _dtConfig.NewRow();
+                    dr["DFor"] = "HandSiganture";
+                    dr["Tag1"] = "@Label=存储路径@FType=String";
+                    dr["Tag2"] = "@Label=窗口打开宽度@DefVal=300@FType=Int";
+                    dr["Tag3"] = "@Label=窗口打开高度@DefVal=200@FType=Int";
+                    dr["Tag4"] = "不需填写";
+                    _dtConfig.Rows.Add(dr);
+
+                    dr = _dtConfig.NewRow();
+                    dr["DFor"] = "iFrame";
+                    dr["Tag1"] = "@Label=Url@DefVal=http://ccflow.org@FType=String";
+                    dr["Tag2"] = "不需填写";
+                    dr["Tag3"] = "不需填写";
+                    dr["Tag4"] = "不需填写";
+                    _dtConfig.Rows.Add(dr);
+
+                    dr = _dtConfig.NewRow();
+                    dr["DFor"] = "Fieldset";
+                    dr["Tag1"] = "@Label=标题@FType=String";
+                    dr["Tag2"] = "不需填写";
+                    dr["Tag3"] = "不需填写";
+                    dr["Tag4"] = "不需填写";
+                    _dtConfig.Rows.Add(dr);
+                }
+                return _dtConfig;
+            }
         }
         public void SetBlank()
         {
@@ -70,21 +96,37 @@ namespace CCForm
             this.IsNew = true;
             this.TB_EleID.IsEnabled = true;
             this.DDL_EleType.IsEnabled = true;
+
+            this.ReSetTagDesc();
         }
+        protected override void OnOpened()
+        {
+            base.OnOpened();
+            this.ReSetTagDesc();
+        }
+        /// <summary>
+        /// 绑定这个控件.
+        /// </summary>
+        /// <param name="mypk"></param>
         public void BindData(string mypk)
         {
-              FF.CCFormSoapClient da = Glo.GetCCFormSoapClientServiceInstance();
-                da.GetXmlDataAsync("FrmEle.xml");
-                da.GetXmlDataCompleted += new EventHandler<FF.GetXmlDataCompletedEventArgs>(da_GetXmlDataCompleted);
-             da = Glo.GetCCFormSoapClientServiceInstance();
+            this.Name = mypk;
+
+            FF.CCFormSoapClient da = Glo.GetCCFormSoapClientServiceInstance();
             da.RunSQLReturnTableAsync("SELECT * FROM Sys_FrmEle WHERE MyPK='" + mypk + "'");
             da.RunSQLReturnTableCompleted += new EventHandler<FF.RunSQLReturnTableCompletedEventArgs>(da_RunSQLReturnTableCompleted);
         }
-
+        /// <summary>
+        /// 绑定这个控件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         void da_RunSQLReturnTableCompleted(object sender, FF.RunSQLReturnTableCompletedEventArgs e)
         {
+
             DataSet ds = new DataSet();
             ds.FromXml(e.Result);
+
             DataTable dt = ds.Tables[0];
             if (dt.Rows.Count == 0)
             {
@@ -93,45 +135,40 @@ namespace CCForm
             else
             {
                 this.TB_EleID.IsEnabled = false;
-                this.DDL_EleType.IsEnabled = false;
+                this.DDL_EleType.IsEnabled = true;
                 this.IsNew = false;
+
                 this.TB_EleID.Text = dt.Rows[0]["EleID"].ToString();
                 this.TB_EleName.Text = dt.Rows[0]["EleName"].ToString();
 
-                int idx = 0;
-                if (dt.Rows[0]["EleType"] == "HandSiganture")
-                    idx = 0;
+                foreach (var item in this.DDL_EleType.Items)
+                {
+                    ComboBoxItem myite = item as ComboBoxItem;
+                    if (myite.Tag.ToString() == dt.Rows[0]["EleType"].ToString())
+                    {
+                        this.DDL_EleType.SelectedItem = myite;
+                        myite.IsSelected = true;
+                        break;
+                    }
+                }
 
-                if (dt.Rows[0]["EleType"] == "EleSiganture")
-                    idx = 1;
+                this.DDL_EleType.IsEnabled = false;
 
-                if (dt.Rows[0]["EleType"] == "CheckGroup")
-                    idx = 2;
 
-                if (dt.Rows[0]["EleType"] == "iFrame")
-                    idx = 3;
-
-                this.DDL_EleType.SelectedIndex = idx;
+                //为每个tag 赋值。
                 this.TB_Tag1.Text = dt.Rows[0]["Tag1"].ToString();
                 this.TB_Tag2.Text = dt.Rows[0]["Tag2"].ToString();
                 this.TB_Tag3.Text = dt.Rows[0]["Tag3"].ToString();
                 this.TB_Tag4.Text = dt.Rows[0]["Tag4"].ToString();
             }
+
+            this.ReSetTagDesc();
         }
         private void OKButton_Click(object sender, RoutedEventArgs e)
         {
-            string eleType = this.DDL_EleType.SelectedIndex.ToString();
-            if (eleType == "0")
-                eleType = "HandSiganture";
-
-            if (eleType == "1")
-                eleType = "EleSiganture";
-
-            if (eleType == "2")
-                eleType = "CheckGroup";
-
-            if (eleType == "3")
-                eleType = "iFrame";
+            ComboBoxItem item = (ComboBoxItem)this.DDL_EleType.SelectedItem;
+            string eleType = item.Tag.ToString();
+            MessageBox.Show(eleType);
 
             string mypk = Glo.FK_MapData + "_" + eleType + "_" + this.TB_EleID.Text.Trim();
             string strs = "@EnName=BP.Sys.FrmEle@PKVal=" + mypk;
@@ -146,9 +183,14 @@ namespace CCForm
                 strs += "@IsEnable=0";
 
             strs += "@Tag1=" + this.TB_Tag1.Text.Trim();
-            strs += "@Tag2=" + this.TB_Tag2.Text.Trim();
-            strs += "@Tag3=" + this.TB_Tag3.Text.Trim();
-            strs += "@Tag4=" + this.TB_Tag4.Text.Trim();
+            if (this.Lab_Tag2.Content.ToString() != "不需填写")
+                strs += "@Tag2=" + this.TB_Tag2.Text.Trim();
+
+            if (this.Lab_Tag3.Content.ToString() != "不需填写")
+                strs += "@Tag3=" + this.TB_Tag3.Text.Trim();
+
+            if (this.Lab_Tag4.Content.ToString() != "不需填写")
+                strs += "@Tag4=" + this.TB_Tag4.Text.Trim();
 
             FF.CCFormSoapClient da = Glo.GetCCFormSoapClientServiceInstance();
             da.SaveEnAsync(strs);
@@ -164,35 +206,23 @@ namespace CCForm
         }
         private void DDL_EleType_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           // this.ReSetConfig();
+           // MessageBox.Show("初始化注释。");
+            this.ReSetTagDesc();
+           // MessageBox.Show("初始化注释。 over");
         }
-        public DataTable dtConfig = null;
-        void da_GetXmlDataCompleted(object sender, FF.GetXmlDataCompletedEventArgs e)
+        /// <summary>
+        /// 重设置描述
+        /// </summary>
+        public void ReSetTagDesc()
         {
-            DataSet ds = new DataSet();
-            ds.FromXml(e.Result);
-            this.dtConfig = ds.Tables[0];
-        }
-        public void ReSetConfig()
-        {
-            if (dtConfig == null)
-            {
-                DDL_EleType_SelectionChanged(null, null);
+            if (this.DDL_EleType == null)
                 return;
-            }
 
-            string eleType = this.DDL_EleType.SelectedIndex.ToString();
-            if (eleType == "0")
-                eleType = "HandSiganture";
+            if (this.DDL_EleType.SelectedItem == null)
+                return;
 
-            if (eleType == "1")
-                eleType = "EleSiganture";
-
-            if (eleType == "2")
-                eleType = "CheckGroup";
-
-            if (eleType == "3")
-                eleType = "iFrame";
+            ComboBoxItem  item = this.DDL_EleType.SelectedItem as ComboBoxItem;
+            string eleType = item.Tag.ToString();
 
             foreach (DataRow dr in dtConfig.Rows)
             {

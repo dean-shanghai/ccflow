@@ -20,12 +20,12 @@
                  VerticalAlignment="Top" Width="215" TextChanged="TB_EleName_TextChanged" LostFocus="TB_EleName_LostFocus" />
         <sdk:Label Content="类型" Height="28" HorizontalAlignment="Left" Margin="38,80,0,0" Name="label5" VerticalAlignment="Top" Width="37" />
         <ComboBox Height="23" HorizontalAlignment="Left" Margin="90,79,0,0" Name="DDL_EleType"
-                  VerticalAlignment="Top" Width="166" ItemsSource="{Binding}" SelectedIndex="0" SelectionChanged="DDL_EleType_SelectionChanged">
-            <ComboBoxItem Content="手写签名" Tag="HandSinge" IsSelected="True" />
-            <ComboBoxItem Content="电子签名" Tag="EleSinge"  />
-            <ComboBoxItem Content="审核分组" />
+                  VerticalAlignment="Top" Width="166" ItemsSource="{Binding}" SelectedIndex="0"  SelectionChanged="DDL_EleType_SelectionChanged">
+            <ComboBoxItem Content="手写签名" Tag="HandSiganture" IsSelected="True" />
+            <!--<ComboBoxItem Content="电子签名" Tag="EleSinge"  />-->
+            <!--<ComboBoxItem Content="审核分组"  Tag="CheckGroup"  />-->
             <ComboBoxItem Content="网页框架" Tag="iFrame"   />
-
+            <ComboBoxItem Content="元素分组" Tag="Fieldset"   />
         </ComboBox>
         <TextBox Height="23" HorizontalAlignment="Left" Margin="83,129,0,0" Name="TB_Tag1" VerticalAlignment="Top" Width="272" />
         <sdk:Label Content="Tag2" Height="28" HorizontalAlignment="Left" Margin="83,158,0,0" Name="Lab_Tag2" VerticalAlignment="Top" Width="162" />
