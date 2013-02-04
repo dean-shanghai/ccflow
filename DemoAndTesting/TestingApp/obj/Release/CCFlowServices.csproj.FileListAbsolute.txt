@@ -1,0 +1,17 @@
+D:\ccflow\trunk\CCFlowServices\bin\Release\CCFlowServices.exe.config
+D:\ccflow\trunk\CCFlowServices\bin\Release\CCFlowServices.exe
+D:\ccflow\trunk\CCFlowServices\bin\Release\CCFlowServices.pdb
+D:\ccflow\trunk\CCFlowServices\bin\Release\BP.En30.dll
+D:\ccflow\trunk\CCFlowServices\bin\Release\BP.WF.dll
+D:\ccflow\trunk\CCFlowServices\bin\Release\IBM.Data.Informix.dll
+D:\ccflow\trunk\CCFlowServices\bin\Release\MySql.Data.dll
+D:\ccflow\trunk\CCFlowServices\obj\Release\ResolveAssemblyReference.cache
+D:\ccflow\trunk\CCFlowServices\obj\Release\CCFlowServices.FrmEfficiency.resources
+D:\ccflow\trunk\CCFlowServices\obj\Release\SMSServices.FrmMain.resources
+D:\ccflow\trunk\CCFlowServices\obj\Release\CCFlowServices.Properties.Resources.resources
+D:\ccflow\trunk\CCFlowServices\obj\Release\CCFlowServices.ToolBox.resources
+D:\ccflow\trunk\CCFlowServices\obj\Release\SMSServices.FrmTesting.resources
+D:\ccflow\trunk\CCFlowServices\obj\Release\GenerateResource.read.1.tlog
+D:\ccflow\trunk\CCFlowServices\obj\Release\GenerateResource.write.1.tlog
+D:\ccflow\trunk\CCFlowServices\obj\Release\CCFlowServices.exe
+D:\ccflow\trunk\CCFlowServices\obj\Release\CCFlowServices.pdb
